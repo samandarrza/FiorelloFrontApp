@@ -67,43 +67,43 @@ const insertErrorMsg = (element, message){
 
 
 
-// (function () {
-//     emailjs.init("KoykfC3B1UUSHCa5I");
-//   })();
+(function () {
+    emailjs.init("KoykfC3B1UUSHCa5I");
+  })();
 
-//  function  send() {
+ function  send() {
 
-//     Email.send({
-//         SecureToken : "e3d920b4-592b-4635-8276-8642587ce120",
-//         To : 'tahirtahirli2002@gmail.com',
-//         From : "elmugruna@gmail.com",
-//         Subject : "mesaj test edirem",
-//         Body : "ve bu menim ilk sehifem"
-//     }).then(
-//       message => alert(message)
-//     );
+    Email.send({
+        SecureToken : "e3d920b4-592b-4635-8276-8642587ce120",
+        To : 'tahirtahirli2002@gmail.com',
+        From : "elmugruna@gmail.com",
+        Subject : "mesaj test edirem",
+        Body : "ve bu menim ilk sehifem"
+    }).then(
+      message => alert(message)
+    );
 
-// }
+}
 
-//  sendMailBtn.addEventListener('click', ()=>{
-//     var templateParams = {
-//         name: 'tahirli tahir',
-//         to_name: name_surname.value,
-//         message: `${desc.value} \n ${email.value} \n ${phoneNumber.value}`
-//     };
+ sendMailBtn.addEventListener('click', ()=>{
+    var templateParams = {
+        name: 'tahirli tahir',
+        to_name: name_surname.value,
+        message: `${desc.value} \n ${email.value} \n ${phoneNumber.value}`
+    };
 
-//     emailjs.send('service_da4oq1d', 'template_v3hcg84', templateParams)
-//     .then(function(response) {
-//        console.log('SUCCESS!', response.status, response.text);
-//     }, function(error) {
-//        console.log('FAILED...', error);
-//     })
-//     .then(()=>{
-//         name_surname.value = '';
-//         email.value = ''
-//         phoneNumber.value = '';
-//         desc.value = ''
-//     });
-// })
+    emailjs.send('service_da4oq1d', 'template_v3hcg84', templateParams)
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    })
+    .then(()=>{
+        name_surname.value = '';
+        email.value = ''
+        phoneNumber.value = '';
+        desc.value = ''
+    });
+})
 
 
