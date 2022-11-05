@@ -1,8 +1,9 @@
 @use "partials/form";
-@import "partials/variables";
+@import 'partials/variables';
 @import "partials/extends";
 @import "partials/buttons";
 @import "partials/bloglist";
+@import 'partials/shoplist';
 * {
   margin: 0;
   padding: 0;
