@@ -1,4 +1,20 @@
-.solid, .outline, .small, .medium, .large {
+input {
+  width: 100%;
+  outline: none;
+  padding: 19px 18px;
+  border: 1px solid #e8e8e8;
+}
+input::-moz-placeholder {
+  color: #a7a4a4;
+}
+input:-ms-input-placeholder {
+  color: #a7a4a4;
+}
+input::placeholder {
+  color: #a7a4a4;
+}
+
+.solid, .outline, .small, .medium, .large, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
@@ -8,19 +24,11 @@
   height: 80px;
 }
 
-.form_holder form #sendMailBtn {
-  width: 200px;
-  height: 60px;
-  border: none;
-  font-weight: 500;
-  font-style: 1.3rem;
-}
-
-.solid, .small, .medium, .large {
+.solid, .small, .medium, .large, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
   background-color: #f34f3f;
   color: whitesmoke;
 }
-.solid:hover, .small:hover, .medium:hover, .large:hover {
+.solid:hover, .small:hover, .medium:hover, .large:hover, .subscribe_dark:hover, .subscribe_orange:hover, .form_holder #sendMailBtn:hover {
   transition: 0.5s;
   background-color: #f40000;
 }
@@ -66,7 +74,7 @@
   height: 60px;
 }
 
-.medium {
+.medium, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
   width: 190px;
   height: 60px;
 }
@@ -76,8 +84,28 @@
   height: 80px;
 }
 
+.input-error {
+  border: 1px solid red !important;
+}
+.input-error::-moz-placeholder {
+  color: red !important;
+}
+.input-error:-ms-input-placeholder {
+  color: red !important;
+}
+.input-error::placeholder {
+  color: red !important;
+}
+
+.form-types {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  width: 100%;
+}
+
 .form_holder {
-  max-width: 50%;
+  width: 50%;
   margin: auto;
   padding: 20px 0;
 }
@@ -87,37 +115,40 @@
   flex-direction: column;
   row-gap: 20px;
 }
-.form_holder form input {
-  outline: none;
-  padding: 19px 18px;
-  border: 1px solid #e8e8e8;
-}
-.form_holder form input::-moz-placeholder {
-  color: #a7a4a4;
-}
-.form_holder form input:-ms-input-placeholder {
-  color: #a7a4a4;
-}
-.form_holder form input::placeholder {
-  color: #a7a4a4;
-}
-.form_holder form textarea {
+.form_holder textarea {
   padding: 20px 15px;
   outline: none;
   border: 1px solid #e8e8e8;
 }
-.form_holder form textarea::-moz-placeholder {
+.form_holder textarea::-moz-placeholder {
   color: #a7a4a4;
 }
-.form_holder form textarea:-ms-input-placeholder {
+.form_holder textarea:-ms-input-placeholder {
   color: #a7a4a4;
 }
-.form_holder form textarea::placeholder {
+.form_holder textarea::placeholder {
   color: #a7a4a4;
 }
-.form_holder form #sendMailBtn {
+.subscribe {
+  width: 50%;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.subscribe_orange {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.subscribe_dark {
+  position: absolute;
+  top: 0;
+  right: 0;
   color: white;
-  background-color: orange;
+  background-color: black;
+}
+.subscribe_dark:hover {
+  background-color: #232323;
 }
 
 .outline, .solid, .large, .medium, .small {
@@ -266,6 +297,76 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.solid, .outline, .small, .medium, .large {
+  border: none;
+  font-weight: 500;
+  font-style: 1.3rem;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  width: 210px;
+  height: 80px;
+}
+
+.solid, .small, .medium, .large {
+  background-color: #f34f3f;
+  color: whitesmoke;
+}
+.solid:hover, .small:hover, .medium:hover, .large:hover {
+  transition: 0.5s;
+  background-color: #f40000;
+}
+
+.outline {
+  background-color: white;
+  border: 1px solid #f34f3f;
+  color: #f34f3f;
+}
+.outline:hover {
+  transition: 0.5s;
+  background-color: #f34f3f;
+  color: whitesmoke;
+}
+
+.simple {
+  border: none;
+  font-weight: 500;
+  font-style: 1.3rem;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  text-align: left;
+  background-color: white;
+  position: relative;
+  width: 200px;
+}
+.simple::before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 1.5px;
+  background-color: #2b2b2b;
+  transition: 0.3s;
+}
+.simple:hover::before {
+  width: 55%;
+}
+
+.small {
+  width: 170px;
+  height: 60px;
+}
+
+.medium {
+  width: 190px;
+  height: 60px;
+}
+
+.large {
+  width: 230px;
+  height: 80px;
+}
+
 .blog_header {
   background-color: #fefaf9;
   min-height: 30vh;
@@ -325,4 +426,4 @@ body {
 
 button {
   cursor: pointer;
-}
+}/*# sourceMappingURL=main.css.map */
