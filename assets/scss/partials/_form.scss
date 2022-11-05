@@ -1,5 +1,6 @@
 // if you want to use this style add "  @use 'partials/form'  "
 @import 'extends';
+@import 'variables';
 
 
 .form_holder {
@@ -19,11 +20,22 @@
 
     input{
         outline: none;
-        padding: 20px 15px;
+        padding: 19px 18px;
+        border: 1px solid $input_border ;
+        &::placeholder{
+          color: $placeholder_color;
+        }
+        
     }
     textarea{
         padding: 20px 15px;
         outline: none;
+        border: 1px solid $input_border ;
+
+        &::placeholder{
+          color: $placeholder_color;
+        }
+
     }
     #sendMailBtn {
        @extend %send_mail_btn ;
