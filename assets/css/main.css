@@ -1,3 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800&display=swap");
+input {
+  width: 100%;
+  outline: none;
+  padding: 19px 18px;
+  border: 1px solid #e8e8e8;
+}
+input::-moz-placeholder {
+  color: #a7a4a4;
+}
+input:-ms-input-placeholder {
+  color: #a7a4a4;
+}
+input::placeholder {
+  color: #a7a4a4;
+}
+
+.solid, .outline, .small, .medium, .large, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
 .solid, .outline, .small, .medium, .large {
   border: none;
   font-weight: 500;
@@ -440,6 +458,10 @@
   background-color: rgba(255, 255, 255, 0.9);
   opacity: 1;
 }
+.blog_header .blog_title {
+  font-size: 3rem;
+  font-weight: 200;
+  margin: 2rem 15rem;
 .cards_card_info .flower-name {
   color: #1b1b1b;
 }
@@ -458,6 +480,48 @@
   z-index: 2;
 }
 
+.accordion {
+  max-width: 70rem;
+}
+
+.accordion_content {
+  margin: 1rem 2rem;
+}
+
+.accordion_label {
+  font-weight: 400;
+  padding: 1.5rem;
+  border: 1px solid whitesmoke;
+  color: gray;
+}
+
+.accordion_label:hover {
+  background: #f34f3f;
+  color: white;
+  cursor: pointer;
+}
+
+.accordion_title {
+  background: #fff;
+  max-height: 0;
+  overflow: hidden;
+  border: 0px solid white;
+  padding: 0 0.5rem;
+  transition: 1s;
+}
+
+.accordion_content.active .accordion_title {
+  max-height: 300px;
+  border: 1px solid whitesmoke;
+}
+
+.accordion_grid {
+  display: grid;
+  grid-template-areas: "fr fr";
+  gap: 1rem;
+  padding: 1rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -465,6 +529,7 @@
 }
 
 body {
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
 
