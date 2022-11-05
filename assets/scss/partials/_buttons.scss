@@ -1,0 +1,27 @@
+@import 'extends';
+
+.btn_grid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.solid{
+    @extend %base_btn;
+    @extend %solid_btn;
+}
+.outline{
+    @extend %base_btn;
+    @extend %outline_btn;
+}
+.simple{
+    @extend %simple_btn;
+}
+.small{
+    @extend %small_btn;
+}
+.medium{
+    @extend %medium_btn;
+}
+.large{
+    @extend %large_btn;
+}
