@@ -1,5 +1,16 @@
 @import "variables";
 
+// INPUTS 
+%form_input {
+  width: 100%;
+  outline: none;
+  padding: 19px 18px;
+  border: 1px solid $input_border ;
+  &::placeholder{
+    color: $placeholder_color;
+  }
+}
+// buttons 
 %base_btn {
   border: none;
   font-weight: 500;
