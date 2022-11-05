@@ -63,3 +63,40 @@
 
   }
 }
+
+.sm-cards{
+  display: grid;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 100vh;
+  background-color: red;
+  gap: 20px;
+
+  &_card{
+    width: 100%;
+    height: 197px;
+    overflow: visible;
+    position: relative;
+    background-color: gray;
+
+    
+    img{
+      transition: 0.3s;
+      position: absolute;
+      object-fit: cover;
+      transform: translate(-50%,-50%);
+      top: 50%;
+      left: 50%;
+      &:hover{
+       scale: 2;
+        
+
+      }
+
+
+    }
+
+  }
+}
