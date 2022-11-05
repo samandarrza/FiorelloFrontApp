@@ -19,11 +19,31 @@
 }
 .form_holder form input {
   outline: none;
-  padding: 20px 15px;
+  padding: 19px 18px;
+  border: 1px solid #e8e8e8;
+}
+.form_holder form input::-moz-placeholder {
+  color: #a7a4a4;
+}
+.form_holder form input:-ms-input-placeholder {
+  color: #a7a4a4;
+}
+.form_holder form input::placeholder {
+  color: #a7a4a4;
 }
 .form_holder form textarea {
   padding: 20px 15px;
   outline: none;
+  border: 1px solid #e8e8e8;
+}
+.form_holder form textarea::-moz-placeholder {
+  color: #a7a4a4;
+}
+.form_holder form textarea:-ms-input-placeholder {
+  color: #a7a4a4;
+}
+.form_holder form textarea::placeholder {
+  color: #a7a4a4;
 }
 .form_holder form #sendMailBtn {
   color: white;
