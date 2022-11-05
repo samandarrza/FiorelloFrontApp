@@ -1,0 +1,35 @@
+.accordion {
+    max-width: 70rem;
+}
+.accordion_content {
+    margin: 1rem 2rem;
+}
+.accordion_label {
+    font-weight: 400;
+    padding: 1.5rem;
+    border: 1px solid whitesmoke;
+    color: gray;
+}
+.accordion_label:hover{
+    background: #f34f3f;
+    color: white;
+    cursor: pointer;
+}
+.accordion_title {
+    background: #fff;
+    max-height: 0;
+    overflow: hidden;
+    border: 0px solid white;
+    padding: 0 0.5rem;   
+    transition: 1s;
+}
+.accordion_content.active .accordion_title {
+    max-height: 300px;
+    border: 1px solid whitesmoke;
+}
+.accordion_grid {
+    display: grid;
+    grid-template-areas:'fr fr';
+    gap: 1rem;
+    padding: 1rem;
+}

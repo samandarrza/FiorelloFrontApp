@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800&display=swap");
 input {
   width: 100%;
   outline: none;
@@ -373,7 +374,7 @@ input::placeholder {
   display: flex;
   align-items: center;
 }
-.blog_header .title {
+.blog_header .blog_title {
   font-size: 3rem;
   font-weight: 200;
   margin: 2rem 15rem;
@@ -414,6 +415,48 @@ input::placeholder {
   transform: scale(1.2);
 }
 
+.accordion {
+  max-width: 70rem;
+}
+
+.accordion_content {
+  margin: 1rem 2rem;
+}
+
+.accordion_label {
+  font-weight: 400;
+  padding: 1.5rem;
+  border: 1px solid whitesmoke;
+  color: gray;
+}
+
+.accordion_label:hover {
+  background: #f34f3f;
+  color: white;
+  cursor: pointer;
+}
+
+.accordion_title {
+  background: #fff;
+  max-height: 0;
+  overflow: hidden;
+  border: 0px solid white;
+  padding: 0 0.5rem;
+  transition: 1s;
+}
+
+.accordion_content.active .accordion_title {
+  max-height: 300px;
+  border: 1px solid whitesmoke;
+}
+
+.accordion_grid {
+  display: grid;
+  grid-template-areas: "fr fr";
+  gap: 1rem;
+  padding: 1rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -421,6 +464,7 @@ input::placeholder {
 }
 
 body {
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
 
