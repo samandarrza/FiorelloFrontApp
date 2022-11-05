@@ -16,6 +16,7 @@ input::placeholder {
 }
 
 .solid, .outline, .small, .medium, .large, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
+.solid, .outline, .small, .medium, .large {
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
@@ -25,11 +26,19 @@ input::placeholder {
   height: 80px;
 }
 
-.solid, .small, .medium, .large, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
+.form_holder form #sendMailBtn {
+  width: 200px;
+  height: 60px;
+  border: none;
+  font-weight: 500;
+  font-style: 1.3rem;
+}
+
+.solid, .small, .medium, .large {
   background-color: #f34f3f;
   color: whitesmoke;
 }
-.solid:hover, .small:hover, .medium:hover, .large:hover, .subscribe_dark:hover, .subscribe_orange:hover, .form_holder #sendMailBtn:hover {
+.solid:hover, .small:hover, .medium:hover, .large:hover {
   transition: 0.5s;
   background-color: #f40000;
 }
@@ -75,7 +84,7 @@ input::placeholder {
   height: 60px;
 }
 
-.medium, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
+.medium {
   width: 190px;
   height: 60px;
 }
@@ -152,7 +161,7 @@ input::placeholder {
   background-color: #232323;
 }
 
-.outline, .solid, .large, .medium, .small {
+.outline, .solid, .large, .cards_card_info .addCart-btn, .medium, .small {
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
@@ -162,11 +171,11 @@ input::placeholder {
   height: 80px;
 }
 
-.solid, .large, .medium, .small {
+.solid, .large, .cards_card_info .addCart-btn, .medium, .small {
   background-color: #f34f3f;
   color: whitesmoke;
 }
-.solid:hover, .large:hover, .medium:hover, .small:hover {
+.solid:hover, .large:hover, .cards_card_info .addCart-btn:hover, .medium:hover, .small:hover {
   transition: 0.5s;
   background-color: #f40000;
 }
@@ -212,7 +221,7 @@ input::placeholder {
   height: 60px;
 }
 
-.medium {
+.cards_card_info .addCart-btn, .medium {
   width: 190px;
   height: 60px;
 }
@@ -222,7 +231,7 @@ input::placeholder {
   height: 80px;
 }
 
-.outline, .solid, .small, .medium, .large {
+.outline, .solid, .small, .cards_card_info .addCart-btn, .medium, .large {
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
@@ -232,11 +241,11 @@ input::placeholder {
   height: 80px;
 }
 
-.solid, .small, .medium, .large {
+.solid, .small, .cards_card_info .addCart-btn, .medium, .large {
   background-color: #f34f3f;
   color: whitesmoke;
 }
-.solid:hover, .small:hover, .medium:hover, .large:hover {
+.solid:hover, .small:hover, .cards_card_info .addCart-btn:hover, .medium:hover, .large:hover {
   transition: 0.5s;
   background-color: #f40000;
 }
@@ -282,7 +291,7 @@ input::placeholder {
   height: 60px;
 }
 
-.medium {
+.cards_card_info .addCart-btn, .medium {
   width: 190px;
   height: 60px;
 }
@@ -298,83 +307,13 @@ input::placeholder {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.solid, .outline, .small, .medium, .large {
-  border: none;
-  font-weight: 500;
-  font-style: 1.3rem;
-  font-family: sans-serif;
-  font-size: 0.9rem;
-  width: 210px;
-  height: 80px;
-}
-
-.solid, .small, .medium, .large {
-  background-color: #f34f3f;
-  color: whitesmoke;
-}
-.solid:hover, .small:hover, .medium:hover, .large:hover {
-  transition: 0.5s;
-  background-color: #f40000;
-}
-
-.outline {
-  background-color: white;
-  border: 1px solid #f34f3f;
-  color: #f34f3f;
-}
-.outline:hover {
-  transition: 0.5s;
-  background-color: #f34f3f;
-  color: whitesmoke;
-}
-
-.simple {
-  border: none;
-  font-weight: 500;
-  font-style: 1.3rem;
-  font-family: sans-serif;
-  font-size: 0.9rem;
-  text-align: left;
-  background-color: white;
-  position: relative;
-  width: 200px;
-}
-.simple::before {
-  content: "";
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  width: 0%;
-  height: 1.5px;
-  background-color: #2b2b2b;
-  transition: 0.3s;
-}
-.simple:hover::before {
-  width: 55%;
-}
-
-.small {
-  width: 170px;
-  height: 60px;
-}
-
-.medium {
-  width: 190px;
-  height: 60px;
-}
-
-.large {
-  width: 230px;
-  height: 80px;
-}
-
 .blog_header {
   background-color: #fefaf9;
   min-height: 30vh;
   display: flex;
   align-items: center;
 }
-.blog_header .blog_title {
+.blog_header .title {
   font-size: 3rem;
   font-weight: 200;
   margin: 2rem 15rem;
@@ -413,6 +352,132 @@ input::placeholder {
 }
 .blog_watch .blog_content .image img:hover {
   transform: scale(1.2);
+}
+
+.cards_card_info .addCart-btn, .solid, .outline, .small, .medium, .large {
+  border: none;
+  font-weight: 500;
+  font-style: 1.3rem;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  width: 210px;
+  height: 80px;
+}
+
+.cards_card_info .addCart-btn, .solid, .small, .medium, .large {
+  background-color: #f34f3f;
+  color: whitesmoke;
+}
+.cards_card_info .addCart-btn:hover, .solid:hover, .small:hover, .medium:hover, .large:hover {
+  transition: 0.5s;
+  background-color: #f40000;
+}
+
+.outline {
+  background-color: white;
+  border: 1px solid #f34f3f;
+  color: #f34f3f;
+}
+.outline:hover {
+  transition: 0.5s;
+  background-color: #f34f3f;
+  color: whitesmoke;
+}
+
+.simple {
+  border: none;
+  font-weight: 500;
+  font-style: 1.3rem;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  text-align: left;
+  background-color: white;
+  position: relative;
+  width: 200px;
+}
+.simple::before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 1.5px;
+  background-color: #2b2b2b;
+  transition: 0.3s;
+}
+.simple:hover::before {
+  width: 55%;
+}
+
+.small {
+  width: 170px;
+  height: 60px;
+}
+
+.cards_card_info .addCart-btn, .medium {
+  width: 190px;
+  height: 60px;
+}
+
+.large {
+  width: 230px;
+  height: 80px;
+}
+
+.cards {
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+.cards_card {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.cards_card_info {
+  text-decoration: none;
+  width: 100%;
+  height: 99%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(154, 205, 50, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5%;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+}
+.cards_card_info:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  opacity: 1;
+}
+.blog_header .blog_title {
+  font-size: 3rem;
+  font-weight: 200;
+  margin: 2rem 15rem;
+.cards_card_info .flower-name {
+  color: #1b1b1b;
+}
+.cards_card_info .flower-price {
+  color: #afafaf;
+}
+.cards_card_status {
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  padding: 6px 15px;
+  background-color: #f34f3f;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
 }
 
 .accordion {
@@ -470,4 +535,4 @@ body {
 
 button {
   cursor: pointer;
-}/*# sourceMappingURL=main.css.map */
+}
