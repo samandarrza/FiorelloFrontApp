@@ -1,7 +1,80 @@
+@import "variables";
+
+%base_btn {
+  border: none;
+  font-weight: 500;
+  font-style: 1.3rem;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  width: 210px;
+  height: 80px;
+}
+
 %send_mail_btn {
-    width: 200px;
+  width: 200px;
+  height: 60px;
+  border: none;
+  font-weight: 500;
+  font-style: 1.3rem;
+}
+
+%solid_btn {
+  background-color: $primary_orange;
+  color: $second_text_color;
+  &:hover {
+    transition: 0.5s;
+    background-color: $secondary_orange;
+  }
+}
+%outline_btn {
+  background-color: white;
+  border: 1px solid $primary_orange;
+  color: $primary_orange;
+  &:hover {
+    transition: 0.5s;
+    background-color: $primary_orange;
+    color: $second_text_color;
+  }
+}
+%simple_btn {
+  border: none;
+  font-weight: 500;
+  font-style: 1.3rem;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  text-align: left;
+  background-color: white;
+  position: relative;
+  width: 200px;
+  &::before {
+    content: "";
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0%;
+    height: 1.5px;
+    background-color: #2b2b2b;
+    transition: 0.3s;
+  }
+  &:hover::before {
+    width: 55%;
+  }
+}
+%small_btn{
+    @extend %solid_btn;
+    @extend %base_btn;
+    width: 170px;
     height: 60px;
-    border:none;
-    font-weight: 500;
-    font-style: 1.3rem;
+}
+%medium_btn{
+    @extend %solid_btn;
+    @extend %base_btn;
+    width: 190px;
+    height: 60px;
+}
+%large_btn{
+    @extend %solid_btn;
+    @extend %base_btn;
+    width: 230px;
+    height: 80px;
 }
