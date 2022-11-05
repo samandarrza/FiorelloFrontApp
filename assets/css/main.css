@@ -1,9 +1,79 @@
+.solid, .outline, .small, .medium, .large {
+  border: none;
+  font-weight: 500;
+  font-style: 1.3rem;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  width: 210px;
+  height: 80px;
+}
+
 .form_holder form #sendMailBtn {
   width: 200px;
   height: 60px;
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
+}
+
+.solid, .small, .medium, .large {
+  background-color: #f34f3f;
+  color: whitesmoke;
+}
+.solid:hover, .small:hover, .medium:hover, .large:hover {
+  transition: 0.5s;
+  background-color: #f40000;
+}
+
+.outline {
+  background-color: white;
+  border: 1px solid #f34f3f;
+  color: #f34f3f;
+}
+.outline:hover {
+  transition: 0.5s;
+  background-color: #f34f3f;
+  color: whitesmoke;
+}
+
+.simple {
+  border: none;
+  font-weight: 500;
+  font-style: 1.3rem;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  text-align: left;
+  background-color: white;
+  position: relative;
+  width: 200px;
+}
+.simple::before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 1.5px;
+  background-color: #2b2b2b;
+  transition: 0.3s;
+}
+.simple:hover::before {
+  width: 55%;
+}
+
+.small {
+  width: 170px;
+  height: 60px;
+}
+
+.medium {
+  width: 190px;
+  height: 60px;
+}
+
+.large {
+  width: 230px;
+  height: 80px;
 }
 
 .form_holder {
@@ -48,6 +118,152 @@
 .form_holder form #sendMailBtn {
   color: white;
   background-color: orange;
+}
+
+.outline, .solid, .large, .medium, .small {
+  border: none;
+  font-weight: 500;
+  font-style: 1.3rem;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  width: 210px;
+  height: 80px;
+}
+
+.solid, .large, .medium, .small {
+  background-color: #f34f3f;
+  color: whitesmoke;
+}
+.solid:hover, .large:hover, .medium:hover, .small:hover {
+  transition: 0.5s;
+  background-color: #f40000;
+}
+
+.outline {
+  background-color: white;
+  border: 1px solid #f34f3f;
+  color: #f34f3f;
+}
+.outline:hover {
+  transition: 0.5s;
+  background-color: #f34f3f;
+  color: whitesmoke;
+}
+
+.simple {
+  border: none;
+  font-weight: 500;
+  font-style: 1.3rem;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  text-align: left;
+  background-color: white;
+  position: relative;
+  width: 200px;
+}
+.simple::before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 1.5px;
+  background-color: #2b2b2b;
+  transition: 0.3s;
+}
+.simple:hover::before {
+  width: 55%;
+}
+
+.small {
+  width: 170px;
+  height: 60px;
+}
+
+.medium {
+  width: 190px;
+  height: 60px;
+}
+
+.large {
+  width: 230px;
+  height: 80px;
+}
+
+.outline, .solid, .small, .medium, .large {
+  border: none;
+  font-weight: 500;
+  font-style: 1.3rem;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  width: 210px;
+  height: 80px;
+}
+
+.solid, .small, .medium, .large {
+  background-color: #f34f3f;
+  color: whitesmoke;
+}
+.solid:hover, .small:hover, .medium:hover, .large:hover {
+  transition: 0.5s;
+  background-color: #f40000;
+}
+
+.outline {
+  background-color: white;
+  border: 1px solid #f34f3f;
+  color: #f34f3f;
+}
+.outline:hover {
+  transition: 0.5s;
+  background-color: #f34f3f;
+  color: whitesmoke;
+}
+
+.simple {
+  border: none;
+  font-weight: 500;
+  font-style: 1.3rem;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  text-align: left;
+  background-color: white;
+  position: relative;
+  width: 200px;
+}
+.simple::before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 1.5px;
+  background-color: #2b2b2b;
+  transition: 0.3s;
+}
+.simple:hover::before {
+  width: 55%;
+}
+
+.small {
+  width: 170px;
+  height: 60px;
+}
+
+.medium {
+  width: 190px;
+  height: 60px;
+}
+
+.large {
+  width: 230px;
+  height: 80px;
+}
+
+.btn_grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 * {
