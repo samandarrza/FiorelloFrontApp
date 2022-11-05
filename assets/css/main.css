@@ -266,6 +266,53 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.blog_header {
+  background-color: #fefaf9;
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+}
+.blog_header .title {
+  font-size: 3rem;
+  font-weight: 200;
+  margin: 2rem 15rem;
+  color: #1b1b1b;
+}
+
+.blog_watch {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 15rem;
+}
+.blog_watch .blog_content {
+  margin: 1rem;
+}
+.blog_watch .blog_content .image {
+  position: relative;
+  overflow: hidden;
+}
+.blog_watch .blog_content .image button {
+  position: absolute;
+  border: none;
+  padding: 0.5rem;
+  font-size: 0.7rem;
+  top: 2%;
+  left: 2%;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+.blog_watch .blog_content .image button:hover {
+  color: #f34f3f;
+}
+.blog_watch .blog_content .image img {
+  cursor: pointer;
+  width: 100%;
+  transition: 1s;
+}
+.blog_watch .blog_content .image img:hover {
+  transform: scale(1.2);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -278,4 +325,4 @@ body {
 
 button {
   cursor: pointer;
-}/*# sourceMappingURL=main.css.map */
+}
