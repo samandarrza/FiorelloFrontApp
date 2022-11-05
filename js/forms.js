@@ -52,7 +52,7 @@ const checkEmail = (email) => {
 const checkInput = (input)=>{
   return input.value.trim().length > 0 
 }
-const insertErrorMsg = (element, message){
+const insertErrorMsg = (element, message)=>{
     element.insertAdjacentHTML("afterend",)
 }
 
