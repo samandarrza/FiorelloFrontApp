@@ -1,4 +1,4 @@
-const content = document.getElementsByClassName('content');
+const content = document.getElementsByClassName('accordion_content');
 function accordion() {
     this.classList.toggle('active');
 }
