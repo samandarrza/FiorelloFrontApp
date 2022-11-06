@@ -1,14 +1,13 @@
 nav {
-  background-color: bisque;
+  background-color: white;
   padding: 20px;
 
   .nav-wrapper {
     width: 85%;
     margin: auto;
-    background-color: white;
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 10px 0;
     &_logo {
       display: inline-flex;
       align-items: center;
@@ -19,10 +18,10 @@ nav {
     &_menu-box {
       display: flex;
       align-items: center;
-      ul {
+      & > ul {
         display: flex;
         align-items: center;
-       
+
         button {
           font-size: 30px;
           padding: 0px;
@@ -49,10 +48,15 @@ nav {
     }
   }
 
-
   .nav_menu {
     display: inline-block;
     margin-left: 40px;
+    position: relative;
+    &:hover .submenu {
+      max-height: 400px;
+      opacity: 1;
+      padding: 30px 20px 0;
+    }
     &_btn {
       display: inline-block;
       color: $text_color;
@@ -60,24 +64,23 @@ nav {
       @extend %simple_btn;
       width: auto;
       padding: 2px 0;
-      font-size: .75rem;
+      font-size: 0.75rem;
       cursor: pointer;
     }
-    
   }
-  .nav_menu-search{
-        margin-left: 20px;
-        list-style: none;
-        text-align: right;
-    }
+  .nav_menu-search {
+    margin-left: 20px;
+    list-style: none;
+    text-align: right;
+  }
 
   .nav_menu-cart {
     cursor: pointer;
     display: inline-flex;
     align-items: center;
     color: $text_color;
-    font-size: .75rem;
-    padding-right: .8rem;
+    font-size: 0.75rem;
+    padding-right: 0.8rem;
     &_btn {
       position: relative;
 
@@ -94,6 +97,30 @@ nav {
         line-height: 100%;
         color: white;
         transform: translate(50%);
+      }
+    }
+  }
+
+  .submenu {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    font-size: 0.75rem;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 0 20px;
+    left: -20px;
+    width: 500%;
+    transition: 0.3s;
+    &_item {
+      color: green;
+      display: block;
+      margin: 20px 0;
+
+      a {
+        color: $text_color;
+        @extend %simple_btn;
       }
     }
   }
