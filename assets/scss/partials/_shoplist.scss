@@ -64,7 +64,7 @@
 
   max-width: 80%;
   margin: auto;
-  background-color: red;
+  background-color: grey;
   padding: 20px;
   overflow: hidden;
   &_cards {
@@ -109,6 +109,21 @@
       }
     }
   }
+  &_btns{
+    text-align: right;
+     &_arrow-btn{
+    border: none;
+    margin: 5px 0;
+    font-size: 2rem;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: 0.3s;
+    &:hover{
+      transform: scale(1.1); 
+    }
+  }
+  }
+ 
 }
 
 .sm-cards {
