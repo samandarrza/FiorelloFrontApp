@@ -1,0 +1,57 @@
+@import "variables";
+footer{
+    background-color: $bg_footer;
+    font-family: "Montserrat";
+    
+}
+.container{
+    margin: 0 5rem;
+}
+.headings{
+    list-style-type: none;
+    margin-top: 4.4rem;
+    margin-bottom: 1.6rem;
+    font-size: .75rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+.footer_items{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 7.5rem;
+
+
+  .items{
+    list-style-type: none;
+    margin-bottom: .6rem;
+}
+}
+a{
+    text-decoration: none;
+    color: $placeholder_color;
+    font-size: .7rem;
+    transition: .25s;
+}
+a:hover{
+    color:$secondary_orange;
+}
+.lastinfo{
+    display: flex;
+    justify-content: space-between;
+    font-size: .7rem;
+    margin-top: 1.25rem;
+    .social_media{
+        display: flex;
+        a{
+            margin-right: 0.94rem;
+        }
+    }
+ 
+}
+.hr{
+    border: none;
+    height: .1px;
+    background-color: $input_border;
+    margin-top: 3.75rem;
+}
+
