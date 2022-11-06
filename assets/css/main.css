@@ -850,6 +850,147 @@ body {
   bottom: 1rem;
 }
 
+.progress_bar {
+  background: #fefaf9;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.progress_bar h3 {
+  padding: 10px;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 600;
+  color: #f40000;
+}
+
+.progress_skill {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.progress_watch {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.progress_outer {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.progress_inner {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgb(255, 255, 255), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+#progress_one_number, #progress_two_number, #progress_three_number, #progress_four_number {
+  font-weight: 600;
+  font-size: 32px;
+  color: #f40000;
+}
+
+.progress_circle_one {
+  fill: none;
+  stroke: url(#progress_gradient);
+  stroke-width: 20px;
+  stroke-dasharray: 436;
+  stroke-dashoffset: 436;
+  -webkit-animation: anim1 2s linear forwards;
+          animation: anim1 2s linear forwards;
+}
+
+.progress_svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@-webkit-keyframes anim1 {
+  100% {
+    stroke-dashoffset: 50;
+  }
+}
+
+@keyframes anim1 {
+  100% {
+    stroke-dashoffset: 50;
+  }
+}
+.progress_circle_two {
+  fill: none;
+  stroke: url(#progress_gradient);
+  stroke-width: 20px;
+  stroke-dasharray: 436;
+  stroke-dashoffset: 436;
+  -webkit-animation: anim2 2s linear forwards;
+          animation: anim2 2s linear forwards;
+}
+
+@-webkit-keyframes anim2 {
+  100% {
+    stroke-dashoffset: 25;
+  }
+}
+
+@keyframes anim2 {
+  100% {
+    stroke-dashoffset: 25;
+  }
+}
+.progress_circle_three {
+  fill: none;
+  stroke: url(#progress_gradient);
+  stroke-width: 20px;
+  stroke-dasharray: 436;
+  stroke-dashoffset: 436;
+  -webkit-animation: anim3 2s linear forwards;
+          animation: anim3 2s linear forwards;
+}
+
+@-webkit-keyframes anim3 {
+  100% {
+    stroke-dashoffset: 20;
+  }
+}
+
+@keyframes anim3 {
+  100% {
+    stroke-dashoffset: 20;
+  }
+}
+.progress_circle_four {
+  fill: none;
+  stroke: url(#progress_gradient);
+  stroke-width: 20px;
+  stroke-dasharray: 436;
+  stroke-dashoffset: 436;
+  -webkit-animation: anim4 2s linear forwards;
+          animation: anim4 2s linear forwards;
+}
+
+@-webkit-keyframes anim4 {
+  100% {
+    stroke-dashoffset: 40;
+  }
+}
+
+@keyframes anim4 {
+  100% {
+    stroke-dashoffset: 40;
+  }
+}
 * {
   margin: 0;
   padding: 0;
