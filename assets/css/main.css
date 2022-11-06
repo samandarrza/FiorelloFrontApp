@@ -598,6 +598,7 @@ input::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
+  aspect-ratio: 3/4;
 }
 .sm-cards_card_imgWrapper img {
   transition: 0.3s;
