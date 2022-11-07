@@ -1,6 +1,8 @@
 nav {
   background-color: white;
   padding: 20px;
+  width: 100%;
+  max-height: 15vh;
 
   .nav-wrapper {
     width: 85%;
@@ -124,4 +126,11 @@ nav {
       }
     }
   }
+}
+.nav-scroll{
+  position: fixed;
+  top: -15vh;
+  transition: 0.3s;
+  padding-top: 0;
+  padding-bottom: 0;
 }
