@@ -25,7 +25,7 @@ nav {
         transition: 0.5s;
         display: flex;
         align-items: center;
-        margin-right: 20px;
+        margin-right: 50px;
       }
       button {
         font-size: 30px;
@@ -61,9 +61,12 @@ nav {
     
           .cart-item-count {
             position: absolute;
-            width: 14px;
-            height: 14px;
-            padding-top: 1px;
+            padding: 2.5px;
+            display: flex;
+            min-height: 16px;
+            min-width: 16px;
+            align-items: center;
+            justify-content: center;
             border-radius: 50%;
             background-color: $primary_orange;
             top: 0;
@@ -76,13 +79,33 @@ nav {
         }
       }
       .nav-wrapper_menu-box_profile {
-        display: inline-block;
-        width: 90px;
+        display: inline-flex;
+        align-items: center;
+        width: 50px;
         margin-left: 20px;
         cursor: pointer;
-        overflow: hidden;
         display: flex;
-        border-radius: 50%;
+        .profile{
+          border-radius: 50%;
+          background-color: gainsboro;
+          padding: 0 7px;
+          display: none;
+          i{
+            pointer-events: none;
+          }
+        }
+        .sign-in{
+          font-size: .8rem;
+          white-space: nowrap;
+          background-color: $primary_orange;
+          color: white;
+          padding: 10px 20px;
+          font-size: 1rem;
+          &:hover{
+            background-color: $secondary_orange;
+          }
+        }
+
       }
     }
    
