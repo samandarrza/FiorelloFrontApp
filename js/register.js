@@ -1,14 +1,23 @@
-const register_Modal = document.querySelector('.register-modal');
-const register_ModalContent = document.querySelector('.register-modal_content');
+import {getUserData, addNewUser,User,isUserExists, getUsers,register} from './UserFunctions.js'
+
+
+
+const modal = document.querySelector('.register-modal');
+const modalContent = document.querySelector('.register-modal_content');
+const login_ModalContent = document.querySelector('.login_modal');
+const signUp_ModalContent = document.querySelector('.signUp_modal');
 const signUpBtns = document.getElementsByClassName('sign-up');
+const logOutBtns = document.getElementsByClassName('log-out');
+const loginBtns = document.getElementsByClassName('login-link');
+
 
 
 // if you want to open modal use this funcion
 function modalToggle() {
     document.body.addEventListener('click', (e) => {
         if (e.target.classList.contains('sign-up') || e.target.classList.contains('register-modal')) {
-            register_Modal.classList.toggle('show-modal');
-            register_ModalContent.classList.toggle('show-modal_content');
+            modal.classList.toggle('show-modal');
+            modalContent.classList.toggle('show-modal_content');
         }
     });
 }
@@ -49,8 +58,8 @@ const checkNewUser = () => {
         isFormValid = false;
     }
 
-    if (!checkInput(usernameInput)) {
-        insertErrorMsg(usernameInput, 'This field must be filled');
+    if (isUserExists(usernameInput.value)) {
+        insertErrorMsg(usernameInput, 'Username exists');
         usernameInput.animate(inputShake, shakeTiming);
         isFormValid = false;
     }
@@ -65,52 +74,44 @@ const checkNewUser = () => {
 registerBtn.addEventListener('click', (e) => {
     if (!checkNewUser())
         return;
-
+    // remove errors
     for (const input of registerForm) {
         input.classList.remove('input-error');
     }
+    // add user
+   let registered = register(name_surname.value, usernameInput.value, passwordInput.value);
+    if(!registered){
+        console.error('User Exists');
+        return;
+    }
 
-    let user = new NewUser(name_surname.value, usernameInput.value, passwordInput.value);
 
-    addNewUser(user);
+    modal.classList.toggle('show-modal');
+    modalContent.classList.toggle('show-modal_content');
 
+    for (const signUp of signUpBtns) {
+        signUp.classList.toggle('d-none');
+    }
+    for (const logOut of logOutBtns) {
+        logOut.classList.toggle('d-none')
+    }
 });
 
-// adding new user to database
+for (const loginBtn of loginBtns) {
+    loginBtn.addEventListener('click',()=>{
+       login_ModalContent.classList.toggle('d-none');
+       signUp_ModalContent.classList.toggle('d-none');
 
-function NewUser(fullname, username, password) {
-    this.userId = username + password;
-    this.fullname = fullname;
-    this.username = username;
-    this.password = password;
+    })
 }
 
-let tahir = new NewUser('tahir tahirli', 'tako34', '1234');
-
-function addNewUser(user) {
-    let newUser = JSON.stringify(user);
-    localStorage.setItem(`${user?.userId}`, newUser);
-}
-addNewUser(tahir);
 
 
-function getUserData(userId) {
-    let result;
-    let wantedUser = localStorage.getItem(`${userId}`);
-    if (wantedUser !== null) {
-        result = JSON.parse(wantedUser);
-    }
-    else{
-        console.error('User Not Found');
-    }
-    return result;
-}
 
-console.log(getUserData('tako341234'))
 
-import hello from './UserFunctions.js'
 
-hello();
+
+
 
 
 

@@ -85,15 +85,18 @@ nav {
         margin-left: 20px;
         cursor: pointer;
         display: flex;
-        .profile{
-          border-radius: 50%;
-          background-color: gainsboro;
-          padding: 0 7px;
-          display: none;
-          i{
-            pointer-events: none;
+        .log-out{
+          font-size: .8rem;
+          white-space: nowrap;
+          background-color: $primary_orange;
+          color: white;
+          padding: 10px 20px;
+          font-size: 1rem;
+          &:hover{
+            background-color: $secondary_orange;
           }
         }
+       
         .sign-up{
           font-size: .8rem;
           white-space: nowrap;
@@ -105,7 +108,7 @@ nav {
             background-color: $secondary_orange;
           }
         }
-
+        
       }
     }
    
@@ -199,6 +202,5 @@ nav {
   padding-bottom: 0;
 }
 .d-none {
-  opacity:0 ;
-  overflow: hidden;
+display: none;
 }
