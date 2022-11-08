@@ -5,7 +5,7 @@ nav {
   max-height: 15vh;
 
   .nav-wrapper {
-    width: 85%;
+    width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -81,7 +81,6 @@ nav {
       .nav-wrapper_menu-box_profile {
         display: inline-flex;
         align-items: center;
-        width: 50px;
         margin-left: 20px;
         cursor: pointer;
         display: flex;
@@ -162,7 +161,7 @@ nav {
     }
   }
   .searching {
-    width: 400px;
+    width: 385px;
   }
  
   .border {
@@ -201,6 +200,8 @@ nav {
   padding-top: 0;
   padding-bottom: 0;
 }
+
+
 .d-none {
 display: none;
 }

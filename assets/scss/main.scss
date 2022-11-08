@@ -16,6 +16,16 @@
 @import "partials/cards";
 @import "partials/navbar";
 @import "partials/register";
+
+
+
+
+// =====================================
+// RESPONSIVE SCSS
+// =====================================
+@import 'partials/navMobile';
+@import 'partials/responsive/navbar-responsive';
+
 * {
   margin: 0;
   padding: 0;

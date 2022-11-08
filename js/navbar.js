@@ -2,12 +2,12 @@
 // NAVBAR SCROLL REVEAL
 // =====================================
 const nav = document.querySelector('.nav-scroll');
-window.addEventListener ('scroll',()=>{
-    if(document.documentElement.scrollTop > window.innerHeight)
+window.addEventListener('scroll', () => {
+    if (document.documentElement.scrollTop > window.innerHeight)
         nav.style.top = '0';
     else
         nav.style.top = '-15vh';
-})
+});
 
 // =====================================
 
@@ -20,22 +20,46 @@ const searchInputs = document.getElementsByClassName('nav_menu-search_input');
 const searchBtn = document.querySelectorAll('.nav_menu-search_btn');
 const menus = document.getElementsByClassName('menu-holder');
 
-searchBtn.forEach(btn=>{
-btn.addEventListener('click',(e)=>{
+searchBtn.forEach(btn => {
+    btn.addEventListener('click', (e) => {
 
-    let input = e.target.parentElement.parentElement.children[0];
-    let searchValue = input.value.trim();
-    if(searchValue.length <! 0){
-        input.classList.toggle('searching');
-        input.parentElement.classList.toggle('border');
-        for (const menu of menus) {
-                menu.classList.toggle('d-none')
+        let input = e.target.parentElement.parentElement.children[0];
+        let searchValue = input.value.trim();
+        if (searchValue.length < !0) {
+            input.classList.toggle('searching');
+            input.parentElement.classList.toggle('border');
+            for (const menu of menus) {
+                menu.classList.toggle('d-none');
+            }
         }
-    }
-        else{
+        else {
             // search for the value
         }
-    
-       
-    })
-})
+
+
+    });
+});
+
+
+
+// =====================================
+//  NAVBAR MOBILE 
+// =====================================
+const icons = document.getElementsByClassName('navMobile_box_menu');
+const homeIcon = document.getElementById('homeIcon');
+const indicator = document.querySelector('.indicator');
+
+indicator.style.left = `${homeIcon.getBoundingClientRect().left - ((indicator.offsetWidth / 2) - (homeIcon.offsetWidth / 2))}px`;
+
+
+
+for (const icon of icons) {
+    icon.addEventListener('click', () => {
+        for (const item of icons) {
+            item.classList.remove('active');
+        }
+        indicator.style.left = `${icon.getBoundingClientRect().left - ((indicator.offsetWidth / 2) - (icon.offsetWidth / 2))}px`;
+
+        icon.classList.toggle('active');
+    });
+}
