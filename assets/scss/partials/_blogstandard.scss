@@ -1,0 +1,96 @@
+@import "variables";
+
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+main{
+    background-color: $bg_footer;
+}
+.blog {
+  width: 100%;
+  background-color: whitesmoke;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  .title {
+    font-size: 60px;
+    font-style: italic;
+    margin-left: 5rem;
+  }
+  .subtitle {
+    font-size: 24px;
+    font-style: italic;
+    color: $placeholder_color;
+    margin-left: 5rem;
+  }
+}
+.d-grid {
+  display: grid;
+  grid-template-columns: 3.5fr 1fr;
+  margin: 0rem 5rem 0 5rem;
+  .blog-info {
+    p {
+      margin-top: 2rem;
+      font-size: 40px;
+    }
+    span {
+      font-size: 24px;
+      color: $placeholder_color;
+    }
+    img {
+      margin-top: 5rem;
+      object-fit: cover;
+      width: 90%;
+    }
+  }
+  .info {
+    margin-top: 5rem;
+  }
+}
+
+.search-container {
+  background: #fff;
+  height: 30px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.8s;
+  border: 1px solid lightgray;
+}
+
+.search-container:hover > .search-input {
+  width: 200px;
+}
+
+.search-container .search-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.8s;
+}
+.search-icon {
+  font-size: 25px;
+}
+
+.categories{
+    margin-top: 4rem;
+    p{
+        font-size: 24px;
+    }
+    ul{
+        margin-top: 2rem;
+        li{
+            list-style-type: none;
+            margin-top: 0.8rem;
+            color: $placeholder_color;
+            a{
+                font-size: 18px;
+            }
+        }
+    }
+}
