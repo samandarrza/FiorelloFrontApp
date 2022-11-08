@@ -9,7 +9,16 @@ const login_ModalContent = document.querySelector('.login_modal');
 const signUp_ModalContent = document.querySelector('.signUp_modal');
 const signUpBtns = document.getElementsByClassName('sign-up');
 const logOutBtns = document.getElementsByClassName('log-out');
-const loginBtns = document.getElementsByClassName('login-link');
+const modalLinks = document.getElementsByClassName('login-link');
+
+const registerForm = document.getElementById('registerForm');
+const name_surname = document.getElementById('nameInput');
+const usernameInput = document.getElementById('userInput');
+const passwordInput = document.getElementById('passwordInput');
+const usernameLogin = document.getElementById('userLogin');
+const passwordLogin = document.getElementById('passwordLogin');
+const registerBtn = document.getElementById('registerBtn');
+const loginBtn = document.getElementById('loginBtn');
 
 
 
@@ -25,14 +34,6 @@ function modalToggle() {
 modalToggle();
 
 
-const registerForm = document.getElementById('registerForm');
-const name_surname = document.getElementById('nameInput');
-const usernameInput = document.getElementById('userInput');
-const passwordInput = document.getElementById('passwordInput');
-const usernameLogin = document.getElementById('userLogin');
-const passwordLogin = document.getElementById('passwordLogin');
-const registerBtn = document.getElementById('registerBtn');
-const loginBtn = document.getElementById('loginBtn');
 
 
 
@@ -120,7 +121,7 @@ loginBtn.addEventListener('click', () => {
     }, 0);
 });
 
-for (const loginLink of loginBtns) {
+for (const loginLink of modalLinks) {
     loginLink.addEventListener('click', () => {
         login_ModalContent.classList.toggle('d-none');
         signUp_ModalContent.classList.toggle('d-none');

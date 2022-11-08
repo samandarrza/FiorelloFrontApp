@@ -64,8 +64,6 @@ function getUsers() {
     return users;
 }
 
-
-
 function register(fullname, username, password) {
     if (isUserExists(username))
         return false;
@@ -107,7 +105,6 @@ function isLoggedIn() {
         console.log('user not logged in');
     return isLogged;
 }
-
 
 export { login, isLoggedIn};
 
