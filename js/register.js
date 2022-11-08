@@ -1,4 +1,5 @@
-import {getUserData, addNewUser,User,isUserExists, getUsers,register} from './UserFunctions.js'
+import { getUserDataById, getUserDataByName, addNewUser, User, isUserExists, getUsers, register, login, isLoggedIn, logOut } from './UserFunctions.js';
+
 
 
 
@@ -28,8 +29,21 @@ const registerForm = document.getElementById('registerForm');
 const name_surname = document.getElementById('nameInput');
 const usernameInput = document.getElementById('userInput');
 const passwordInput = document.getElementById('passwordInput');
+const usernameLogin = document.getElementById('userLogin');
+const passwordLogin = document.getElementById('passwordLogin');
 const registerBtn = document.getElementById('registerBtn');
+const loginBtn = document.getElementById('loginBtn');
 
+
+
+if (isLoggedIn()) {
+    for (const signUp of signUpBtns) {
+        signUp.classList.add('d-none');
+    }
+    for (const logOut of logOutBtns) {
+        logOut.classList.remove('d-none');
+    }
+}
 
 const inputShake = [
     { transform: 'translateX(0)' },
@@ -79,38 +93,49 @@ registerBtn.addEventListener('click', (e) => {
         input.classList.remove('input-error');
     }
     // add user
-   let registered = register(name_surname.value, usernameInput.value, passwordInput.value);
-    if(!registered){
+    let registered = register(name_surname.value, usernameInput.value, passwordInput.value);
+    if (!registered) {
         console.error('User Exists');
         return;
     }
-
+    login(usernameInput.value, passwordInput.value);
 
     modal.classList.toggle('show-modal');
     modalContent.classList.toggle('show-modal_content');
 
-    for (const signUp of signUpBtns) {
-        signUp.classList.toggle('d-none');
-    }
-    for (const logOut of logOutBtns) {
-        logOut.classList.toggle('d-none')
-    }
+    setTimeout(() => {
+        window.location.reload();
+    }, 0);
+
 });
 
-for (const loginBtn of loginBtns) {
-    loginBtn.addEventListener('click',()=>{
-       login_ModalContent.classList.toggle('d-none');
-       signUp_ModalContent.classList.toggle('d-none');
 
-    })
+
+loginBtn.addEventListener('click', () => {
+    console.log(usernameLogin.value, passwordLogin.value);
+    login(usernameLogin.value, passwordLogin.value);
+
+    setTimeout(() => {
+        window.location.reload();
+    }, 0);
+});
+
+for (const loginLink of loginBtns) {
+    loginLink.addEventListener('click', () => {
+        login_ModalContent.classList.toggle('d-none');
+        signUp_ModalContent.classList.toggle('d-none');
+
+    });
 }
 
-
-
-
-
-
-
+for (const logoutBtn of logOutBtns) {
+    logoutBtn.addEventListener('click', () => {
+        logOut();
+        setTimeout(() => {
+            window.location.reload();
+        }, 0);
+    });
+}
 
 
 
