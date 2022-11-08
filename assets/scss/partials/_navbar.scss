@@ -1,0 +1,206 @@
+nav {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  max-height: 15vh;
+
+  .nav-wrapper {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    &_logo {
+      display: inline-flex;
+      align-items: center;
+      img {
+        height: 20px;
+      }
+    }
+    &_menu-box {
+      display: flex;
+      align-items: center;
+
+      .menu-holder {
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+        margin-right: 50px;
+      }
+      button {
+        font-size: 30px;
+        padding: 0px;
+        margin: 0 10px;
+        border: none;
+        background-color: transparent;
+
+        transition: 0.3s;
+        &:hover {
+          color: $primary_orange;
+        }
+      }
+      .container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        position: relative;
+        height: 100%;
+        margin: 0;
+      }
+      .nav_menu-cart {
+        cursor: pointer;
+        display: inline-flex;
+        white-space: nowrap;
+        align-items: center;
+        color: $text_color;
+        font-size: 0.75rem;
+        padding-right: 0.8rem;
+        &_btn {
+          position: relative;
+    
+          .cart-item-count {
+            position: absolute;
+            padding: 2.5px;
+            display: flex;
+            min-height: 16px;
+            min-width: 16px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: $primary_orange;
+            top: 0;
+            right: 0;
+            font-size: 12px;
+            line-height: 100%;
+            color: white;
+            transform: translate(50%);
+          }
+        }
+      }
+      .nav-wrapper_menu-box_profile {
+        display: inline-flex;
+        align-items: center;
+        width: 50px;
+        margin-left: 20px;
+        cursor: pointer;
+        display: flex;
+        .log-out{
+          font-size: .8rem;
+          white-space: nowrap;
+          background-color: $primary_orange;
+          color: white;
+          padding: 10px 20px;
+          font-size: 1rem;
+          &:hover{
+            background-color: $secondary_orange;
+          }
+        }
+       
+        .sign-up{
+          font-size: .8rem;
+          white-space: nowrap;
+          background-color: $primary_orange;
+          color: white;
+          padding: 10px 20px;
+          font-size: 1rem;
+          &:hover{
+            background-color: $secondary_orange;
+          }
+        }
+        
+      }
+    }
+   
+  }
+
+  .nav_menu {
+    transition: 0.3s;
+    display: inline-block;
+    margin-left: 40px;
+    position: relative;
+    &:hover .submenu {
+      max-height: 400px;
+      opacity: 1;
+      padding: 30px 20px 0;
+    }
+    &_btn {
+      display: inline-block;
+      color: $text_color;
+      text-decoration: none;
+      @extend %simple_btn;
+      width: auto;
+      padding: 2px 0;
+      font-size: 0.75rem;
+      cursor: pointer;
+    }
+  }
+  .nav_menu-search {
+
+    margin-left: 20px;
+    list-style: none;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    border: none;
+    padding: 2px 20px;
+    transition: 0.5s;
+    position: absolute;
+    right: 0;
+
+    &_input {
+      padding: 7px 0;
+      border: none;
+      width: 0;
+      transition: 0.3s;
+      margin-right: 20px;
+    }
+    &_btn {
+      position: absolute;
+      right: -4px;
+    }
+  }
+  .searching {
+    width: 400px;
+  }
+ 
+  .border {
+    border: 1px solid black !important;
+  }
+  
+
+  .submenu {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    font-size: 0.75rem;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 0 20px;
+    left: -20px;
+    width: 500%;
+    transition: 0.3s;
+    &_item {
+      color: green;
+      display: block;
+      margin: 20px 0;
+
+      a {
+        color: $text_color;
+        @extend %simple_btn;
+      }
+    }
+  }
+}
+.nav-scroll {
+  position: fixed;
+  top: -15vh;
+  transition: 0.3s;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.d-none {
+display: none;
+}
