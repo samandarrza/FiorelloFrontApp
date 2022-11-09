@@ -60,17 +60,18 @@
   }
 }
 
-.slider{
-
-  max-width: 80%;
+.slider {
+  width: 100%;
   margin: auto;
-  background-color: grey;
+  background-color: transparent;
   padding: 20px;
   overflow: hidden;
   &_cards {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% - (1.5rem * (var(--per-view) - 1))) / var(--per-view));
+    grid-auto-columns: calc(
+      (100% - (1.5rem * (var(--per-view) - 1))) / var(--per-view)
+    );
     grid-row: 1fr;
     gap: 1.5rem;
     position: relative;
@@ -109,21 +110,20 @@
       }
     }
   }
-  &_btns{
+  &_btns {
     text-align: right;
-     &_arrow-btn{
-    border: none;
-    margin: 5px 0;
-    font-size: 2rem;
-    background-color: transparent;
-    border-radius: 5px;
-    transition: 0.3s;
-    &:hover{
-      transform: scale(1.1); 
+    &_arrow-btn {
+      border: none;
+      margin: 5px 0;
+      font-size: 2rem;
+      background-color: transparent;
+      border-radius: 5px;
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
-  }
- 
 }
 
 .sm-cards {
