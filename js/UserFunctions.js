@@ -102,6 +102,7 @@ function login(username, password) {
     sessionStorage.setItem('phoneNum', user.phoneNumber);
     sessionStorage.setItem('isLogged', user.isLogged);
     sessionStorage.setItem('photo', user.photo);
+    return true;
     console.log('Logged In ');
 
 }

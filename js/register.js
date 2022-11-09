@@ -11,6 +11,7 @@ const signUp_ModalContent = document.querySelector('.signUp_modal');
 // buttons in navbar
 const signUpBtns = document.getElementsByClassName('sign-up');
 const logOutBtns = document.getElementsByClassName('log-out');
+const profileBtns = document.getElementsByClassName('userProfile')
 
 // links in modal bottom( login, signup)
 const modalLinks = document.getElementsByClassName('login-link');
@@ -61,6 +62,10 @@ if (isLoggedIn()) {
     for (const logOut of logOutBtns) {
         logOut.classList.remove('d-none');
     }
+    for (const profile of profileBtns) {
+        profile.classList.remove('d-none');
+    }
+
     signUp_ModalContent.classList.add('d-none');
     login_ModalContent.classList.add('d-none');
     profileModal.classList.remove('d-none');
@@ -68,27 +73,27 @@ if (isLoggedIn()) {
 
     // filling user details 
     let photoLink = sessionStorage.getItem('photo');
-    if(photoLink == undefined)
+    if (photoLink == undefined)
         photoLink = 'https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg';
     for (const item of currentUserNames) {
-        item.textContent = sessionStorage.getItem('currentUserName')
+        item.textContent = sessionStorage.getItem('currentUserName');
     }
     for (const item of currentFullNames) {
-        item.textContent = sessionStorage.getItem('fullName')
+        item.textContent = sessionStorage.getItem('fullName');
     }
     for (const item of currentPhoneNums) {
-        item.textContent = sessionStorage.getItem('phoneNum')
+        item.textContent = sessionStorage.getItem('phoneNum');
     }
     for (const item of currentEmails) {
-        item.textContent = sessionStorage.getItem('email')
+        item.textContent = sessionStorage.getItem('email');
     }
     for (const item of currentPhotos) {
-        item.setAttribute('src',photoLink)
+        item.setAttribute('src', photoLink);
     }
 
 
 }
-else{
+else {
     login_ModalContent.classList.remove('d-none');
     signUp_ModalContent.classList.add('d-none');
     profileModal.classList.add('d-none');
@@ -135,10 +140,10 @@ const checkNewUser = () => {
         phoneInput.animate(inputShake, shakeTiming);
         isFormValid = false;
     }
-    if ( isUserExists(usernameInput.value)) {
+    if (isUserExists(usernameInput.value)) {
         insertErrorMsg(usernameInput, 'Username exists');
         usernameInput.animate(inputShake, shakeTiming);
-        isFormValid = false;    
+        isFormValid = false;
     }
 
     if (!checkInput(passwordInput)) {
@@ -148,20 +153,20 @@ const checkNewUser = () => {
     }
     return isFormValid;
 };
-const checkLogin = () =>{
-    let isFormValid = true
+const checkLogin = () => {
+    let isFormValid = true;
     if (!isUserExists(usernameLogin.value)) {
-        insertErrorMsg(usernameLogin, 'Username exists');
+        insertErrorMsg(usernameLogin, 'Username not Found');
         usernameLogin.animate(inputShake, shakeTiming);
-        isFormValid = false;    
+        isFormValid = false;
     }
     if (!checkInput(passwordLogin)) {
         insertErrorMsg(passwordLogin, 'This field must be filled');
         passwordLogin.animate(inputShake, shakeTiming);
         isFormValid = false;
     }
-    return isFormValid
-}
+    return isFormValid;
+};
 
 
 
@@ -176,11 +181,11 @@ addPhotoBtn.addEventListener('click', () => {
     addPicHidden.addEventListener('change', () => {
         const fileReader = new FileReader();
         fileReader.onload = () => {
-             photoLink = fileReader.result;
+            photoLink = fileReader.result;
             for (const photo of userPhotos) {
-                photo.setAttribute('src',photoLink);
+                photo.setAttribute('src', photoLink);
             }
-            
+
         };
         fileReader.readAsDataURL(addPicHidden.files[0]);
     });
@@ -206,8 +211,8 @@ registerBtn.addEventListener('click', (e) => {
         console.error('User Exists');
         return;
     }
-    if( !login(usernameInput.value, passwordInput.value)){
-        console.log('logged error')
+    if (!login(usernameInput.value, passwordInput.value)) {
+        console.log('logged error');
     }
 
     modal.classList.toggle('show-modal');
@@ -222,11 +227,17 @@ registerBtn.addEventListener('click', (e) => {
 
 
 loginBtn.addEventListener('click', () => {
-    if(!checkLogin())
-    return
+    if (!checkLogin())
+        return;
     console.log(usernameLogin.value, passwordLogin.value);
-    login(usernameLogin.value, passwordLogin.value);
-
+    let isLoggedin = login(usernameLogin.value, passwordLogin.value);
+    if (!isLoggedin) {
+        insertErrorMsg(usernameLogin, 'Wrong password or username');
+        insertErrorMsg(passwordLogin, 'Wrong password or username');
+        usernameLogin.animate(inputShake, shakeTiming);
+        passwordLogin.animate(inputShake, shakeTiming);
+        return;
+    }
     setTimeout(() => {
         window.location.reload();
     }, 0);
