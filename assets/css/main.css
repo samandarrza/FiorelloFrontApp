@@ -16,7 +16,7 @@ input::placeholder {
   color: #a7a4a4;
 }
 
-.solid, .outline, .small, .medium, .large, .cards_card_info .addCart-btn, .register-modal_content_inputs .form_holder .submitBtn, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
+.solid, .outline, .small, .medium, .large, .cards_card_info .addCart-btn, .register-modal_content .submitBtn, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
@@ -26,11 +26,11 @@ input::placeholder {
   height: 80px;
 }
 
-.solid, .small, .medium, .large, .cards_card_info .addCart-btn, .register-modal_content_inputs .form_holder .submitBtn, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
+.solid, .small, .medium, .large, .cards_card_info .addCart-btn, .register-modal_content .submitBtn, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
   background-color: #f34f3f;
   color: whitesmoke;
 }
-.solid:hover, .small:hover, .medium:hover, .large:hover, .cards_card_info .addCart-btn:hover, .register-modal_content_inputs .form_holder .submitBtn:hover, .subscribe_dark:hover, .subscribe_orange:hover, .form_holder #sendMailBtn:hover {
+.solid:hover, .small:hover, .medium:hover, .large:hover, .cards_card_info .addCart-btn:hover, .register-modal_content .submitBtn:hover, .subscribe_dark:hover, .subscribe_orange:hover, .form_holder #sendMailBtn:hover {
   transition: 0.5s;
   background-color: #f40000;
 }
@@ -76,7 +76,7 @@ input::placeholder {
   height: 60px;
 }
 
-.medium, .cards_card_info .addCart-btn, .register-modal_content_inputs .form_holder .submitBtn, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
+.medium, .cards_card_info .addCart-btn, .register-modal_content .submitBtn, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
   width: 190px;
   height: 60px;
 }
@@ -153,7 +153,7 @@ input::placeholder {
   background-color: #232323;
 }
 
-.outline, .solid, .large, .register-modal_content_inputs .form_holder .submitBtn, .cards_card_info .addCart-btn, .medium, .small {
+.outline, .solid, .large, .register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium, .small {
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
@@ -163,11 +163,11 @@ input::placeholder {
   height: 80px;
 }
 
-.solid, .large, .register-modal_content_inputs .form_holder .submitBtn, .cards_card_info .addCart-btn, .medium, .small {
+.solid, .large, .register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium, .small {
   background-color: #f34f3f;
   color: whitesmoke;
 }
-.solid:hover, .large:hover, .register-modal_content_inputs .form_holder .submitBtn:hover, .cards_card_info .addCart-btn:hover, .medium:hover, .small:hover {
+.solid:hover, .large:hover, .register-modal_content .submitBtn:hover, .cards_card_info .addCart-btn:hover, .medium:hover, .small:hover {
   transition: 0.5s;
   background-color: #f40000;
 }
@@ -213,7 +213,7 @@ input::placeholder {
   height: 60px;
 }
 
-.register-modal_content_inputs .form_holder .submitBtn, .cards_card_info .addCart-btn, .medium {
+.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium {
   width: 190px;
   height: 60px;
 }
@@ -223,7 +223,7 @@ input::placeholder {
   height: 80px;
 }
 
-.outline, .solid, .small, .register-modal_content_inputs .form_holder .submitBtn, .cards_card_info .addCart-btn, .medium, .large {
+.outline, .solid, .small, .register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium, .large {
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
@@ -233,11 +233,11 @@ input::placeholder {
   height: 80px;
 }
 
-.solid, .small, .register-modal_content_inputs .form_holder .submitBtn, .cards_card_info .addCart-btn, .medium, .large {
+.solid, .small, .register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium, .large {
   background-color: #f34f3f;
   color: whitesmoke;
 }
-.solid:hover, .small:hover, .register-modal_content_inputs .form_holder .submitBtn:hover, .cards_card_info .addCart-btn:hover, .medium:hover, .large:hover {
+.solid:hover, .small:hover, .register-modal_content .submitBtn:hover, .cards_card_info .addCart-btn:hover, .medium:hover, .large:hover {
   transition: 0.5s;
   background-color: #f40000;
 }
@@ -283,7 +283,7 @@ input::placeholder {
   height: 60px;
 }
 
-.register-modal_content_inputs .form_holder .submitBtn, .cards_card_info .addCart-btn, .medium {
+.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium {
   width: 190px;
   height: 60px;
 }
@@ -299,7 +299,7 @@ input::placeholder {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.register-modal_content_inputs .form_holder .submitBtn, .cards_card_info .addCart-btn, .solid, .outline, .small, .medium, .large {
+.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .solid, .outline, .small, .medium, .large {
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
@@ -309,11 +309,11 @@ input::placeholder {
   height: 80px;
 }
 
-.register-modal_content_inputs .form_holder .submitBtn, .cards_card_info .addCart-btn, .solid, .small, .medium, .large {
+.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .solid, .small, .medium, .large {
   background-color: #f34f3f;
   color: whitesmoke;
 }
-.register-modal_content_inputs .form_holder .submitBtn:hover, .cards_card_info .addCart-btn:hover, .solid:hover, .small:hover, .medium:hover, .large:hover {
+.register-modal_content .submitBtn:hover, .cards_card_info .addCart-btn:hover, .solid:hover, .small:hover, .medium:hover, .large:hover {
   transition: 0.5s;
   background-color: #f40000;
 }
@@ -359,7 +359,7 @@ input::placeholder {
   height: 60px;
 }
 
-.register-modal_content_inputs .form_holder .submitBtn, .cards_card_info .addCart-btn, .medium {
+.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium {
   width: 190px;
   height: 60px;
 }
@@ -458,7 +458,7 @@ input::placeholder {
   padding: 1rem;
 }
 
-.register-modal_content_inputs .form_holder .submitBtn, .cards_card_info .addCart-btn, .solid, .outline, .small, .medium, .large {
+.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .solid, .outline, .small, .medium, .large {
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
@@ -468,11 +468,11 @@ input::placeholder {
   height: 80px;
 }
 
-.register-modal_content_inputs .form_holder .submitBtn, .cards_card_info .addCart-btn, .solid, .small, .medium, .large {
+.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .solid, .small, .medium, .large {
   background-color: #f34f3f;
   color: whitesmoke;
 }
-.register-modal_content_inputs .form_holder .submitBtn:hover, .cards_card_info .addCart-btn:hover, .solid:hover, .small:hover, .medium:hover, .large:hover {
+.register-modal_content .submitBtn:hover, .cards_card_info .addCart-btn:hover, .solid:hover, .small:hover, .medium:hover, .large:hover {
   transition: 0.5s;
   background-color: #f40000;
 }
@@ -518,7 +518,7 @@ input::placeholder {
   height: 60px;
 }
 
-.register-modal_content_inputs .form_holder .submitBtn, .cards_card_info .addCart-btn, .medium {
+.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium {
   width: 190px;
   height: 60px;
 }
@@ -1742,11 +1742,17 @@ nav .submenu_item a {
   left: 50%;
   transform: translate(-50%, -40%);
   width: 350px;
-  min-height: 50vh;
+  min-height: 30vh;
   background-color: white;
   border-radius: 10px;
   pointer-events: fill;
   padding: 30px;
+}
+.register-modal_content .submitBtn {
+  width: 100%;
+  font-size: 1.2rem;
+  height: auto;
+  padding: 10px;
 }
 .register-modal_content p {
   text-align: center;
@@ -1763,12 +1769,6 @@ nav .submenu_item a {
   width: 100%;
 }
 .register-modal_content_inputs .form_holder input {
-  padding: 10px;
-}
-.register-modal_content_inputs .form_holder .submitBtn {
-  width: 100%;
-  font-size: 1.2rem;
-  height: auto;
   padding: 10px;
 }
 .register-modal_content_suggestion a {

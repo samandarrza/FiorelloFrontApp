@@ -30,13 +30,18 @@ const passwordLogin = document.getElementById('passwordLogin');
 const loginBtn = document.getElementById('loginBtn');
 
 
+// user Info
+const currentUserNames = document.getElementsByClassName('userName');
+const currentFullNames = document.getElementsByClassName('fullName');
+const currentPhoneNums = document.getElementsByClassName('phoneNumber');
+const currentEmails = document.getElementsByClassName('email');
+const currentPhotos = document.getElementsByClassName('userPhoto');
+
 
 
 // if you want to open modal use this funcion
 function modalToggle() {
-    console.log('bura');
     document.body.addEventListener('click', (e) => {
-        console.log(e.target.classList);
         if (e.target.classList.contains('sign-up') || e.target.classList.contains('profile') || e.target.classList.contains('register-modal')) {
             modal.classList.toggle('show-modal');
             modalContent.classList.toggle('show-modal_content');
@@ -47,7 +52,7 @@ modalToggle();
 
 
 
-
+// checking if user is logged in 
 
 if (isLoggedIn()) {
     for (const signUp of signUpBtns) {
@@ -56,7 +61,37 @@ if (isLoggedIn()) {
     for (const logOut of logOutBtns) {
         logOut.classList.remove('d-none');
     }
+    signUp_ModalContent.classList.add('d-none');
+    login_ModalContent.classList.add('d-none');
     profileModal.classList.remove('d-none');
+
+
+    // filling user details 
+    let photoLink = sessionStorage.getItem('photo');
+    if(photoLink == undefined)
+        photoLink = 'https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg';
+    for (const item of currentUserNames) {
+        item.textContent = sessionStorage.getItem('currentUserName')
+    }
+    for (const item of currentFullNames) {
+        item.textContent = sessionStorage.getItem('fullName')
+    }
+    for (const item of currentPhoneNums) {
+        item.textContent = sessionStorage.getItem('phoneNum')
+    }
+    for (const item of currentEmails) {
+        item.textContent = sessionStorage.getItem('email')
+    }
+    for (const item of currentPhotos) {
+        item.setAttribute('src',photoLink)
+    }
+
+
+}
+else{
+    login_ModalContent.classList.remove('d-none');
+    signUp_ModalContent.classList.add('d-none');
+    profileModal.classList.add('d-none');
 }
 
 const inputShake = [
@@ -100,12 +135,12 @@ const checkNewUser = () => {
         phoneInput.animate(inputShake, shakeTiming);
         isFormValid = false;
     }
-
-    if (isUserExists(usernameInput.value)) {
+    if ( isUserExists(usernameInput.value)) {
         insertErrorMsg(usernameInput, 'Username exists');
         usernameInput.animate(inputShake, shakeTiming);
-        isFormValid = false;
+        isFormValid = false;    
     }
+
     if (!checkInput(passwordInput)) {
         insertErrorMsg(passwordInput, 'This field must be filled');
         passwordInput.animate(inputShake, shakeTiming);
@@ -113,6 +148,21 @@ const checkNewUser = () => {
     }
     return isFormValid;
 };
+const checkLogin = () =>{
+    let isFormValid = true
+    if (!isUserExists(usernameLogin.value)) {
+        insertErrorMsg(usernameLogin, 'Username exists');
+        usernameLogin.animate(inputShake, shakeTiming);
+        isFormValid = false;    
+    }
+    if (!checkInput(passwordLogin)) {
+        insertErrorMsg(passwordLogin, 'This field must be filled');
+        passwordLogin.animate(inputShake, shakeTiming);
+        isFormValid = false;
+    }
+    return isFormValid
+}
+
 
 
 // Getting user Photo 
@@ -156,7 +206,9 @@ registerBtn.addEventListener('click', (e) => {
         console.error('User Exists');
         return;
     }
-    login(usernameInput.value, passwordInput.value);
+    if( !login(usernameInput.value, passwordInput.value)){
+        console.log('logged error')
+    }
 
     modal.classList.toggle('show-modal');
     modalContent.classList.toggle('show-modal_content');
@@ -170,6 +222,8 @@ registerBtn.addEventListener('click', (e) => {
 
 
 loginBtn.addEventListener('click', () => {
+    if(!checkLogin())
+    return
     console.log(usernameLogin.value, passwordLogin.value);
     login(usernameLogin.value, passwordLogin.value);
 

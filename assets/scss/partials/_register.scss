@@ -36,11 +36,21 @@
         left: 50%;
         transform: translate(-50%,-40%);
         width: 350px;
-        min-height: 50vh;
+        min-height: 30vh;
         background-color: white;
         border-radius: 10px;
         pointer-events: fill;
         padding: 30px;
+
+        .submitBtn{
+            @extend %medium_btn;
+            width: 100%;
+            font-size: 1.2rem;
+            height: auto;
+            padding: 10px;
+          }
+
+          
         p{
             text-align: center;
             margin: 10px;
@@ -61,13 +71,7 @@
             input{
                 padding: 10px;
             }
-            .submitBtn{
-              @extend %medium_btn;
-              width: 100%;
-              font-size: 1.2rem;
-              height: auto;
-              padding: 10px;
-            }
+          
            }
         }
         &_suggestion{
