@@ -10,12 +10,35 @@ const cardContainer = document.querySelector('.slider_cards');
 const cards = document.querySelectorAll('.slider_cards_card');
 let cardWidth = document.querySelector('.slider_cards  :first-child').offsetWidth + 24;
 
+
+
+
+
 //parameters
-const perView = 4;
+let perView = 4;
 let scrollCount = 0;
 let delay = 5000;
+//========================================
+// RESPONSIVNESS
+//========================================
+
+if (window.matchMedia("(max-width:992px)").matches) {
+    perView = 3;
+    cardContainer.style.setProperty('--per-view', perView);  
+}
+if (window.matchMedia("(max-width:798px)").matches) {
+    perView = 2;
+    cardContainer.style.setProperty('--per-view', perView);  
+}
+if (window.matchMedia("(max-width:560px)").matches) {
+    perView = 1;
+    cardContainer.style.setProperty('--per-view', perView);  
+}
+
+
 
 cardContainer.style.setProperty('--per-view', perView);
+
 for (let i = 0; i < perView; i++) {
     cardContainer.insertAdjacentHTML('beforeend', cards[i].outerHTML);
 }
@@ -47,8 +70,8 @@ const scroll = (direction) => {
 
     cardWidth = document.querySelector('.slider_cards  :first-child').offsetWidth + 24;
 
-    if(scrollCount != cards.length)
-    cardContainer.style.transition = '0.3s';
+    if (scrollCount != cards.length)
+        cardContainer.style.transition = '0.3s';
 
 
     if (direction)

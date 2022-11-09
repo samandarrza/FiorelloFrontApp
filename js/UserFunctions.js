@@ -36,17 +36,20 @@ function addNewUser(user) {
     let newUser = JSON.stringify(user);
     localStorage.setItem(`${user.id}`, newUser);
 }
-function User(fullname, username, password, isLogged) {
+function User(fullname,email,phoneNumber, username, password, isLogged,photoLink) {
     this.id = generateUniqueId(getUsers());
-    this.fullname = fullname;
+    this.email = email;
+    this.phoneNumber = phoneNumber;
+    this.fullName = fullname;
     this.username = username;
     this.password = password;
+    this.photo = photoLink;
     this.isLogged = isLogged;
 }
 
 function isUserExists(username) {
     let keys = Object.keys(localStorage);
-
+    if(username.length == 0 ) return true;
     let hasUser = keys.some(key => {
         let user = JSON.parse(localStorage.getItem(key));
         return user.username === username;
@@ -64,11 +67,11 @@ function getUsers() {
     return users;
 }
 
-function register(fullname, username, password) {
+function register(fullname,email,phoneNumber, username, password, photoLink) {
     if (isUserExists(username))
         return false;
     // create new user
-    let newUser = new User(fullname, username, password, false);
+    let newUser = new User(fullname,email,phoneNumber,username, password, true, photoLink);
     addNewUser(newUser);
     return true;
 
@@ -93,13 +96,19 @@ function login(username, password) {
     localStorage.removeItem(user.id);
     addNewUser(user);
     sessionStorage.setItem('currentUserId', user.id);
-    sessionStorage.setItem('currentUser', user.username);
+    sessionStorage.setItem('currentUserName', user.username);
+    sessionStorage.setItem('fullName', user.fullName);
+    sessionStorage.setItem('email', user.email);
+    sessionStorage.setItem('phoneNum', user.phoneNumber);
     sessionStorage.setItem('isLogged', user.isLogged);
+    sessionStorage.setItem('photo', user.photo);
+    return true;
     console.log('Logged In ');
 
 }
 function isLoggedIn() {
     let isLogged =JSON.parse(sessionStorage.getItem('isLogged')) ;
+    console.log(isLogged);
     isLogged?
         console.log('logged in user'):
         console.log('user not logged in');
@@ -116,16 +125,8 @@ export { login, isLoggedIn};
 
 
 function logOut(){
-
-    let currentUserId = sessionStorage.getItem('currentUserId');
-    let user = getUserDataById(currentUserId);
-    user.isLogged = false;
-    localStorage.removeItem(user.id);
-    addNewUser(user);
-    sessionStorage.removeItem('isLogged');
-    sessionStorage.setItem('isLogged', user.isLogged);
-
-    
+    sessionStorage.clear();
+    sessionStorage.setItem('isLogged', false);
 
 }
 
