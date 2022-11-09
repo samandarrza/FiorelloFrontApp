@@ -45,13 +45,12 @@ searchBtn.forEach(btn => {
 // =====================================
 //  NAVBAR MOBILE 
 // =====================================
+const homeMenu = document.querySelector('.navMobile_home');
 const icons = document.getElementsByClassName('navMobile_box_menu');
 const homeIcon = document.getElementById('homeIcon');
 const indicator = document.querySelector('.indicator');
 
 indicator.style.left = `${homeIcon.getBoundingClientRect().left - ((indicator.offsetWidth / 2) - (homeIcon.offsetWidth / 2))}px`;
-
-
 
 for (const icon of icons) {
     icon.addEventListener('click', () => {
@@ -61,5 +60,32 @@ for (const icon of icons) {
         indicator.style.left = `${icon.getBoundingClientRect().left - ((indicator.offsetWidth / 2) - (icon.offsetWidth / 2))}px`;
 
         icon.classList.toggle('active');
+        if (icon.classList.contains('homeIcon')) {
+            homeMenu.classList.toggle('active');
+        }
+        else
+            homeMenu.classList.remove('active');
+
+    });
+}
+
+// =====================================
+//  NAVBAR MOBILE PAGES
+// =====================================
+
+document.body.addEventListener('click', (e) => {
+    console.log(e.target);
+    if (e.target.classList.contains('homeIcon')) {
+
+        homeMenu.classList.toggle('active');
+    }
+});
+
+const menuBtns = document.getElementsByClassName('navMobile_menu_btn');
+const subMenus = document.getElementsByClassName('submenu');
+
+for (const menu of menuBtns) {
+    menu.addEventListener('click', () => {
+        menu.nextElementSibling?.classList.toggle('active');
     });
 }

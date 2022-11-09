@@ -26,13 +26,13 @@ footer{
     margin-bottom: .6rem;
 }
 }
-a{
+footer a{
     text-decoration: none;
     color: $placeholder_color;
     font-size: .7rem;
     transition: .25s;
 }
-a:hover{
+footer a:hover{
     color:$secondary_orange;
 }
 .lastinfo{

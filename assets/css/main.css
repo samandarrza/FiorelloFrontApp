@@ -46,18 +46,18 @@ input::placeholder {
   color: whitesmoke;
 }
 
-.simple, nav .nav_menu_btn, nav .submenu_item a {
+.simple, nav .nav_menu_btn, nav .submenu_item a, .navMobile_home a, .navMobile_menu-holder .navMobile_menu_btn {
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
   font-family: sans-serif;
   font-size: 0.9rem;
   text-align: left;
-  background-color: white;
+  background-color: transparent;
   position: relative;
   width: 200px;
 }
-.simple::before, nav .nav_menu_btn::before, nav .submenu_item a::before {
+.simple::before, nav .nav_menu_btn::before, nav .submenu_item a::before, .navMobile_home a::before, .navMobile_menu-holder .navMobile_menu_btn::before {
   content: "";
   bottom: 0;
   left: 0;
@@ -67,7 +67,7 @@ input::placeholder {
   background-color: #2b2b2b;
   transition: 0.3s;
 }
-.simple:hover::before, nav .nav_menu_btn:hover::before, nav .submenu_item a:hover::before {
+.simple:hover::before, nav .nav_menu_btn:hover::before, nav .submenu_item a:hover::before, .navMobile_home a:hover::before, .navMobile_menu-holder .navMobile_menu_btn:hover::before {
   width: 100%;
 }
 
@@ -183,18 +183,18 @@ input::placeholder {
   color: whitesmoke;
 }
 
-nav .submenu_item a, nav .nav_menu_btn, .simple {
+.navMobile_menu-holder .navMobile_menu_btn, .navMobile_home a, nav .submenu_item a, nav .nav_menu_btn, .simple {
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
   font-family: sans-serif;
   font-size: 0.9rem;
   text-align: left;
-  background-color: white;
+  background-color: transparent;
   position: relative;
   width: 200px;
 }
-nav .submenu_item a::before, nav .nav_menu_btn::before, .simple::before {
+.navMobile_menu-holder .navMobile_menu_btn::before, .navMobile_home a::before, nav .submenu_item a::before, nav .nav_menu_btn::before, .simple::before {
   content: "";
   bottom: 0;
   left: 0;
@@ -204,7 +204,7 @@ nav .submenu_item a::before, nav .nav_menu_btn::before, .simple::before {
   background-color: #2b2b2b;
   transition: 0.3s;
 }
-nav .submenu_item a:hover::before, nav .nav_menu_btn:hover::before, .simple:hover::before {
+.navMobile_menu-holder .navMobile_menu_btn:hover::before, .navMobile_home a:hover::before, nav .submenu_item a:hover::before, nav .nav_menu_btn:hover::before, .simple:hover::before {
   width: 100%;
 }
 
@@ -253,18 +253,18 @@ nav .submenu_item a:hover::before, nav .nav_menu_btn:hover::before, .simple:hove
   color: whitesmoke;
 }
 
-nav .submenu_item a, nav .nav_menu_btn, .simple {
+.navMobile_menu-holder .navMobile_menu_btn, .navMobile_home a, nav .submenu_item a, nav .nav_menu_btn, .simple {
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
   font-family: sans-serif;
   font-size: 0.9rem;
   text-align: left;
-  background-color: white;
+  background-color: transparent;
   position: relative;
   width: 200px;
 }
-nav .submenu_item a::before, nav .nav_menu_btn::before, .simple::before {
+.navMobile_menu-holder .navMobile_menu_btn::before, .navMobile_home a::before, nav .submenu_item a::before, nav .nav_menu_btn::before, .simple::before {
   content: "";
   bottom: 0;
   left: 0;
@@ -274,7 +274,7 @@ nav .submenu_item a::before, nav .nav_menu_btn::before, .simple::before {
   background-color: #2b2b2b;
   transition: 0.3s;
 }
-nav .submenu_item a:hover::before, nav .nav_menu_btn:hover::before, .simple:hover::before {
+.navMobile_menu-holder .navMobile_menu_btn:hover::before, .navMobile_home a:hover::before, nav .submenu_item a:hover::before, nav .nav_menu_btn:hover::before, .simple:hover::before {
   width: 100%;
 }
 
@@ -329,18 +329,18 @@ nav .submenu_item a:hover::before, nav .nav_menu_btn:hover::before, .simple:hove
   color: whitesmoke;
 }
 
-nav .submenu_item a, nav .nav_menu_btn, .simple {
+.navMobile_menu-holder .navMobile_menu_btn, .navMobile_home a, nav .submenu_item a, nav .nav_menu_btn, .simple {
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
   font-family: sans-serif;
   font-size: 0.9rem;
   text-align: left;
-  background-color: white;
+  background-color: transparent;
   position: relative;
   width: 200px;
 }
-nav .submenu_item a::before, nav .nav_menu_btn::before, .simple::before {
+.navMobile_menu-holder .navMobile_menu_btn::before, .navMobile_home a::before, nav .submenu_item a::before, nav .nav_menu_btn::before, .simple::before {
   content: "";
   bottom: 0;
   left: 0;
@@ -350,7 +350,7 @@ nav .submenu_item a::before, nav .nav_menu_btn::before, .simple::before {
   background-color: #2b2b2b;
   transition: 0.3s;
 }
-nav .submenu_item a:hover::before, nav .nav_menu_btn:hover::before, .simple:hover::before {
+.navMobile_menu-holder .navMobile_menu_btn:hover::before, .navMobile_home a:hover::before, nav .submenu_item a:hover::before, nav .nav_menu_btn:hover::before, .simple:hover::before {
   width: 100%;
 }
 
@@ -488,18 +488,18 @@ nav .submenu_item a:hover::before, nav .nav_menu_btn:hover::before, .simple:hove
   color: whitesmoke;
 }
 
-nav .submenu_item a, nav .nav_menu_btn, .simple {
+.navMobile_menu-holder .navMobile_menu_btn, .navMobile_home a, nav .submenu_item a, nav .nav_menu_btn, .simple {
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
   font-family: sans-serif;
   font-size: 0.9rem;
   text-align: left;
-  background-color: white;
+  background-color: transparent;
   position: relative;
   width: 200px;
 }
-nav .submenu_item a::before, nav .nav_menu_btn::before, .simple::before {
+.navMobile_menu-holder .navMobile_menu_btn::before, .navMobile_home a::before, nav .submenu_item a::before, nav .nav_menu_btn::before, .simple::before {
   content: "";
   bottom: 0;
   left: 0;
@@ -509,7 +509,7 @@ nav .submenu_item a::before, nav .nav_menu_btn::before, .simple::before {
   background-color: #2b2b2b;
   transition: 0.3s;
 }
-nav .submenu_item a:hover::before, nav .nav_menu_btn:hover::before, .simple:hover::before {
+.navMobile_menu-holder .navMobile_menu_btn:hover::before, .navMobile_home a:hover::before, nav .submenu_item a:hover::before, nav .nav_menu_btn:hover::before, .simple:hover::before {
   width: 100%;
 }
 
@@ -709,14 +709,14 @@ footer {
   margin-bottom: 0.6rem;
 }
 
-a {
+footer a {
   text-decoration: none;
   color: #a7a4a4;
   font-size: 0.7rem;
   transition: 0.25s;
 }
 
-a:hover {
+footer a:hover {
   color: #f40000;
 }
 
@@ -1516,6 +1516,8 @@ nav {
   padding: 20px;
   width: 100%;
   max-height: 15vh;
+  z-index: 3;
+  position: relative;
 }
 nav .nav-wrapper {
   width: 90%;
@@ -1860,6 +1862,50 @@ nav .submenu_item a {
   top: 51%;
   border-top-left-radius: 25px;
   box-shadow: 0 -5px 0 0 white;
+}
+.navMobile_home {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 0;
+  overflow: hidden;
+  height: 95vh;
+  background-color: white;
+  border-right: 1px solid gainsboro;
+  bottom: 70px;
+  z-index: 0;
+  transition: 0.5s;
+}
+.navMobile_home a {
+  color: #1b1b1b;
+  text-decoration: none;
+  font-weight: 400;
+}
+.navMobile_home.active {
+  width: 250px;
+  padding: 20px 40px 0;
+}
+.navMobile_menu-holder {
+  list-style: none;
+}
+.navMobile_menu-holder .navMobile_menu {
+  margin-top: 20px;
+  color: #1b1b1b !important;
+}
+.navMobile_menu-holder .navMobile_menu_btn {
+  width: auto;
+  font-weight: 500 !important;
+}
+.navMobile_menu-holder .navMobile_menu .submenu {
+  transition: 0.5s;
+  list-style: none;
+  padding-left: 20px;
+  max-height: 0;
+  overflow: hidden;
+}
+.navMobile_menu-holder .navMobile_menu .submenu.active {
+  padding: 10px 0px 10px 20px;
+  max-height: 200px;
 }
 
 @media (max-width: 992px) {
