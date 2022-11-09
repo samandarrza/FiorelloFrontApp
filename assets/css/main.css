@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800&display=swap");
 @import url("https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css");
+.outline, .solid, .large, .register-modal_content_inputs .form_holder .submitBtn, .cards_card_info .addCart-btn, .medium, .small {
 input {
   width: 100%;
   outline: none;
@@ -686,8 +687,8 @@ footer {
   font-family: "Montserrat";
 }
 
-.container {
-  margin: 0 5rem;
+.footer_container {
+  padding: 0 5rem;
 }
 
 .headings {
@@ -709,6 +710,7 @@ footer {
   margin-bottom: 0.6rem;
 }
 
+.footer_container a {
 footer a {
   text-decoration: none;
   color: #a7a4a4;
@@ -716,6 +718,7 @@ footer a {
   transition: 0.25s;
 }
 
+.footer_container a:hover {
 footer a:hover {
   color: #f40000;
 }
@@ -751,15 +754,15 @@ html {
 }
 
 .grid-container {
-  padding: 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
   -moz-column-gap: 2rem;
        column-gap: 2rem;
   row-gap: 2rem;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  padding: 0 5rem;
 }
 .grid-container #grid-item1 {
   grid-area: 1/1/3/3;
@@ -2128,6 +2131,108 @@ nav .submenu_item a {
     row-gap: 40px;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+#img-heading {
+  width: 100%;
+  height: 14rem;
+  position: relative;
+}
+
+#text-heading {
+  position: absolute;
+  top: 5.2rem;
+  left: 5rem;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.standard_container {
+  padding: 4rem 5rem 0 5rem;
+}
+.standard_container .categories a {
+  text-decoration: none;
+  color: #1b1b1b;
+  font-size: 0.75rem;
+  transition: 0.25s;
+  text-transform: uppercase;
+  margin-right: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.15ch;
+}
+.standard_container .categories a:hover {
+  color: #f40000;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  row-gap: 2rem;
+  padding-top: 2rem;
+}
+.items #port-item1 {
+  grid-area: 1/1/2/2;
+}
+.items #port-item2 {
+  grid-area: 1/2/2/3;
+}
+.items #port-item3 {
+  grid-area: 1/3/2/4;
+}
+.items #port-item4 {
+  grid-area: 2/1/3/2;
+}
+.items #port-item5 {
+  grid-area: 2/2/3/3;
+}
+.items #port-item6 {
+  grid-area: 2/3/3/4;
+}
+.items #port-item7 {
+  grid-area: 3/1/4/2;
+}
+.items #port-item8 {
+  grid-area: 3/2/4/3;
+}
+.items #port-item9 {
+  grid-area: 3/3/4/4;
+}
+.items #port-item10 {
+  grid-area: 4/1/5/2;
+}
+.items #port-item11 {
+  grid-area: 4/2/5/3;
+}
+.items #port-item12 {
+  grid-area: 4/3/5/4;
+}
+
+.items a {
+  letter-spacing: 0.1ch;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #1b1b1b;
+  font-size: 0.7rem;
+  transition: 0.25s;
+}
+
+.items a:hover {
+  color: #f40000;
+}
+
+.items img {
+  width: 22rem;
+  height: 29rem;
+}
+
 * {
   margin: 0;
   padding: 0;

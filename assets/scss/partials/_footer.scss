@@ -4,8 +4,8 @@ footer{
     font-family: "Montserrat";
     
 }
-.container{
-    margin: 0 5rem;
+.footer_container{
+    padding: 0 5rem;
 }
 .headings{
     list-style-type: none;
@@ -26,13 +26,13 @@ footer{
     margin-bottom: .6rem;
 }
 }
-footer a{
+.footer_container a{
     text-decoration: none;
     color: $placeholder_color;
     font-size: .7rem;
     transition: .25s;
 }
-footer a:hover{
+.footer_container a:hover{
     color:$secondary_orange;
 }
 .lastinfo{
