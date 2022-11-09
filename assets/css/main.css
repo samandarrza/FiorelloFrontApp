@@ -1702,7 +1702,7 @@ nav .submenu_item a {
 }
 
 .d-none {
-  display: none;
+  display: none !important;
 }
 
 .register-modal {
@@ -1715,10 +1715,30 @@ nav .submenu_item a {
   transition: 0.3s;
   visibility: hidden;
 }
+.register-modal .form_holder form {
+  row-gap: 10px;
+}
+.register-modal .form_holder {
+  padding: 0;
+}
+.register-modal .signUp_modal #addProfilePic {
+  position: absolute;
+  font-size: 1.35rem;
+  display: block;
+  bottom: 10px;
+  left: 58%;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #1b1b1b;
+  padding: 0;
+}
 .register-modal_content {
   transition: 0.5s ease-in-out;
   position: fixed;
-  top: -40%;
+  top: -80%;
   left: 50%;
   transform: translate(-50%, -40%);
   width: 350px;
@@ -1730,7 +1750,7 @@ nav .submenu_item a {
 }
 .register-modal_content p {
   text-align: center;
-  margin-top: 10px;
+  margin: 10px;
   font-size: 0.8rem;
 }
 .register-modal_content_logo {
@@ -1738,9 +1758,6 @@ nav .submenu_item a {
 }
 .register-modal_content_logo img {
   width: 60%;
-}
-.register-modal_content_inputs {
-  margin-top: 50px;
 }
 .register-modal_content_inputs .form_holder {
   width: 100%;
@@ -1768,9 +1785,13 @@ nav .submenu_item a {
 .register-modal_content .profileModal_userPhoto {
   overflow: hidden;
   text-align: center;
+  position: relative;
 }
 .register-modal_content .profileModal_userPhoto img {
   width: 110px;
+  height: 110px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border: 6px solid gainsboro;
   border-radius: 50%;
 }

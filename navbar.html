@@ -167,10 +167,15 @@
               </p>
             </div>
           </div>
-          <div class="signUp_modal d-none">
+          <div class="signUp_modal ">
             <div class="register-modal_content_logo">
               <img src="assets/imgs/h2-logo-1.png" alt="" />
               <p>Create a new account</p>
+              <div class="profileModal_userPhoto">
+                <img class="userPhoto"  src="assets/imgs/userPhoto.png" alt="">
+                <span id="addProfilePic" ><i class="las la-plus-circle"></i></span>
+                <input id="addPicHidden" type="file" hidden >
+              </div>
             </div>
             <div class="register-modal_content_inputs">
               <div class="form_holder">
@@ -178,9 +183,19 @@
                   <input
                     id="nameInput"
                     type="text"
-                    placeholder="Your full name..."
+                    placeholder="Full name"
                   />
-                  <input id="userInput" type="email" placeholder="Username" />
+                  <input
+                  id="emailInput"
+                  type="email"
+                  placeholder="Email"
+                />
+                <input
+                id="phoneInput"
+                type="text"
+                placeholder="Phone Number"
+              />
+                  <input id="userInput" type="text" placeholder="Username" />
                   <input
                     id="passwordInput"
                     type="password"
@@ -199,9 +214,9 @@
               </p>
             </div>
           </div>
-          <div class="profileModal">
+          <div class="profileModal d-none">
               <div class="profileModal_userPhoto">
-                <img   src="assets/imgs/userPhoto.png" alt="">
+                <img class="userPhoto"  src="assets/imgs/userPhoto.png" alt="">
                 <p class="userName">Username</p>
               </div>
               <div class="profileModal_body">
@@ -266,7 +281,7 @@
             </a>
           </li>
           <li class="navMobile_box_menu ">
-            <a  class="sign-up" >
+            <a  class="" >
               <span class="icon profile"><i class="las la-user-circle profile"></i></span>
               <span class="text profile">Profile</span>
             </a>

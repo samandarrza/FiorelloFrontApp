@@ -36,11 +36,14 @@ function addNewUser(user) {
     let newUser = JSON.stringify(user);
     localStorage.setItem(`${user.id}`, newUser);
 }
-function User(fullname, username, password, isLogged) {
+function User(fullname,email,phoneNumber, username, password, isLogged,photoLink) {
     this.id = generateUniqueId(getUsers());
-    this.fullname = fullname;
-    this.username = username;
+    this.email = email;
+    this.phoneNumber = phoneNumber;
+    this.fullName = fullname;
+    this.userName = username;
     this.password = password;
+    this.photo = photoLink;
     this.isLogged = isLogged;
 }
 
@@ -64,11 +67,11 @@ function getUsers() {
     return users;
 }
 
-function register(fullname, username, password) {
+function register(fullname,email,phoneNumber, username, password, photoLink) {
     if (isUserExists(username))
         return false;
     // create new user
-    let newUser = new User(fullname, username, password, false);
+    let newUser = new User(fullname,email,phoneNumber,username, password, false, photoLink);
     addNewUser(newUser);
     return true;
 
@@ -92,9 +95,14 @@ function login(username, password) {
     user.isLogged = true;
     localStorage.removeItem(user.id);
     addNewUser(user);
+    sessionStorage.clear();
     sessionStorage.setItem('currentUserId', user.id);
-    sessionStorage.setItem('currentUser', user.username);
+    sessionStorage.setItem('currentUserName', user.userName);
+    sessionStorage.setItem('fullName', user.fullName);
+    sessionStorage.setItem('email', user.email);
+    sessionStorage.setItem('phoneNum', user.phoneNumber);
     sessionStorage.setItem('isLogged', user.isLogged);
+    sessionStorage.setItem('photo', user.photo);
     console.log('Logged In ');
 
 }

@@ -6,12 +6,33 @@
     z-index: 8;
     top: 0;
     transition: 0.3s;
-    visibility: hidden;    
-    
+    visibility: hidden;  
+    .form_holder form{
+        row-gap: 10px ;
+    } 
+    .form_holder{
+        padding: 0;
+    }  
+    .signUp_modal{
+        #addProfilePic{
+            position: absolute;
+            font-size:  1.35rem;
+            display: block;
+            bottom: 10px;
+            left: 58%;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 50%;
+            cursor: pointer;
+            color: $text_color;
+            padding: 0;
+        }
+    }
     &_content{
         transition: 0.5s ease-in-out;
         position: fixed;
-        top: -40%;
+        top: -80%;
         left: 50%;
         transform: translate(-50%,-40%);
         width: 350px;
@@ -22,7 +43,7 @@
         padding: 30px;
         p{
             text-align: center;
-            margin-top: 10px;
+            margin: 10px;
             font-size: 0.8rem;
         }
 
@@ -35,7 +56,6 @@
             
         }
         &_inputs{
-            margin-top: 50px;
            .form_holder{
             width: 100%;
             input{
@@ -66,8 +86,11 @@
             &_userPhoto{
                 overflow: hidden;
                 text-align: center;
+                position: relative;
                 img{
                     width: 110px;
+                    height: 110px;
+                    object-fit: cover;
                     border: 6px solid gainsboro;
                     border-radius: 50%;
                 }
@@ -93,6 +116,7 @@
 
 
     }
+
 
 
 }
