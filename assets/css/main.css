@@ -1759,6 +1759,36 @@ nav .submenu_item a {
   text-decoration: underline !important;
   color: #f34f3f;
 }
+.register-modal_content .profileModal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.register-modal_content .profileModal_userPhoto {
+  overflow: hidden;
+  text-align: center;
+}
+.register-modal_content .profileModal_userPhoto img {
+  width: 110px;
+  border: 6px solid gainsboro;
+  border-radius: 50%;
+}
+.register-modal_content .profileModal_userPhoto .userName {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  margin-top: 0;
+  font-weight: 500;
+  color: #1b1b1b;
+}
+.register-modal_content .profileModal_body {
+  margin-top: 20px;
+}
+.register-modal_content .profileModal_body p {
+  text-align: left;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
 
 .show-modal {
   visibility: visible !important;
