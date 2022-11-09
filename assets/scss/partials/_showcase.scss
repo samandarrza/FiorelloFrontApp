@@ -7,16 +7,15 @@
 html{
     scroll-behavior: smooth;
 }
-
 .grid-container{
-    padding: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     column-gap: 2rem;
     row-gap: 2rem;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    padding: 0 5rem;
     #grid-item1{grid-area: 1 / 1 / 3 / 3;
         transition: .5s;
         overflow: hidden;
@@ -152,7 +151,7 @@ html{
         transform:scale(1.02);
     }
     }
-    img{
+     img{
         width: 100%;
         height: 100%;
     }
