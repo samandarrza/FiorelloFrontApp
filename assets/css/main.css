@@ -1721,7 +1721,7 @@ nav .submenu_item a {
   top: -40%;
   left: 50%;
   transform: translate(-50%, -40%);
-  width: 400px;
+  width: 350px;
   min-height: 50vh;
   background-color: white;
   border-radius: 10px;

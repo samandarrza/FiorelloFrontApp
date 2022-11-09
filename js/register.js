@@ -24,8 +24,11 @@ const loginBtn = document.getElementById('loginBtn');
 
 // if you want to open modal use this funcion
 function modalToggle() {
+    console.log('bura')
     document.body.addEventListener('click', (e) => {
-        if (e.target.classList.contains('sign-up') || e.target.classList.contains('register-modal')) {
+        console.log(e.target.classList)
+        if (e.target.classList.contains('sign-up')|| e.target.classList.contains('profile') || e.target.classList.contains('register-modal')) {
+            console.log('calisdi')
             modal.classList.toggle('show-modal');
             modalContent.classList.toggle('show-modal_content');
         }
@@ -85,7 +88,7 @@ const checkNewUser = () => {
     }
     return isFormValid;
 };
-
+ 
 registerBtn.addEventListener('click', (e) => {
     if (!checkNewUser())
         return;
