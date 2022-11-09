@@ -1,0 +1,105 @@
+
+.video_header {
+    background-color: $bg_primary;
+    flex-direction: column;
+    padding: 4rem;
+
+    .video_title {
+        padding-left: 10rem;
+        font-size: 3rem;
+        color: $text_color;
+    }
+}
+
+.video_container {
+    width: 85%;
+    margin: auto;
+    padding-top: 2rem;
+
+    .video_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+
+        .image {
+            overflow: hidden;
+            position: relative;
+
+            img {
+                transition: 1s;
+                width: 100%;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.05);
+                }
+            }
+
+
+            .play {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100px;
+                height: 100px;
+                background-color: whitesmoke;
+                border-radius: 50px;
+                display: flex;
+                justify-content: center;
+
+                img {
+                    margin: auto;
+                    width: 40px;
+                }
+            }
+        }
+    }
+
+}
+
+.video_full {
+    padding-top: 4rem;
+
+    .imagefull {
+        overflow: hidden;
+        position: relative;
+
+        img {
+            transition: 1s;
+            width: 100%;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.05);
+            }
+        }
+
+        .playfull {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 100px;
+            background-color: whitesmoke;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+
+            img {
+                margin: auto;
+                width: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .video_container {
+        .video_grid {
+            width: 100%;
+            grid-template-columns: 1fr;
+        }
+    }
+}
