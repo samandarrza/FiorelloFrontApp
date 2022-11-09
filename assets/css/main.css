@@ -1,159 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800&display=swap");
 @import url("https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css");
-.outline, .solid, .large, .register-modal_content_inputs .form_holder .submitBtn, .cards_card_info .addCart-btn, .medium, .small {
-input {
-  width: 100%;
-  outline: none;
-  padding: 19px 18px;
-  border: 1px solid #e8e8e8;
-}
-input::-moz-placeholder {
-  color: #a7a4a4;
-}
-input:-ms-input-placeholder {
-  color: #a7a4a4;
-}
-input::placeholder {
-  color: #a7a4a4;
-}
-
-.solid, .outline, .small, .medium, .large, .cards_card_info .addCart-btn, .register-modal_content .submitBtn, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
-  border: none;
-  font-weight: 500;
-  font-style: 1.3rem;
-  font-family: sans-serif;
-  font-size: 0.9rem;
-  width: 210px;
-  height: 80px;
-}
-
-.solid, .small, .medium, .large, .cards_card_info .addCart-btn, .register-modal_content .submitBtn, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
-  background-color: #f34f3f;
-  color: whitesmoke;
-}
-.solid:hover, .small:hover, .medium:hover, .large:hover, .cards_card_info .addCart-btn:hover, .register-modal_content .submitBtn:hover, .subscribe_dark:hover, .subscribe_orange:hover, .form_holder #sendMailBtn:hover {
-  transition: 0.5s;
-  background-color: #f40000;
-}
-
-.outline {
-  background-color: white;
-  border: 1px solid #f34f3f;
-  color: #f34f3f;
-}
-.outline:hover {
-  transition: 0.5s;
-  background-color: #f34f3f;
-  color: whitesmoke;
-}
-
-.simple, nav .nav_menu_btn, nav .submenu_item a, .navMobile_home a, .navMobile_menu-holder .navMobile_menu_btn {
-  border: none;
-  font-weight: 500;
-  font-style: 1.3rem;
-  font-family: sans-serif;
-  font-size: 0.9rem;
-  text-align: left;
-  background-color: transparent;
-  position: relative;
-  width: 200px;
-}
-.simple::before, nav .nav_menu_btn::before, nav .submenu_item a::before, .navMobile_home a::before, .navMobile_menu-holder .navMobile_menu_btn::before {
-  content: "";
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  width: 0%;
-  height: 1.5px;
-  background-color: #2b2b2b;
-  transition: 0.3s;
-}
-.simple:hover::before, nav .nav_menu_btn:hover::before, nav .submenu_item a:hover::before, .navMobile_home a:hover::before, .navMobile_menu-holder .navMobile_menu_btn:hover::before {
-  width: 100%;
-}
-
-.small {
-  width: 170px;
-  height: 60px;
-}
-
-.medium, .cards_card_info .addCart-btn, .register-modal_content .submitBtn, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
-  width: 190px;
-  height: 60px;
-}
-
-.large {
-  width: 230px;
-  height: 80px;
-}
-
-.input-error {
-  border: 1px solid red !important;
-}
-.input-error::-moz-placeholder {
-  color: red !important;
-}
-.input-error:-ms-input-placeholder {
-  color: red !important;
-}
-.input-error::placeholder {
-  color: red !important;
-}
-
-.form-types {
-  display: flex;
-  flex-direction: column;
-  row-gap: 40px;
-  width: 100%;
-}
-
-.form_holder {
-  width: 50%;
-  margin: auto;
-  padding: 20px 0;
-}
-.form_holder form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-}
-.form_holder textarea {
-  padding: 20px 15px;
-  outline: none;
-  border: 1px solid #e8e8e8;
-}
-.form_holder textarea::-moz-placeholder {
-  color: #a7a4a4;
-}
-.form_holder textarea:-ms-input-placeholder {
-  color: #a7a4a4;
-}
-.form_holder textarea::placeholder {
-  color: #a7a4a4;
-}
-.subscribe {
-  width: 50%;
-  margin: auto;
-  position: relative;
-  overflow: hidden;
-}
-.subscribe_orange {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.subscribe_dark {
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: white;
-  background-color: black;
-}
-.subscribe_dark:hover {
-  background-color: #232323;
-}
-
 .outline, .solid, .large, .register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium, .small {
   border: none;
   font-weight: 500;
@@ -711,7 +557,6 @@ footer {
 }
 
 .footer_container a {
-footer a {
   text-decoration: none;
   color: #a7a4a4;
   font-size: 0.7rem;
@@ -719,7 +564,6 @@ footer a {
 }
 
 .footer_container a:hover {
-footer a:hover {
   color: #f40000;
 }
 
@@ -1823,6 +1667,108 @@ nav .submenu_item a {
   top: 40% !important;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+#img-heading {
+  width: 100%;
+  height: 14rem;
+  position: relative;
+}
+
+#text-heading {
+  position: absolute;
+  top: 5.2rem;
+  left: 5rem;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.standard_container {
+  padding: 4rem 5rem 0 5rem;
+}
+.standard_container .categories a {
+  text-decoration: none;
+  color: #1b1b1b;
+  font-size: 0.75rem;
+  transition: 0.25s;
+  text-transform: uppercase;
+  margin-right: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.15ch;
+}
+.standard_container .categories a:hover {
+  color: #f40000;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  row-gap: 2rem;
+  padding-top: 2rem;
+}
+.items #port-item1 {
+  grid-area: 1/1/2/2;
+}
+.items #port-item2 {
+  grid-area: 1/2/2/3;
+}
+.items #port-item3 {
+  grid-area: 1/3/2/4;
+}
+.items #port-item4 {
+  grid-area: 2/1/3/2;
+}
+.items #port-item5 {
+  grid-area: 2/2/3/3;
+}
+.items #port-item6 {
+  grid-area: 2/3/3/4;
+}
+.items #port-item7 {
+  grid-area: 3/1/4/2;
+}
+.items #port-item8 {
+  grid-area: 3/2/4/3;
+}
+.items #port-item9 {
+  grid-area: 3/3/4/4;
+}
+.items #port-item10 {
+  grid-area: 4/1/5/2;
+}
+.items #port-item11 {
+  grid-area: 4/2/5/3;
+}
+.items #port-item12 {
+  grid-area: 4/3/5/4;
+}
+
+.items a {
+  letter-spacing: 0.1ch;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #1b1b1b;
+  font-size: 0.7rem;
+  transition: 0.25s;
+}
+
+.items a:hover {
+  color: #f40000;
+}
+
+.items img {
+  width: 22rem;
+  height: 29rem;
+}
+
 .gridHome {
   background-color: white;
   padding: 0 5rem;
@@ -2131,108 +2077,6 @@ nav .submenu_item a {
     row-gap: 40px;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
-
-#img-heading {
-  width: 100%;
-  height: 14rem;
-  position: relative;
-}
-
-#text-heading {
-  position: absolute;
-  top: 5.2rem;
-  left: 5rem;
-  font-size: 3rem;
-  font-weight: 500;
-}
-
-.standard_container {
-  padding: 4rem 5rem 0 5rem;
-}
-.standard_container .categories a {
-  text-decoration: none;
-  color: #1b1b1b;
-  font-size: 0.75rem;
-  transition: 0.25s;
-  text-transform: uppercase;
-  margin-right: 2rem;
-  font-weight: 700;
-  letter-spacing: 0.15ch;
-}
-.standard_container .categories a:hover {
-  color: #f40000;
-}
-
-.items {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
-  row-gap: 2rem;
-  padding-top: 2rem;
-}
-.items #port-item1 {
-  grid-area: 1/1/2/2;
-}
-.items #port-item2 {
-  grid-area: 1/2/2/3;
-}
-.items #port-item3 {
-  grid-area: 1/3/2/4;
-}
-.items #port-item4 {
-  grid-area: 2/1/3/2;
-}
-.items #port-item5 {
-  grid-area: 2/2/3/3;
-}
-.items #port-item6 {
-  grid-area: 2/3/3/4;
-}
-.items #port-item7 {
-  grid-area: 3/1/4/2;
-}
-.items #port-item8 {
-  grid-area: 3/2/4/3;
-}
-.items #port-item9 {
-  grid-area: 3/3/4/4;
-}
-.items #port-item10 {
-  grid-area: 4/1/5/2;
-}
-.items #port-item11 {
-  grid-area: 4/2/5/3;
-}
-.items #port-item12 {
-  grid-area: 4/3/5/4;
-}
-
-.items a {
-  letter-spacing: 0.1ch;
-  font-size: 1rem;
-  text-decoration: none;
-  color: #1b1b1b;
-  font-size: 0.7rem;
-  transition: 0.25s;
-}
-
-.items a:hover {
-  color: #f40000;
-}
-
-.items img {
-  width: 22rem;
-  height: 29rem;
-}
-
 * {
   margin: 0;
   padding: 0;
