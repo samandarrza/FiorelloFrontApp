@@ -28,10 +28,30 @@
     align-items: center;
     border-radius: 20px;
     border: 1px solid whitesmoke;
+    button{
+        border: none;
+        background-color: whitesmoke;
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        border-radius: 10px;
+        font-weight: 600;
+    }
     h3{
         text-align: center;
         input{
-            width: 100px;
+            width: 80px;
+        }
+        position: relative;
+        #decrement{
+            position: absolute;
+            left: 40px;
+            top: 18px;
+        }
+        #increment{
+            position: absolute;
+            right: 65px;
+            top: 18px;
         }
     }
 }
