@@ -115,10 +115,7 @@ subscribeOrange.addEventListener('click', (e) => {
             console.log('FAILED...', error);
         })
         .then(() => {
-            name_surname.value = '';
-            email.value = '';
-            phoneNumber.value = '';
-            desc.value = '';
+            email.value = '';  
         });
 
 });
