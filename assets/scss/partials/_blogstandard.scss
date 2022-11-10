@@ -1,9 +1,5 @@
 @import "variables";
 
-* {
-  font-family: "Times New Roman", Times, serif;
-  font-style: italic;
-}
 .blog {
   width: 100%;
   background-color: whitesmoke;
@@ -28,10 +24,10 @@
     padding-left: 5rem;
     p {
       margin-top: 2rem;
-      font-size: 40px;
+      font-size: 30px;
     }
     span {
-      font-size: 24px;
+      font-size: 18px;
       color: $placeholder_color;
     }
     img {
@@ -140,7 +136,7 @@
   padding: 30px 50px;
   display: flex;
   overflow: hidden;
-  max-height: 11.25rem;
+  max-height: 12rem;
   p {
     font-size: 28px !important;
   }
@@ -185,7 +181,7 @@
     }
   }
 }
-@media only screen and (min-width:767px) and (max-width:1023px){
+@media only screen and (min-width:768px) and (max-width:1023px){
     .blog{
         width: 115%;
     }
