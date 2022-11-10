@@ -1969,10 +1969,6 @@ nav .submenu_item a {
   font-size: 1rem;
 }
 
-.productSlider {
-  background-color: red;
-}
-
 .aboutUsSection {
   display: grid;
   padding: 110px 0 80px;
@@ -2007,10 +2003,6 @@ nav .submenu_item a {
 .subscribeSection .subscribe-holder .text {
   text-align: center;
   font-size: 2.2rem;
-}
-
-.gridHome-footer {
-  background-color: white;
 }
 
 @-webkit-keyframes slideUp {
@@ -2361,7 +2353,7 @@ nav .submenu_item a {
   bottom: 0px;
   align-items: flex-end;
   color: white;
-  height: 70px;
+  height: 72px;
   z-index: 8;
 }
 .navMobile_box {
@@ -2554,6 +2546,9 @@ nav .submenu_item a {
   }
 }
 @media (max-width: 992px) {
+  body {
+    font-size: 14px;
+  }
   .aboutUsSection {
     grid-template-columns: 1fr;
     row-gap: 40px;
@@ -2578,6 +2573,12 @@ nav .submenu_item a {
   .slogan_animation_link {
     font-size: 1rem !important;
   }
+  .subscribe-holder .text {
+    font-size: 2rem !important;
+  }
+  .subscribe-holder .subscribe_orange {
+    width: 180px;
+  }
 }
 @media (max-width: 568px) {
   .slogan {
@@ -2594,6 +2595,29 @@ nav .submenu_item a {
   .slogan_animation_link {
     margin-top: 5px;
     font-size: 0.7rem !important;
+  }
+  .gridHome {
+    padding: 0 1rem;
+  }
+  .text-holder .title {
+    font-size: 1.8rem !important;
+  }
+  .text-holder .desc {
+    font-size: 1rem !important;
+  }
+  .subscribe-holder .text {
+    font-size: 1.6rem !important;
+  }
+  .subscribe-holder .subscribe_orange {
+    width: 110px;
+  }
+}
+@media (max-width: 568px) {
+  .subscribe-holder {
+    width: 95% !important;
+  }
+  .subscribe-holder .subscribe_orange {
+    width: 90px;
   }
 }
 * {

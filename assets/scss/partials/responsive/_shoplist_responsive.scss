@@ -36,6 +36,9 @@
 // GRID
 //=================================
 @media (max-width: 992px) {
+  body {
+    font-size: 14px;
+  }
   .aboutUsSection {
     grid-template-columns: 1fr;
     row-gap: 40px;
@@ -53,39 +56,75 @@
   }
 }
 @media (max-width: 768px) {
-    .slogan{
-        margin-bottom: 50px;
+  .slogan {
+    margin-bottom: 50px;
 
-    
     &_animation {
-        &_text {
-          font-size: 1.3rem;
-        }
-        &_link {
-          font-size: 1rem !important;
-        }
+      &_text {
+        font-size: 1.3rem;
+      }
+      &_link {
+        font-size: 1rem !important;
       }
     }
+  }
+  .subscribe-holder{
+
+    .text{
+        font-size: 2rem !important;
+    }
+    .subscribe_orange{
+        width: 180px;
+    }
+  }
 }
 @media (max-width: 568px) {
-    .slogan{
-        margin-bottom: 20px;
-        height: 40vh;
-        &_img{
-            height: 100%;
-            width: 130%;
-        }
-        
-    
-    &_animation
-    {
-        &_text {
-          font-size: 1rem;
-        }
-        &_link {
-            margin-top: 5px;
-          font-size: .7rem !important;
-        }
-      }  
+  .slogan {
+    margin-bottom: 20px;
+    height: 40vh;
+    &_img {
+      height: 100%;
+      width: 130%;
     }
+
+    &_animation {
+      &_text {
+        font-size: 1rem;
+      }
+      &_link {
+        margin-top: 5px;
+        font-size: 0.7rem !important;
+      }
+    }
+  }
+  .gridHome {
+    padding: 0 1rem;
+  }
+  .text-holder {
+    .title {
+      font-size: 1.8rem !important;
+    }
+    .desc{
+        font-size: 1rem !important;
+    }
+  }
+
+  .subscribe-holder{
+
+    .text{
+        font-size: 1.6rem !important;
+    }
+    .subscribe_orange{
+        width: 110px;
+    }
+  }
+}
+@media (max-width: 568px){
+    .subscribe-holder{
+        width: 95% !important;
+       
+        .subscribe_orange{
+            width: 90px;
+        }
+      }
 }
