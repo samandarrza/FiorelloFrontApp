@@ -16,7 +16,7 @@ input::placeholder {
   color: #a7a4a4;
 }
 
-.solid, .outline, .small, .medium, .large, .cards_card_info .addCart-btn, .register-modal_content .submitBtn, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
+.outline, .solid, .large, .register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn, .small {
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
@@ -26,11 +26,11 @@ input::placeholder {
   height: 80px;
 }
 
-.solid, .small, .medium, .large, .cards_card_info .addCart-btn, .register-modal_content .submitBtn, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
+.solid, .large, .register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn, .small {
   background-color: #f34f3f;
   color: whitesmoke;
 }
-.solid:hover, .small:hover, .medium:hover, .large:hover, .cards_card_info .addCart-btn:hover, .register-modal_content .submitBtn:hover, .subscribe_dark:hover, .subscribe_orange:hover, .form_holder #sendMailBtn:hover {
+.solid:hover, .large:hover, .register-modal_content .submitBtn:hover, .cards_card_info .addCart-btn:hover, .medium:hover, .subscribe_dark:hover, .subscribe_orange:hover, .form_holder #sendMailBtn:hover, .small:hover {
   transition: 0.5s;
   background-color: #f40000;
 }
@@ -46,7 +46,7 @@ input::placeholder {
   color: whitesmoke;
 }
 
-.simple, nav .nav_menu_btn, nav .submenu_item a, .navMobile_home a, .navMobile_menu-holder .navMobile_menu_btn {
+.navMobile_menu-holder .navMobile_menu_btn, .navMobile_home a, nav .submenu_item a, nav .nav_menu_btn, .simple {
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
@@ -57,7 +57,7 @@ input::placeholder {
   position: relative;
   width: 200px;
 }
-.simple::before, nav .nav_menu_btn::before, nav .submenu_item a::before, .navMobile_home a::before, .navMobile_menu-holder .navMobile_menu_btn::before {
+.navMobile_menu-holder .navMobile_menu_btn::before, .navMobile_home a::before, nav .submenu_item a::before, nav .nav_menu_btn::before, .simple::before {
   content: "";
   bottom: 0;
   left: 0;
@@ -67,7 +67,7 @@ input::placeholder {
   background-color: #2b2b2b;
   transition: 0.3s;
 }
-.simple:hover::before, nav .nav_menu_btn:hover::before, nav .submenu_item a:hover::before, .navMobile_home a:hover::before, .navMobile_menu-holder .navMobile_menu_btn:hover::before {
+.navMobile_menu-holder .navMobile_menu_btn:hover::before, .navMobile_home a:hover::before, nav .submenu_item a:hover::before, nav .nav_menu_btn:hover::before, .simple:hover::before {
   width: 100%;
 }
 
@@ -76,7 +76,93 @@ input::placeholder {
   height: 60px;
 }
 
-.medium, .cards_card_info .addCart-btn, .register-modal_content .submitBtn, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
+.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
+  width: 190px;
+  height: 60px;
+}
+
+.large {
+  width: 230px;
+  height: 80px;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  padding: 19px 18px;
+  border: 1px solid #e8e8e8;
+}
+input::-moz-placeholder {
+  color: #a7a4a4;
+}
+input:-ms-input-placeholder {
+  color: #a7a4a4;
+}
+input::placeholder {
+  color: #a7a4a4;
+}
+
+.outline, .solid, .small, .register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn, .large {
+  border: none;
+  font-weight: 500;
+  font-style: 1.3rem;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  width: 210px;
+  height: 80px;
+}
+
+.solid, .small, .register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn, .large {
+  background-color: #f34f3f;
+  color: whitesmoke;
+}
+.solid:hover, .small:hover, .register-modal_content .submitBtn:hover, .cards_card_info .addCart-btn:hover, .medium:hover, .subscribe_dark:hover, .subscribe_orange:hover, .form_holder #sendMailBtn:hover, .large:hover {
+  transition: 0.5s;
+  background-color: #f40000;
+}
+
+.outline {
+  background-color: white;
+  border: 1px solid #f34f3f;
+  color: #f34f3f;
+}
+.outline:hover {
+  transition: 0.5s;
+  background-color: #f34f3f;
+  color: whitesmoke;
+}
+
+.navMobile_menu-holder .navMobile_menu_btn, .navMobile_home a, nav .submenu_item a, nav .nav_menu_btn, .simple {
+  border: none;
+  font-weight: 500;
+  font-style: 1.3rem;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  text-align: left;
+  background-color: transparent;
+  position: relative;
+  width: 200px;
+}
+.navMobile_menu-holder .navMobile_menu_btn::before, .navMobile_home a::before, nav .submenu_item a::before, nav .nav_menu_btn::before, .simple::before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 1.5px;
+  background-color: #2b2b2b;
+  transition: 0.3s;
+}
+.navMobile_menu-holder .navMobile_menu_btn:hover::before, .navMobile_home a:hover::before, nav .submenu_item a:hover::before, nav .nav_menu_btn:hover::before, .simple:hover::before {
+  width: 100%;
+}
+
+.small {
+  width: 170px;
+  height: 60px;
+}
+
+.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
   width: 190px;
   height: 60px;
 }
@@ -132,7 +218,7 @@ input::placeholder {
   color: #a7a4a4;
 }
 .subscribe {
-  width: 50%;
+  width: 100%;
   margin: auto;
   position: relative;
   overflow: hidden;
@@ -153,83 +239,29 @@ input::placeholder {
   background-color: #232323;
 }
 
-.outline, .solid, .large, .register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium, .small {
-  border: none;
-  font-weight: 500;
-  font-style: 1.3rem;
-  font-family: sans-serif;
-  font-size: 0.9rem;
-  width: 210px;
-  height: 80px;
-}
-
-.solid, .large, .register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium, .small {
-  background-color: #f34f3f;
-  color: whitesmoke;
-}
-.solid:hover, .large:hover, .register-modal_content .submitBtn:hover, .cards_card_info .addCart-btn:hover, .medium:hover, .small:hover {
-  transition: 0.5s;
-  background-color: #f40000;
-}
-
-.outline {
-  background-color: white;
-  border: 1px solid #f34f3f;
-  color: #f34f3f;
-}
-.outline:hover {
-  transition: 0.5s;
-  background-color: #f34f3f;
-  color: whitesmoke;
-}
-
-.navMobile_menu-holder .navMobile_menu_btn, .navMobile_home a, nav .submenu_item a, nav .nav_menu_btn, .simple {
-  border: none;
-  font-weight: 500;
-  font-style: 1.3rem;
-  font-family: sans-serif;
-  font-size: 0.9rem;
-  text-align: left;
-  background-color: transparent;
-  position: relative;
-  width: 200px;
-}
-.navMobile_menu-holder .navMobile_menu_btn::before, .navMobile_home a::before, nav .submenu_item a::before, nav .nav_menu_btn::before, .simple::before {
-  content: "";
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  width: 0%;
-  height: 1.5px;
-  background-color: #2b2b2b;
-  transition: 0.3s;
-}
-.navMobile_menu-holder .navMobile_menu_btn:hover::before, .navMobile_home a:hover::before, nav .submenu_item a:hover::before, nav .nav_menu_btn:hover::before, .simple:hover::before {
-  width: 100%;
-}
-
-.small {
-  width: 170px;
-  height: 60px;
-}
-
-.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium {
-  width: 190px;
-  height: 60px;
-}
-
-.large {
-  width: 230px;
-  height: 80px;
-}
-
 .btn_grid {
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .solid, .outline, .small, .medium, .large {
+input {
+  width: 100%;
+  outline: none;
+  padding: 19px 18px;
+  border: 1px solid #e8e8e8;
+}
+input::-moz-placeholder {
+  color: #a7a4a4;
+}
+input:-ms-input-placeholder {
+  color: #a7a4a4;
+}
+input::placeholder {
+  color: #a7a4a4;
+}
+
+.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .form_holder #sendMailBtn, .subscribe_orange, .subscribe_dark, .solid, .outline, .small, .medium, .large {
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
@@ -239,11 +271,11 @@ input::placeholder {
   height: 80px;
 }
 
-.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .solid, .small, .medium, .large {
+.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .form_holder #sendMailBtn, .subscribe_orange, .subscribe_dark, .solid, .small, .medium, .large {
   background-color: #f34f3f;
   color: whitesmoke;
 }
-.register-modal_content .submitBtn:hover, .cards_card_info .addCart-btn:hover, .solid:hover, .small:hover, .medium:hover, .large:hover {
+.register-modal_content .submitBtn:hover, .cards_card_info .addCart-btn:hover, .form_holder #sendMailBtn:hover, .subscribe_orange:hover, .subscribe_dark:hover, .solid:hover, .small:hover, .medium:hover, .large:hover {
   transition: 0.5s;
   background-color: #f40000;
 }
@@ -289,7 +321,7 @@ input::placeholder {
   height: 60px;
 }
 
-.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium {
+.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .form_holder #sendMailBtn, .subscribe_orange, .subscribe_dark, .medium {
   width: 190px;
   height: 60px;
 }
@@ -386,76 +418,6 @@ input::placeholder {
   grid-template-areas: "fr fr";
   gap: 1rem;
   padding: 1rem;
-}
-
-.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .solid, .outline, .small, .medium, .large {
-  border: none;
-  font-weight: 500;
-  font-style: 1.3rem;
-  font-family: sans-serif;
-  font-size: 0.9rem;
-  width: 210px;
-  height: 80px;
-}
-
-.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .solid, .small, .medium, .large {
-  background-color: #f34f3f;
-  color: whitesmoke;
-}
-.register-modal_content .submitBtn:hover, .cards_card_info .addCart-btn:hover, .solid:hover, .small:hover, .medium:hover, .large:hover {
-  transition: 0.5s;
-  background-color: #f40000;
-}
-
-.outline {
-  background-color: white;
-  border: 1px solid #f34f3f;
-  color: #f34f3f;
-}
-.outline:hover {
-  transition: 0.5s;
-  background-color: #f34f3f;
-  color: whitesmoke;
-}
-
-.navMobile_menu-holder .navMobile_menu_btn, .navMobile_home a, nav .submenu_item a, nav .nav_menu_btn, .simple {
-  border: none;
-  font-weight: 500;
-  font-style: 1.3rem;
-  font-family: sans-serif;
-  font-size: 0.9rem;
-  text-align: left;
-  background-color: transparent;
-  position: relative;
-  width: 200px;
-}
-.navMobile_menu-holder .navMobile_menu_btn::before, .navMobile_home a::before, nav .submenu_item a::before, nav .nav_menu_btn::before, .simple::before {
-  content: "";
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  width: 0%;
-  height: 1.5px;
-  background-color: #2b2b2b;
-  transition: 0.3s;
-}
-.navMobile_menu-holder .navMobile_menu_btn:hover::before, .navMobile_home a:hover::before, nav .submenu_item a:hover::before, nav .nav_menu_btn:hover::before, .simple:hover::before {
-  width: 100%;
-}
-
-.small {
-  width: 170px;
-  height: 60px;
-}
-
-.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium {
-  width: 190px;
-  height: 60px;
-}
-
-.large {
-  width: 230px;
-  height: 80px;
 }
 
 .cards {
@@ -620,7 +582,7 @@ footer {
   padding: 0 5rem;
 }
 
-.headings {
+.footer_headings {
   list-style-type: none;
   margin-top: 4.4rem;
   margin-bottom: 1.6rem;
@@ -630,11 +592,13 @@ footer {
 }
 
 .footer_items {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 7.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.footer_items .items {
+.footer_items ul {
+  text-align: center;
+}
+.footer_items .footer_item {
   list-style-type: none;
   margin-bottom: 0.6rem;
 }
@@ -650,17 +614,21 @@ footer {
   color: #f40000;
 }
 
-.lastinfo {
-  display: flex;
-  justify-content: space-between;
+.footer_lastinfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   font-size: 0.7rem;
   margin-top: 1.25rem;
 }
-.lastinfo .social_media {
-  display: flex;
+.footer_lastinfo .footer_payingImg {
+  text-align: center;
 }
-.lastinfo .social_media a {
-  margin-right: 0.94rem;
+.footer_lastinfo .footer_social_media {
+  display: flex;
+  justify-content: end;
+}
+.footer_lastinfo .footer_social_media a {
+  margin: 0 0.94rem;
 }
 
 .hr {
@@ -670,12 +638,27 @@ footer {
   margin-top: 3.75rem;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
+@media (max-width: 768px) {
+  .footer_items {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer_lastinfo {
+    grid-template-columns: 1fr;
+    text-align: center;
+    row-gap: 15px;
+  }
+  .footer_lastinfo .footer_social_media {
+    justify-content: center;
+  }
 }
-
+@media (max-width: 576px) {
+  .footer_items {
+    grid-template-columns: 1fr;
+  }
+  .footer_container {
+    padding: 0;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -1536,8 +1519,11 @@ nav {
   padding: 20px;
   width: 100%;
   max-height: 15vh;
-  z-index: 3;
+  z-index: 9;
   position: relative;
+}
+nav a {
+  text-decoration: none;
 }
 nav .nav-wrapper {
   width: 90%;
@@ -1840,13 +1826,6 @@ nav .submenu_item a {
   top: 40% !important;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
-
 #img-heading {
   width: 100%;
   height: 14rem;
@@ -2010,7 +1989,8 @@ nav .submenu_item a {
   justify-content: center;
 }
 .subscribeSection .subscribe-holder {
-  width: 100%;
+  width: 80%;
+  margin: auto;
 }
 .subscribeSection .subscribe-holder .subscribe {
   margin-top: 20px;
@@ -2373,7 +2353,7 @@ nav .submenu_item a {
   align-items: flex-end;
   color: white;
   height: 70px;
-  z-index: 9;
+  z-index: 8;
 }
 .navMobile_box {
   width: 100%;
