@@ -1522,6 +1522,9 @@ nav {
   z-index: 9;
   position: relative;
 }
+nav a {
+  text-decoration: none;
+}
 nav .nav-wrapper {
   width: 90%;
   margin: auto;
