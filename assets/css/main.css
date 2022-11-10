@@ -424,7 +424,7 @@ input::placeholder {
   padding: 20px;
   width: 100%;
   margin: auto;
-  background-color: aqua;
+  background-color: transparent;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 15px;
@@ -497,7 +497,7 @@ input::placeholder {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-color: aqua;
+  background-color: transparent;
 }
 .slider_cards_card:hover img {
   scale: 1.15;
@@ -1927,14 +1927,18 @@ nav .submenu_item a {
 }
 
 .slogan {
-  margin-bottom: 100px;
+  margin: 50px;
   width: 100%;
   height: 45vh;
+  margin: auto;
   overflow: hidden;
-  background-size: 100%;
-  background-image: url("/assets/imgs/gridhome.jpg");
-  background-position-y: 50%;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slogan_img {
+  width: 100%;
 }
 .slogan_animation {
   text-align: center;
@@ -1943,13 +1947,13 @@ nav .submenu_item a {
   left: 50%;
   transform: translate(-50%, -40%);
 }
-.slogan_animation p {
+.slogan_animation_text {
   font-size: 2.2rem;
   font-weight: 300;
   -webkit-animation: slideUp 0.5s linear 1;
           animation: slideUp 0.5s linear 1;
 }
-.slogan_animation a {
+.slogan_animation_link {
   color: #1b1b1b;
   margin-top: 1rem;
   display: inline-block;
@@ -1959,9 +1963,14 @@ nav .submenu_item a {
 }
 
 .sliderSection {
-  margin: 40px 0;
+  margin: 50px 0;
   position: relative;
   height: 50vh;
+  font-size: 1rem;
+}
+
+.productSlider {
+  background-color: red;
 }
 
 .aboutUsSection {
@@ -2349,7 +2358,7 @@ nav .submenu_item a {
   width: 100%;
   background-color: white;
   position: fixed;
-  bottom: 0;
+  bottom: 0px;
   align-items: flex-end;
   color: white;
   height: 70px;
@@ -2357,7 +2366,8 @@ nav .submenu_item a {
 }
 .navMobile_box {
   width: 100%;
-  position: relative;
+  position: fixed;
+  bottom: 0;
   display: flex;
   background-color: #f34f3f;
   align-items: flex-end;
@@ -2366,7 +2376,7 @@ nav .submenu_item a {
 .navMobile_box_menu {
   position: relative;
   list-style: none;
-  width: 70px;
+  max-width: 70px;
   height: 65px;
   z-index: 2;
   transition: 0.8s;
@@ -2547,6 +2557,43 @@ nav .submenu_item a {
   .aboutUsSection {
     grid-template-columns: 1fr;
     row-gap: 40px;
+  }
+  .gridHome {
+    padding: 0 2rem;
+  }
+  .slogan_animation_text {
+    font-size: 1.6rem;
+  }
+  .slogan_animation_link {
+    font-size: 1.3rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .slogan {
+    margin-bottom: 50px;
+  }
+  .slogan_animation_text {
+    font-size: 1.3rem;
+  }
+  .slogan_animation_link {
+    font-size: 1rem !important;
+  }
+}
+@media (max-width: 568px) {
+  .slogan {
+    margin-bottom: 20px;
+    height: 40vh;
+  }
+  .slogan_img {
+    height: 100%;
+    width: 130%;
+  }
+  .slogan_animation_text {
+    font-size: 1rem;
+  }
+  .slogan_animation_link {
+    margin-top: 5px;
+    font-size: 0.7rem !important;
   }
 }
 * {

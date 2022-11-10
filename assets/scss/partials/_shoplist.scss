@@ -2,7 +2,7 @@
   padding: 20px;
   width: 100%;
   margin: auto;
-  background-color: aqua;
+  background-color: transparent;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 15px;
@@ -83,7 +83,7 @@
       align-items: center;
       justify-content: center;
       overflow: hidden;
-      background-color: aqua;
+      background-color: transparent ;
 
       &:hover img {
         scale: 1.15;

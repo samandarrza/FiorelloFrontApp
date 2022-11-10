@@ -3,14 +3,20 @@
   padding: 0 5rem;
 }
 .slogan {
-  margin-bottom: 100px;
+  margin: 50px;
   width: 100%;
   height: 45vh;
+  margin: auto;
   overflow: hidden;
-  background-size: 100%;
-  background-image: url("/assets/imgs/gridhome.jpg");
-  background-position-y: 50%;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  &_img{
+    width: 100%;
+    }
 
   &_animation {
     text-align: center;
@@ -18,12 +24,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -40%);
-    p {
+    &_text {
       font-size: 2.2rem;
       font-weight: 300;
       animation: slideUp .5s linear 1  ;
     }
-    a {
+    &_link {
       color: $text_color;
       margin-top: 1rem;
       display: inline-block;
@@ -34,9 +40,14 @@
   }
 }
 .sliderSection{
-  margin: 40px 0;
+  margin: 50px 0;
   position: relative;
   height: 50vh;
+  font-size: 1rem ;
+}
+
+.productSlider{
+  background-color: red;
 }
 
 .aboutUsSection{

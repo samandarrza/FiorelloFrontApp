@@ -1,43 +1,91 @@
 @media (max-width: 992px) {
-    .cards{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .sm-cards{
-        grid-template-columns: 1fr 1fr 1fr ;
-    }
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .sm-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media (max-width: 768px) {
-    .cards{
-        grid-template-columns: 1fr 1fr ;
-    }
-    .sm-cards{
-        grid-template-columns: 1fr 1fr  ;
-    }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .sm-cards {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media (max-width: 560px) {
-    .cards{
-        grid-template-columns: 1fr 1fr ;
-    }
-    .sm-cards{
-        grid-template-columns: 1fr 1fr  ;
-    }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .sm-cards {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media (max-width: 360px) {
-    .cards{
-        grid-template-columns: 1fr ;
-    }
-    .sm-cards{
-        grid-template-columns: 1fr  ;
-    }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .sm-cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 //=================================
-// GRID 
+// GRID
 //=================================
 @media (max-width: 992px) {
-    .aboutUsSection{
-        grid-template-columns: 1fr;
-        row-gap: 40px;
+  .aboutUsSection {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+  .gridHome {
+    padding: 0 2rem;
+  }
+  .slogan_animation {
+    &_text {
+      font-size: 1.6rem;
+    }
+    &_link {
+      font-size: 1.3rem !important;
+    }
+  }
+}
+@media (max-width: 768px) {
+    .slogan{
+        margin-bottom: 50px;
+
+    
+    &_animation {
+        &_text {
+          font-size: 1.3rem;
+        }
+        &_link {
+          font-size: 1rem !important;
+        }
+      }
+    }
+}
+@media (max-width: 568px) {
+    .slogan{
+        margin-bottom: 20px;
+        height: 40vh;
+        &_img{
+            height: 100%;
+            width: 130%;
+        }
+        
+    
+    &_animation
+    {
+        &_text {
+          font-size: 1rem;
+        }
+        &_link {
+            margin-top: 5px;
+          font-size: .7rem !important;
+        }
+      }  
     }
 }
