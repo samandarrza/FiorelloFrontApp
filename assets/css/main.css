@@ -16,7 +16,7 @@ input::placeholder {
   color: #a7a4a4;
 }
 
-.outline, .solid, .large, .register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn, .small {
+.outline, .solid, .large, .register-modal_content .submitBtn, .medium, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn, .small {
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
@@ -26,11 +26,11 @@ input::placeholder {
   height: 80px;
 }
 
-.solid, .large, .register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn, .small {
+.solid, .large, .register-modal_content .submitBtn, .medium, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn, .small {
   background-color: #f34f3f;
   color: whitesmoke;
 }
-.solid:hover, .large:hover, .register-modal_content .submitBtn:hover, .cards_card_info .addCart-btn:hover, .medium:hover, .subscribe_dark:hover, .subscribe_orange:hover, .form_holder #sendMailBtn:hover, .small:hover {
+.solid:hover, .large:hover, .register-modal_content .submitBtn:hover, .medium:hover, .subscribe_dark:hover, .subscribe_orange:hover, .form_holder #sendMailBtn:hover, .small:hover {
   transition: 0.5s;
   background-color: #f40000;
 }
@@ -76,7 +76,7 @@ input::placeholder {
   height: 60px;
 }
 
-.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
+.register-modal_content .submitBtn, .medium, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
   width: 190px;
   height: 60px;
 }
@@ -102,7 +102,7 @@ input::placeholder {
   color: #a7a4a4;
 }
 
-.outline, .solid, .small, .register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn, .large {
+.outline, .solid, .small, .register-modal_content .submitBtn, .medium, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn, .large {
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
@@ -112,11 +112,11 @@ input::placeholder {
   height: 80px;
 }
 
-.solid, .small, .register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn, .large {
+.solid, .small, .register-modal_content .submitBtn, .medium, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn, .large {
   background-color: #f34f3f;
   color: whitesmoke;
 }
-.solid:hover, .small:hover, .register-modal_content .submitBtn:hover, .cards_card_info .addCart-btn:hover, .medium:hover, .subscribe_dark:hover, .subscribe_orange:hover, .form_holder #sendMailBtn:hover, .large:hover {
+.solid:hover, .small:hover, .register-modal_content .submitBtn:hover, .medium:hover, .subscribe_dark:hover, .subscribe_orange:hover, .form_holder #sendMailBtn:hover, .large:hover {
   transition: 0.5s;
   background-color: #f40000;
 }
@@ -162,7 +162,7 @@ input::placeholder {
   height: 60px;
 }
 
-.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .medium, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
+.register-modal_content .submitBtn, .medium, .subscribe_dark, .subscribe_orange, .form_holder #sendMailBtn {
   width: 190px;
   height: 60px;
 }
@@ -261,7 +261,7 @@ input::placeholder {
   color: #a7a4a4;
 }
 
-.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .form_holder #sendMailBtn, .subscribe_orange, .subscribe_dark, .solid, .outline, .small, .medium, .large {
+.register-modal_content .submitBtn, .form_holder #sendMailBtn, .subscribe_orange, .subscribe_dark, .solid, .outline, .small, .medium, .large {
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
@@ -271,11 +271,11 @@ input::placeholder {
   height: 80px;
 }
 
-.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .form_holder #sendMailBtn, .subscribe_orange, .subscribe_dark, .solid, .small, .medium, .large {
+.register-modal_content .submitBtn, .form_holder #sendMailBtn, .subscribe_orange, .subscribe_dark, .solid, .small, .medium, .large {
   background-color: #f34f3f;
   color: whitesmoke;
 }
-.register-modal_content .submitBtn:hover, .cards_card_info .addCart-btn:hover, .form_holder #sendMailBtn:hover, .subscribe_orange:hover, .subscribe_dark:hover, .solid:hover, .small:hover, .medium:hover, .large:hover {
+.register-modal_content .submitBtn:hover, .form_holder #sendMailBtn:hover, .subscribe_orange:hover, .subscribe_dark:hover, .solid:hover, .small:hover, .medium:hover, .large:hover {
   transition: 0.5s;
   background-color: #f40000;
 }
@@ -321,7 +321,7 @@ input::placeholder {
   height: 60px;
 }
 
-.register-modal_content .submitBtn, .cards_card_info .addCart-btn, .form_holder #sendMailBtn, .subscribe_orange, .subscribe_dark, .medium {
+.register-modal_content .submitBtn, .form_holder #sendMailBtn, .subscribe_orange, .subscribe_dark, .medium {
   width: 190px;
   height: 60px;
 }
@@ -427,7 +427,7 @@ input::placeholder {
   background-color: transparent;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 15px;
+  gap: 30px;
 }
 .cards_card {
   width: 100%;
@@ -460,16 +460,32 @@ input::placeholder {
 .cards_card_info .flower-price {
   color: #afafaf;
 }
+.cards_card_info .addCart-btn {
+  border: none;
+  padding: 5px 10px;
+  background-color: #f40000;
+  transition: 0.3s;
+  color: white;
+}
+.cards_card_info .addCart-btn:hover {
+  background-color: #f34f3f;
+}
 .cards_card_status {
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: white;
-  padding: 6px 15px;
+  padding: 3px 6px;
   background-color: #f34f3f;
   position: absolute;
   top: 15px;
   left: 15px;
   z-index: 2;
+}
+.cards_card .Sold {
+  background-color: black !important;
+}
+.cards_card .New {
+  background-color: #f34f3f !important;
 }
 
 .slider {
@@ -1983,6 +1999,22 @@ nav .submenu_item a {
 .aboutUsSection .text-holder .desc {
   font-size: 1.1rem;
   margin: 2rem 0;
+}
+
+.productsSection .gridHome_categories {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+.productsSection .gridHome_categories .category {
+  cursor: pointer;
+  display: inline-block;
+  color: #1b1b1b;
+  margin-left: 1rem;
+  font-size: 0.75rem;
+  transition: 0.5s;
+}
+.productsSection .gridHome_categories .category:hover {
+  color: #f40000;
 }
 
 .subscribeSection {

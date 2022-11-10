@@ -13,10 +13,9 @@
   align-items: center;
   justify-content: center;
 
-
-  &_img{
+  &_img {
     width: 100%;
-    }
+  }
 
   &_animation {
     text-align: center;
@@ -27,77 +26,81 @@
     &_text {
       font-size: 2.2rem;
       font-weight: 300;
-      animation: slideUp .5s linear 1  ;
+      animation: slideUp 0.5s linear 1;
     }
     &_link {
       color: $text_color;
       margin-top: 1rem;
       display: inline-block;
       font-size: 1.3rem;
-      animation: slideUp .7s linear 1  ;
-
+      animation: slideUp 0.7s linear 1;
     }
   }
 }
-.sliderSection{
+.sliderSection {
   margin: 50px 0;
   position: relative;
   height: 50vh;
-  font-size: 1rem ;
+  font-size: 1rem;
 }
 
-
-
-.aboutUsSection{
+.aboutUsSection {
   display: grid;
   padding: 110px 0 80px;
   grid-template-columns: 1fr 1fr;
   column-gap: 30px;
   position: relative;
 
-  .text-holder{
-
-    .title{
+  .text-holder {
+    .title {
       font-size: 2.5rem;
     }
-    .desc{
+    .desc {
       font-size: 1.1rem;
       margin: 2rem 0;
     }
   }
+}
+.productsSection {
+  .gridHome_categories {
+    width: 100%;
+    padding: .5rem 0 ;
+    .category {
+      cursor: pointer;
+      display: inline-block;
+      color: $text_color;
+      margin-left: 1rem;
+      font-size: .75rem;
+      transition: 0.5s;
+      &:hover{
+        color: $secondary_orange;
+      }
+    }
 
+
+  }
 }
 
-.subscribeSection{
+.subscribeSection {
   height: 45vh;
   background-color: #f7f7f7;
-  margin: 80px 0 ;
+  margin: 80px 0;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  .subscribe-holder{
+  .subscribe-holder {
     width: 80%;
     margin: auto;
-    .subscribe{
+    .subscribe {
       margin-top: 20px;
     }
-    .text{
+    .text {
       text-align: center;
       font-size: 2.2rem;
     }
   }
-
 }
-
-
-
-
-
-
-
-
-
 
 @keyframes slideUp {
   from {
