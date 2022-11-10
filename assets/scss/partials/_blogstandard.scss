@@ -2,9 +2,7 @@
 
 * {
   font-family: "Times New Roman", Times, serif;
-}
-main{
-    background-color: $bg_footer;
+  font-style: italic;
 }
 .blog {
   width: 100%;
@@ -26,8 +24,8 @@ main{
 .d-grid {
   display: grid;
   grid-template-columns: 3.5fr 1fr;
-  margin: 0rem 5rem 0 5rem;
   .blog-info {
+    padding-left: 5rem;
     p {
       margin-top: 2rem;
       font-size: 40px;
@@ -41,9 +39,49 @@ main{
       object-fit: cover;
       width: 90%;
     }
+    small {
+      font-size: 16px;
+      color: $placeholder_color;
+      word-spacing: 5px;
+      i {
+        font-size: 24px;
+      }
+    }
+    a {
+      font-size: 16px;
+      color: black;
+    }
+    .text{
+        width: 90%;
+    }
   }
   .info {
-    margin-top: 5rem;
+    padding-top: 80px;
+    .recent-posts {
+      margin-top: 2.5rem;
+      .post {
+        margin-top: 2rem;
+        display: flex;
+        p {
+          margin-left: 1rem;
+          small {
+            color: $placeholder_color;
+          }
+        }
+        a {
+          color: black;
+          font-style: normal;
+          font-size: 0.8rem;
+          img {
+            object-fit: cover;
+            width: 80%;
+          }
+        }
+      }
+      .attachment {
+        margin-top: 1.5rem;
+      }
+    }
   }
 }
 
@@ -77,20 +115,78 @@ main{
   font-size: 25px;
 }
 
-.categories{
-    margin-top: 4rem;
-    p{
-        font-size: 24px;
+.categories {
+  margin-top: 4rem;
+  p {
+    font-size: 24px;
+  }
+  ul {
+    margin-top: 2rem;
+    li {
+      list-style-type: none;
+      margin-top: 0.8rem;
+      color: $placeholder_color;
+      a {
+        font-size: 18px;
+      }
     }
-    ul{
-        margin-top: 2rem;
-        li{
-            list-style-type: none;
-            margin-top: 0.8rem;
-            color: $placeholder_color;
-            a{
-                font-size: 18px;
-            }
-        }
+  }
+}
+.comment {
+  background-color: whitesmoke;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: 90%;
+  padding: 30px 50px;
+  display: flex;
+  overflow: hidden;
+  max-height: 11.25rem;
+  p {
+    font-size: 28px !important;
+  }
+  span {
+    font-size: 14px !important;
+    color: black !important;
+  }
+  i {
+    justify-content: end;
+    font-size: 14rem;
+    color: lightgrey;
+  }
+}
+.comment-size {
+  max-height: 5rem;
+  display: flex;
+  i {
+    font-size: 12rem;
+  }
+}
+//Responsive for Smartphones
+@media only screen and (max-width: 767px) {
+  .blog {
+    width: 210%;
+    .title {
+      font-size: 45px;
+    }
+  }
+  .blog-info{
+    padding-left: 1rem !important;
+    p{
+        font-size: 1.5rem !important;
+    }
+    span{
+        font-size: 0.8rem !important;
+    }
+  }
+  .comment{
+    max-height: 19rem;
+    .comment-size{
+        max-height: 14rem;
+    }
+  }
+}
+@media only screen and (min-width:767px) and (max-width:1023px){
+    .blog{
+        width: 115%;
     }
 }
