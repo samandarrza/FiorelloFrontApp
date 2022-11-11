@@ -1,0 +1,52 @@
+@import "variables";
+
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.input{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tabs_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.content{
+    width: 100%;
+    display: none;
+    padding: 20px;
+    background-color: $primary_orange;
+    color: white;
+    font-size: 14px;
+}
+.tab{
+    text-align: center;
+    padding: 20px;
+    flex-basis: 33.333%;
+    transition: 0.3s
+}
+#tab-1:checked ~ .tab-1 {
+    background-color: $primary_orange;
+    color: white;
+}
+#tab-1:checked ~ .content-1 {
+    display: block;
+}
+#tab-2:checked ~ .tab-2 {
+    background-color: $primary_orange;
+    color: white;
+}
+#tab-2:checked ~ .content-2 {
+    display: block;
+}
+#tab-3:checked ~ .tab-3 {
+    background-color: $primary_orange;
+    color: white;
+}
+#tab-3:checked ~ .content-3 {
+    display: block;
+}
