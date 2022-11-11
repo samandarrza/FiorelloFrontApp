@@ -2502,9 +2502,11 @@ nav .submenu_item a {
 
 .standartProduct {
   color: #1b1b1b;
+  background-color: white;
 }
 .standartProduct .productList {
   padding: 0 5rem;
+  background-color: white;
   height: 30vh;
   display: flex;
   flex-direction: column;
@@ -2520,6 +2522,7 @@ nav .submenu_item a {
   color: gray;
 }
 .standartProduct .productDemo {
+  background-color: white;
   padding: 0 5rem;
   max-height: 75vh;
 }
@@ -2569,8 +2572,9 @@ nav .submenu_item a {
   margin: 30px;
 }
 .standartProduct .productDemo_container .cart-info .addToCart-container input {
-  background-color: gainsboro;
-  padding: 7px 0;
+  border: 1px solid gainsboro;
+  background-color: transparent;
+  padding: 7px 0 7px 20px;
   font-size: 1rem;
   width: 100px;
   font-weight: 400;
@@ -2691,6 +2695,7 @@ nav .submenu_item a {
   border: none;
   background-color: transparent;
   color: #1b1b1b;
+  max-width: 150px;
 }
 
 .main_subscribe {

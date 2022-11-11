@@ -5,7 +5,7 @@
 
 
 import getUserDataById, { isLoggedIn } from './UserFunctions.js';
-import { addComment, getProduct } from './comment.js';
+import { Comment,addComment, getProduct } from './comment.js';
 
 
 
@@ -73,9 +73,9 @@ document.getElementById('tab_desc_body').textContent = product.desc;
 document.getElementById('reviewCounts').textContent = product.reviews.length;
 
 // Displaying Rewiews
-product.reviews.map(comment =>{
-    let user = getUserDataById(comment.userId)
-    console.log(user)
+product.reviews.map(comment => {
+    let user = getUserDataById(comment.userId);
+    console.log(user);
 
     let html = `  <div class="tab_reviews_review">
 <div class="tab_reviews_review_reviewerProfile">
@@ -89,9 +89,9 @@ product.reviews.map(comment =>{
    ${comment.comment}
   </p>
 </div>
-</div>`
-    reviews.insertAdjacentHTML('beforeend', html)
-})
+</div>`;
+    reviews.insertAdjacentHTML('beforeend', html);
+});
 
 
 
@@ -106,14 +106,14 @@ if (isLoggedIn()) {
 
 
     reviews.innerHTML +=
-        `<div id='create-review' class="create-review">
+        `<div  class="create-review">
 
     <div class="create-review_reviewerProfile">
       <img  src="${userPhoto}" alt="" />
     </div>
     <div class="create-review_inputWrap">
       <input id="commentInput" type="text" class="create-review_inputWrap_input" placeholder="Comment as ${userName}">
-      <button class="create-review_inputWrap_postBtn">Post</button>
+      <button id='create-review' class="create-review_inputWrap_postBtn">Post</button>
     </div>
     
   </div>`;
@@ -123,13 +123,17 @@ if (isLoggedIn()) {
     //================================
 
     const postBtn = document.getElementById('create-review');
+    console.log(postBtn)
     const commentInput = document.getElementById('commentInput');
 
     postBtn.addEventListener('click', () => {
         if (commentInput.value.length > 0)
-            addComment(productId, commentInput.value);
+           addComment(productId, commentInput.value);
         commentInput.value = '';
         document.getElementById('reviewCounts').textContent = product.reviews.length;
+        setTimeout(() => {
+            window.location.reload();
+        }, 0);
 
     });
 

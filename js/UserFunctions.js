@@ -123,8 +123,7 @@ export { login, isLoggedIn};
 
 
 function logOut(){
-    sessionStorage.clear();
-    sessionStorage.setItem('isLogged', false);
+    localStorage.setItem('isLogged', false);
 
 }
 

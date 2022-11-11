@@ -55,6 +55,7 @@ function addComment(productId, comment) {
     console.log(product);
 
     refreshProduct(product);
+    return newComment;
 
 }
 

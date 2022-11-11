@@ -72,20 +72,20 @@ if (isLoggedIn()) {
 
 
     // filling user details 
-    let photoLink = sessionStorage.getItem('photo');
+    let photoLink = localStorage.getItem('photo');
     if (photoLink == undefined)
         photoLink = 'https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg';
     for (const item of currentUserNames) {
-        item.textContent = sessionStorage.getItem('currentUserName');
+        item.textContent = localStorage.getItem('currentUserName');
     }
     for (const item of currentFullNames) {
-        item.textContent = sessionStorage.getItem('fullName');
+        item.textContent = localStorage.getItem('fullName');
     }
     for (const item of currentPhoneNums) {
-        item.textContent = sessionStorage.getItem('phoneNum');
+        item.textContent = localStorage.getItem('phoneNum');
     }
     for (const item of currentEmails) {
-        item.textContent = sessionStorage.getItem('email');
+        item.textContent = localStorage.getItem('email');
     }
     for (const item of currentPhotos) {
         item.setAttribute('src', photoLink);
