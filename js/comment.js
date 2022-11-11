@@ -63,4 +63,4 @@ function addComment(productId, comment) {
 
 
 
-export {Comment, addComment };
+export {Comment, addComment ,getProduct};
