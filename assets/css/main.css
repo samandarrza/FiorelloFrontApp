@@ -2753,4 +2753,14 @@ body {
 
 button {
   cursor: pointer;
+}
+
+::-moz-selection {
+  background: #f34f3f;
+  color: #fff;
+}
+
+::selection {
+  background: #f34f3f;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
