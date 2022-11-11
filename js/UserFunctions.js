@@ -6,6 +6,10 @@
 // =============================================
 // REGISTER FUNCITONS 
 // =============================================
+if(!Object.keys(localStorage).includes('users')){
+    let arr = []
+    localStorage.setItem('users', JSON.stringify(arr))
+}
 
 export default function getUserDataById(userId) {
     let result;
@@ -20,7 +24,9 @@ export default function getUserDataById(userId) {
 }
 function getUserDataByName(username) {
     let users = getUsers();
-    return users.find(user => user.username == username);
+    let user = users.find(user => JSON.parse(user).username == username);
+    return JSON.parse(user);
+
 }
 function generateUniqueId(array) {
     let newId = Math.floor((101538400000 + Math.random()) * 0x10000)
@@ -34,8 +40,11 @@ function generateUniqueId(array) {
 
 function addNewUser(user) {
     let newUser = JSON.stringify(user);
-    localStorage.setItem(`${user.id}`, newUser);
+    let users = JSON.parse(localStorage.getItem('users'));
+    users.push(newUser)
+    localStorage.setItem(`users`, JSON.stringify(users));
 }
+
 function User(fullname,email,phoneNumber, username, password, isLogged,photoLink) {
     this.id = generateUniqueId(getUsers());
     this.email = email;
@@ -48,23 +57,14 @@ function User(fullname,email,phoneNumber, username, password, isLogged,photoLink
 }
 
 function isUserExists(username) {
-    let keys = Object.keys(localStorage);
-    if(username.length == 0 ) return true;
-    let hasUser = keys.some(key => {
-        let user = JSON.parse(localStorage.getItem(key));
-        return user.username === username;
-    });
-    return hasUser;
-
+    if(username.length == 0 ) return true;   
+    let users = JSON.parse(localStorage.getItem('users'));
+     let result = users.some(user => JSON.parse(user).username === username)
+    return result
 }
 
 function getUsers() {
-    let users = [];
-    for (const key of Object.keys(localStorage)) {
-        let user = localStorage.getItem(key);
-        users.push(JSON.parse(user));
-    }
-    return users;
+    return JSON.parse(localStorage.getItem('users'));
 }
 
 function register(fullname,email,phoneNumber, username, password, photoLink) {
@@ -86,14 +86,18 @@ export { User, getUserDataById, getUserDataByName, addNewUser, isUserExists, get
 
 
 function login(username, password) {
-    if (!isUserExists(username))
+    if (!isUserExists(username)){
+        console.log('userexists problem')
         return false;
+    }
     let user = getUserDataByName(username);
-    if (user.password !== password)
+    console.log(user);
+    if (user.password !== password){
+        console.log('password problem')
         return false;
+    }
 
     user.isLogged = true;
-    localStorage.removeItem(user.id);
     addNewUser(user);
     sessionStorage.setItem('currentUserId', user.id);
     sessionStorage.setItem('currentUserName', user.username);
@@ -102,8 +106,8 @@ function login(username, password) {
     sessionStorage.setItem('phoneNum', user.phoneNumber);
     sessionStorage.setItem('isLogged', user.isLogged);
     sessionStorage.setItem('photo', user.photo);
-    return true;
     console.log('Logged In ');
+    return true;
 
 }
 function isLoggedIn() {
