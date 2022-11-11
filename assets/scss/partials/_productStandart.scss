@@ -22,33 +22,41 @@
   .productDemo {
     background-color: white;
     padding: 0 5rem;
-    max-height: 75vh;
 
     &_container {
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 60px;
+
       .product-photos {
         display: grid;
-        grid-template-columns: 1fr 4fr;
-        gap: 30px;
-        height: 100%;
+        gap: 20px;
+
+        grid-template-areas:
+        'sm main main main'
+        'sm main main main'
+        'sm main main main'
+        
+        ;
+
 
         &_smPhotos {
+          grid-area: sm;
           display: flex;
+          overflow: hidden;
           flex-direction: column;
           justify-content: space-evenly;
           gap: 15px;
           height: 100%;
-          width: 100%;
+          width: 100% !important;
           img {
             cursor: pointer;
             width: 100%;
-            
-            aspect-ratio: 4/3;
+            aspect-ratio: 1;
           }
         }
         &_mainPhoto {
+          grid-area: main;
           img {
             width: 100%;
             height: 100%;
@@ -105,8 +113,10 @@
     padding: 0 5rem;
     .tabs {
       display: flex;
+      font-size: 0.8rem;
       .item {
         cursor: pointer;
+
         border: 1px solid rgb(231, 230, 230);
         padding: 10px 20px;
         background-color: transparent;
@@ -172,35 +182,35 @@
         }
       }
     }
-    .create-review{
+    .create-review {
       display: flex;
       align-items: center;
       justify-content: space-between;
       margin-top: 50px;
       padding: 5px;
 
-      &_reviewerProfile{
+      &_reviewerProfile {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-right: 10px;
-        img{
+        img {
           border-radius: 50%;
           width: 40px;
           height: 40px;
         }
       }
-      &_inputWrap{
-          width: 100%;
+      &_inputWrap {
+        width: 100%;
         position: relative;
-        &_input{  
-          width: 100%;   
+        &_input {
+          width: 100%;
           padding: 10px 20px;
           border: 1px solid gainsboro;
           white-space: nowrap;
           border-radius: 20px;
         }
-        &_postBtn{
+        &_postBtn {
           position: absolute;
           top: 0;
           right: 0;
@@ -213,5 +223,58 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 992px) {
+  .productDemo {
+    padding: 0 2rem;
+    &_container {
+      grid-template-columns: 1fr !important ;
+      row-gap: 30px;
+      column-gap: 0;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .productDemo {
+    padding: 0 !important;
+  }
+
+  .product-photos {
+    grid-template-areas:
+    'main main main'
+    'main main main'
+    'sm sm sm'
+     !important
+    ;
+    width: 100%;
+    &_smPhotos {
+
+      display: grid !important;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      img {
+        display: inline-block;
+        width: 100% !important;
+
+      }
+    }
+    &_mainPhoto {
+      width: 95% !important;
+      margin: auto;
+      
+    }
+  }
+  .cart-info,
+  .productInfo {
+    padding: 0 1rem !important;
+  }
+}
+@media (max-width: 568px) {
+  .tabs {
+    flex-direction: column;
+  }
+  .addToCart{
+    padding: 5px 10px !important; 
   }
 }

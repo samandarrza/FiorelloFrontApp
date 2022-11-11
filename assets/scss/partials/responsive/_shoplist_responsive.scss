@@ -33,7 +33,7 @@
 }
 
 //=================================
-// GRID
+// GRID HOME
 //=================================
 @media (max-width: 992px) {
   body {
@@ -110,21 +110,18 @@
   }
 
   .subscribe-holder{
+    width: 95% !important;
 
     .text{
         font-size: 1.6rem !important;
     }
     .subscribe_orange{
-        width: 110px;
+      width: 90px;
     }
   }
 }
-@media (max-width: 568px){
-    .subscribe-holder{
-        width: 95% !important;
-       
-        .subscribe_orange{
-            width: 90px;
-        }
-      }
-}
+
+
+//=================================
+// PRODUCT STANDARD
+//=================================

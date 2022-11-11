@@ -2524,7 +2524,6 @@ nav .submenu_item a {
 .standartProduct .productDemo {
   background-color: white;
   padding: 0 5rem;
-  max-height: 75vh;
 }
 .standartProduct .productDemo_container {
   display: grid;
@@ -2534,22 +2533,26 @@ nav .submenu_item a {
 }
 .standartProduct .productDemo_container .product-photos {
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  gap: 30px;
-  height: 100%;
+  gap: 20px;
+  grid-template-areas: "sm main main main" "sm main main main" "sm main main main";
 }
 .standartProduct .productDemo_container .product-photos_smPhotos {
+  grid-area: sm;
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   justify-content: space-evenly;
   gap: 15px;
   height: 100%;
-  width: 100%;
+  width: 100% !important;
 }
 .standartProduct .productDemo_container .product-photos_smPhotos img {
   cursor: pointer;
   width: 100%;
-  aspect-ratio: 4/3;
+  aspect-ratio: 1;
+}
+.standartProduct .productDemo_container .product-photos_mainPhoto {
+  grid-area: main;
 }
 .standartProduct .productDemo_container .product-photos_mainPhoto img {
   width: 100%;
@@ -2600,6 +2603,7 @@ nav .submenu_item a {
 }
 .standartProduct .productInfo .tabs {
   display: flex;
+  font-size: 0.8rem;
 }
 .standartProduct .productInfo .tabs .item {
   cursor: pointer;
@@ -2698,6 +2702,50 @@ nav .submenu_item a {
   max-width: 150px;
 }
 
+@media (max-width: 992px) {
+  .productDemo {
+    padding: 0 2rem;
+  }
+  .productDemo_container {
+    grid-template-columns: 1fr !important;
+    row-gap: 30px;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+}
+@media (max-width: 768px) {
+  .productDemo {
+    padding: 0 !important;
+  }
+  .product-photos {
+    grid-template-areas: "main main main" "main main main" "sm sm sm" !important;
+    width: 100%;
+  }
+  .product-photos_smPhotos {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .product-photos_smPhotos img {
+    display: inline-block;
+    width: 100% !important;
+  }
+  .product-photos_mainPhoto {
+    width: 95% !important;
+    margin: auto;
+  }
+  .cart-info,
+.productInfo {
+    padding: 0 1rem !important;
+  }
+}
+@media (max-width: 568px) {
+  .tabs {
+    flex-direction: column;
+  }
+  .addToCart {
+    padding: 5px 10px !important;
+  }
+}
 .main_subscribe {
   background-image: url(https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/h3-background-img.jpg);
   background-attachment: fixed;
@@ -3075,16 +3123,11 @@ nav .submenu_item a {
   .text-holder .desc {
     font-size: 1rem !important;
   }
-  .subscribe-holder .text {
-    font-size: 1.6rem !important;
-  }
-  .subscribe-holder .subscribe_orange {
-    width: 110px;
-  }
-}
-@media (max-width: 568px) {
   .subscribe-holder {
     width: 95% !important;
+  }
+  .subscribe-holder .text {
+    font-size: 1.6rem !important;
   }
   .subscribe-holder .subscribe_orange {
     width: 90px;
