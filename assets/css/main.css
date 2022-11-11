@@ -2500,6 +2500,9 @@ nav .submenu_item a {
   background-color: #f40000;
 }
 
+.standartProduct {
+  color: #1b1b1b;
+}
 .standartProduct .productList {
   padding: 0 5rem;
   height: 30vh;
@@ -2548,6 +2551,7 @@ nav .submenu_item a {
 }
 .standartProduct .productDemo_container .product-photos_mainPhoto img {
   width: 100%;
+  height: 100%;
   aspect-ratio: 1;
 }
 .standartProduct .productDemo_container .cart-info #productName {
@@ -2585,6 +2589,107 @@ nav .submenu_item a {
 .standartProduct .productDemo_container .cart-info .details {
   margin-top: 10px;
   font-size: 0.9rem;
+}
+.standartProduct .productInfo {
+  margin-top: 50px;
+  padding: 0 5rem;
+}
+.standartProduct .productInfo .tabs {
+  display: flex;
+}
+.standartProduct .productInfo .tabs .item {
+  cursor: pointer;
+  border: 1px solid rgb(231, 230, 230);
+  padding: 10px 20px;
+  background-color: transparent;
+  transition: 0.3s;
+  color: #1b1b1b;
+}
+.standartProduct .productInfo .tabs .item.active {
+  background-color: #f34f3f;
+  color: white;
+}
+.standartProduct .productInfo .tab {
+  margin-top: 40px;
+  text-align: left;
+}
+.standartProduct .productInfo .tab_desc_title {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.standartProduct .productInfo .tab_desc_body {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+.standartProduct .productInfo .tab_info_details {
+  font-weight: 300;
+}
+.standartProduct .productInfo .tab_reviews_title {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.standartProduct .productInfo .tab_reviews_review {
+  display: flex;
+  margin: 20px 0;
+}
+.standartProduct .productInfo .tab_reviews_review_reviewerProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.standartProduct .productInfo .tab_reviews_review_reviewerProfile img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.standartProduct .productInfo .tab_reviews_review .review_username {
+  font-size: 0.8rem;
+}
+.standartProduct .productInfo .tab_reviews_review .review_username_date {
+  font-size: 0.7rem;
+}
+.standartProduct .productInfo .tab_reviews_review .review_content {
+  padding-top: 8px;
+  font-size: 0.75rem;
+}
+.standartProduct .productInfo .create-review {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 5px;
+}
+.standartProduct .productInfo .create-review_reviewerProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.standartProduct .productInfo .create-review_reviewerProfile img {
+  width: 40px;
+  height: 40px;
+}
+.standartProduct .productInfo .create-review_inputWrap {
+  width: 100%;
+  position: relative;
+}
+.standartProduct .productInfo .create-review_inputWrap_input {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid gainsboro;
+  white-space: nowrap;
+  border-radius: 20px;
+}
+.standartProduct .productInfo .create-review_inputWrap_postBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 0 20px;
+  border: none;
+  background-color: transparent;
+  color: #1b1b1b;
 }
 
 .main_subscribe {
