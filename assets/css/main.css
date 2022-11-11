@@ -2377,6 +2377,93 @@ nav .submenu_item a {
   background-color: #f40000;
 }
 
+.standartProduct .productList {
+  padding: 0 5rem;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.standartProduct .productList h2 {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+.standartProduct .productList p {
+  font-size: 0.95rem;
+  color: gray;
+}
+.standartProduct .productDemo {
+  background-color: rebeccapurple;
+  padding: 0 5rem;
+  max-height: 75vh;
+}
+.standartProduct .productDemo_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+.standartProduct .productDemo_container .product-photos {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 30px;
+  height: 100%;
+}
+.standartProduct .productDemo_container .product-photos_smPhotos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 15px;
+  height: 100%;
+  width: 100%;
+}
+.standartProduct .productDemo_container .product-photos_smPhotos img {
+  cursor: pointer;
+  width: 100%;
+  aspect-ratio: 4/3;
+}
+.standartProduct .productDemo_container .product-photos_mainPhoto img {
+  width: 100%;
+  aspect-ratio: 1;
+}
+.standartProduct .productDemo_container .cart-info #productName {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+.standartProduct .productDemo_container .cart-info #productPrice {
+  color: gray;
+}
+.standartProduct .productDemo_container .cart-info #productDesc {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #1b1b1b;
+}
+.standartProduct .productDemo_container .cart-info .addToCart-container {
+  margin: 30px;
+}
+.standartProduct .productDemo_container .cart-info .addToCart-container input {
+  background-color: gainsboro;
+  padding: 7px 0;
+  font-size: 1rem;
+  width: 100px;
+  font-weight: 400;
+}
+.standartProduct .productDemo_container .cart-info .addToCart-container button {
+  border: 0;
+  padding: 10px 30px;
+  color: white;
+  background-color: black;
+  transition: 0.3s;
+}
+.standartProduct .productDemo_container .cart-info .addToCart-container button:hover {
+  background-color: rgb(48, 48, 48);
+}
+.standartProduct .productDemo_container .cart-info .details {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
 .navMobile {
   display: none;
   width: 100%;
