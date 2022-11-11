@@ -1,5 +1,7 @@
+main {
+  background-color: $bg_footer;
+}
 @import "variables";
-
 .blog {
   width: 100%;
   background-color: whitesmoke;
@@ -8,19 +10,21 @@
   .title {
     font-size: 60px;
     font-style: italic;
-    margin-left: 5rem;
+    padding-left: 5rem;
   }
   .subtitle {
     font-size: 24px;
     font-style: italic;
     color: $placeholder_color;
-    margin-left: 5rem;
+    padding-left: 5rem;
   }
 }
 .d-grid {
   display: grid;
-  grid-template-columns: 3.5fr 1fr;
+  grid-template-columns: 3fr 1fr;
+  width: 100%;
   .blog-info {
+    width: 100%;
     padding-left: 5rem;
     p {
       margin-top: 2rem;
@@ -41,18 +45,24 @@
       word-spacing: 5px;
       i {
         font-size: 24px;
+        cursor: pointer;
+      }
+      i:hover{
+        color: red;
       }
     }
     a {
       font-size: 16px;
       color: black;
+      text-decoration: none;
     }
-    .text{
-        width: 90%;
+    .text {
+      width: 90%;
     }
   }
   .info {
     padding-top: 80px;
+    width: 80%;
     .recent-posts {
       margin-top: 2.5rem;
       .post {
@@ -68,6 +78,7 @@
           color: black;
           font-style: normal;
           font-size: 0.8rem;
+          text-decoration: none;
           img {
             object-fit: cover;
             width: 80%;
@@ -95,7 +106,7 @@
 }
 
 .search-container:hover > .search-input {
-  width: 200px;
+  width: 100px;
 }
 
 .search-container .search-input {
@@ -124,6 +135,8 @@
       color: $placeholder_color;
       a {
         font-size: 18px;
+        text-decoration: none;
+        color: $placeholder_color;
       }
     }
   }
@@ -160,29 +173,42 @@
 //Responsive for Smartphones
 @media only screen and (max-width: 767px) {
   .blog {
-    width: 210%;
+    width: 100%;
     .title {
-      font-size: 45px;
+      font-size: 20px;
+    }
+    .subtitle {
+      font-size: 15px;
     }
   }
-  .blog-info{
+  .d-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .blog-info {
     padding-left: 1rem !important;
-    p{
-        font-size: 1.5rem !important;
+    background-color: white;
+    width: 100%;
+    p {
+      font-size: 1.5rem !important;
     }
-    span{
-        font-size: 0.8rem !important;
+    span {
+      font-size: 0.8rem !important;
     }
   }
-  .comment{
-    max-height: 19rem;
-    .comment-size{
-        max-height: 14rem;
+  .info {
+    width: 100%;
+  }
+  .search-container {
+    width: 10rem;
+  }
+  .comment {
+    max-height: 20rem;
+    .comment-size {
+      max-height: 18rem;
     }
   }
 }
-@media only screen and (min-width:768px) and (max-width:1023px){
-    .blog{
-        width: 115%;
-    }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
 }

@@ -1,0 +1,29 @@
+@media (max-width: 992px) {
+    .navMobile{
+        display: flex;
+    }
+    body{
+        padding-bottom: 90px;
+    }
+    .menu-holder{
+        display: none !important;
+    }
+    .nav_menu-cart{
+        display: none !important;
+    }
+    .nav-wrapper_menu-box_profile{
+        display: none !important;
+    }
+  
+}
+@media (max-width : 768px) {
+    nav .nav-wrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav_menu-search{
+        display: none!important;
+    }
+}
+

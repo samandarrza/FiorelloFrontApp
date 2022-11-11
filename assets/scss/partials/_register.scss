@@ -1,0 +1,134 @@
+.register-modal{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0,0.1);
+    z-index: 8;
+    top: 0;
+    transition: 0.3s;
+    visibility: hidden;  
+    .form_holder form{
+        row-gap: 10px ;
+    } 
+    .form_holder{
+        padding: 0;
+    }  
+    .signUp_modal{
+        #addProfilePic{
+            position: absolute;
+            font-size:  1.35rem;
+            display: block;
+            bottom: 10px;
+            left: 58%;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 50%;
+            cursor: pointer;
+            color: $text_color;
+            padding: 0;
+        }
+    }
+    &_content{
+        transition: 0.5s ease-in-out;
+        position: fixed;
+        top: -80%;
+        left: 50%;
+        transform: translate(-50%,-40%);
+        width: 350px;
+        min-height: 30vh;
+        background-color: white;
+        border-radius: 10px;
+        pointer-events: fill;
+        padding: 30px;
+
+        .submitBtn{
+            @extend %medium_btn;
+            width: 100%;
+            font-size: 1.2rem;
+            height: auto;
+            padding: 10px;
+          }
+
+          
+        p{
+            text-align: center;
+            margin: 10px;
+            font-size: 0.8rem;
+        }
+
+        &_logo{
+
+            text-align: center;
+            img{
+                width: 60%;
+            }
+            
+        }
+        &_inputs{
+           .form_holder{
+            width: 100%;
+            input{
+                padding: 10px;
+            }
+          
+           }
+        }
+        &_suggestion{
+            a{
+                font-size: 0.8rem !important;
+                text-decoration: underline !important;
+                color: $primary_orange;
+            }   
+        }
+        .profileModal{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            
+            justify-content: center;
+            &_userPhoto{
+                overflow: hidden;
+                text-align: center;
+                position: relative;
+                img{
+                    width: 110px;
+                    height: 110px;
+                    object-fit: cover;
+                    border: 6px solid gainsboro;
+                    border-radius: 50%;
+                }
+                .userName{
+                    font-size: 1.3rem;
+                    letter-spacing: 1px;
+                    margin-top: 0;
+                    font-weight: 500;
+                    color: $text_color;
+
+                }
+            }
+            &_body{
+                margin-top: 20px;
+                p{
+                    text-align: left;
+                    margin-top: 10px;
+                    font-size: .9rem;
+                    
+                }
+            }
+        }
+
+
+    }
+
+
+
+}
+.show-modal{
+    visibility: visible  !important;
+    background: rgba(0, 0, 0,0.5);
+
+}
+.show-modal_content{
+    top: 40% !important;
+}

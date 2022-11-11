@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/main.css.map" />
+    <title>Navbar</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-wrapper">
+          <div class="nav-wrapper_logo">
+            <a href="#"><img src="assets/imgs/h2-logo-1.png" alt="" /></a>
+          </div>
+          <div class="nav-wrapper_menu-box">
+            <div class="container">
+              <ul class="menu-holder">
+                <li class="nav_menu">
+                  <p class="nav_menu_btn">HOME</p>
+                  <ul class="submenu">
+                    <li class="submenu_item"><a href="#">Main Home</a></li>
+                    <li class="submenu_item"><a href="#">Grid Home</a></li>
+                    <li class="submenu_item"><a href="#">Flower Shop</a></li>
+                    <li class="submenu_item"><a href="#">Metro Showcase</a></li>
+                  </ul>
+                </li>
+                <li class="nav_menu">
+                  <p class="nav_menu_btn">PAGES</p>
+                  <ul class="submenu">
+                    <li class="submenu_item"><a href="#">About Us</a></li>
+                    <li class="submenu_item"><a href="#">FAQ Page</a></li>
+                    <li class="submenu_item"><a href="#">Contact Us</a></li>
+                  </ul>
+                </li>
+                <li class="nav_menu">
+                  <a href="#" class="nav_menu_btn">SHOP</a>
+                </li>
+                <li class="nav_menu">
+                  <p class="nav_menu_btn">PORTFOLIO</p>
+                </li>
+                <li class="nav_menu">
+                  <p class="nav_menu_btn">BLOG</p>
+                </li>
+                <!-- <li class="nav_menu">
+                <p class="nav_menu_btn">ELEMENTS</p>
+              </li> -->
+              </ul>
+              <div class="nav_menu-search">
+                <input
+                  type="text"
+                  placeholder="Search ..."
+                  class="nav_menu-search_input"
+                />
+                <button class="nav_menu-search_btn">
+                  <i class="las la-search"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="nav_menu-cart">
+              <button class="nav_menu-cart_btn">
+                <i class="las la-shopping-cart"></i>
+                <span class="cart-item-count">0</span>
+              </button>
+            </div>
+
+            <div class="nav-wrapper_menu-box_profile">
+              <button class="profile userProfile d-none"><i class="las la-user-circle profile"></i></button>
+              <button class="sign-up">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="nav-scroll">
+        <div class="nav-wrapper">
+          <div class="nav-wrapper_logo">
+            <a href="#"><img src="assets/imgs/h2-logo-1.png" alt="" /></a>
+          </div>
+          <div class="nav-wrapper_menu-box">
+            <div class="container">
+              <ul class="menu-holder">
+                <li class="nav_menu">
+                  <p class="nav_menu_btn">HOME</p>
+                  <ul class="submenu">
+                    <li class="submenu_item"><a href="#">Main Home</a></li>
+                    <li class="submenu_item"><a href="#">Grid Home</a></li>
+                    <li class="submenu_item"><a href="#">Flower Shop</a></li>
+                    <li class="submenu_item"><a href="#">Metro Showcase</a></li>
+                  </ul>
+                </li>
+                <li class="nav_menu">
+                  <p class="nav_menu_btn">PAGES</p>
+                  <ul class="submenu">
+                    <li class="submenu_item"><a href="#">About Us</a></li>
+                    <li class="submenu_item"><a href="#">FAQ Page</a></li>
+                    <li class="submenu_item"><a href="#">Contact Us</a></li>
+                  </ul>
+                </li>
+                <li class="nav_menu">
+                  <a href="#" class="nav_menu_btn">SHOP</a>
+                </li>
+                <li class="nav_menu">
+                  <p class="nav_menu_btn">PORTFOLIO</p>
+                </li>
+                <li class="nav_menu">
+                  <p class="nav_menu_btn">BLOG</p>
+                </li>
+                <!-- <li class="nav_menu">
+                <p class="nav_menu_btn">ELEMENTS</p>
+              </li> -->
+              </ul>
+              <div class="nav_menu-search">
+                <input
+                  type="text"
+                  placeholder="Search ..."
+                  class="nav_menu-search_input"
+                />
+                <button class="nav_menu-search_btn">
+                  <i class="las la-search"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="nav_menu-cart">
+              <button class="nav_menu-cart_btn">
+                <i class="las la-shopping-cart"></i>
+                <span class="cart-item-count">0</span>
+              </button>
+            </div>
+
+            <div class="nav-wrapper_menu-box_profile">
+              <button class="profile userProfile d-none"><i class="las la-user-circle profile"></i></button>
+              <button class="sign-up">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="register-modal ">
+        <div class="register-modal_content  ">
+          <div class="login_modal d-none">
+            <div class="register-modal_content_logo">
+              <img src="assets/imgs/h2-logo-1.png" alt="" />
+              <p>Log in to your account</p>
+            </div>
+            <div class="register-modal_content_inputs">
+              <div class="form_holder">
+                <form action="" id="loginForm">
+                  <input id="userLogin" type="email" placeholder="Username" />
+                  <input
+                    id="passwordLogin"
+                    type="password"
+                    placeholder="Password"
+                  />
+                  <button id="loginBtn" type="button" class="submitBtn">
+                    Log In
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="register-modal_content_suggestion">
+              <p>
+                Don't have account? <a class="login-link" href="#">Sign Up</a>
+              </p>
+            </div>
+          </div>
+          <div class="signUp_modal ">
+            <div class="register-modal_content_logo">
+              <img src="assets/imgs/h2-logo-1.png" alt="" />
+              <p>Create a new account</p>
+              <div class="profileModal_userPhoto">
+                <img class="userPhoto"  src="assets/imgs/userPhoto.png" alt="profile">
+                <span id="addProfilePic" ><i class="las la-plus-circle"></i></span>
+                <input id="addPicHidden" type="file" hidden >
+              </div>
+            </div>
+            <div class="register-modal_content_inputs">
+              <div class="form_holder">
+                <form action="" id="registerForm">
+                  <input
+                    id="nameInput"
+                    type="text"
+                    placeholder="Full name"
+                  />
+                  <input
+                  id="emailInput"
+                  type="email"
+                  placeholder="Email"
+                />
+                <input
+                id="phoneInput"
+                type="text"
+                placeholder="Phone Number"
+              />
+                  <input id="userInput" type="text" placeholder="Username" />
+                  <input
+                    id="passwordInput"
+                    type="password"
+                    placeholder="Password"
+                  />
+                  <button id="registerBtn" type="button" class="submitBtn">
+                    Sign Up
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="register-modal_content_suggestion">
+              <p>
+                You allready have account?
+                <a class="login-link" href="#">Log In</a>
+              </p>
+            </div>
+          </div>
+          <div class="profileModal d-none">
+              <div class="profileModal_userPhoto">
+                <img class="userPhoto"  src="assets/imgs/userPhoto.png" alt="profile">
+                <p class="userName">Username</p>
+              </div>
+              <div class="profileModal_body">
+                <p class="fullName">Full Name</p>
+                <p class="phoneNumber">Phone Number</p>
+                <p class="email">username@example.com</p>
+              </div>
+              <button class="submitBtn log-out">Log Out</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="navMobile">
+        <div class="navMobile_home ">
+
+          <ul class="navMobile_menu-holder">
+            <li class="navMobile_menu">
+              <span class="navMobile_menu_btn">HOME</span>
+              <ul class="submenu">
+                <li class="submenu_item"><a href="#">Main Home</a></li>
+                <li class="submenu_item"><a href="#">Grid Home</a></li>
+                <li class="submenu_item"><a href="#">Flower Shop</a></li>
+                <li class="submenu_item"><a href="#">Metro Showcase</a></li>
+              </ul>
+            </li>
+            <li class="navMobile_menu">
+              <span class="navMobile_menu_btn">PAGES</span>
+              <ul class="submenu ">
+                <li class="submenu_item"><a href="#">About Us</a></li>
+                <li class="submenu_item"><a href="#">FAQ Page</a></li>
+                <li class="submenu_item"><a href="#">Contact Us</a></li>
+              </ul>
+            </li>
+    
+            <li class="navMobile_menu">
+              <a href="#" class="navMobile_menu_btn">PORTFOLIO</a>
+            </li>
+            <li class="navMobile_menu">
+              <a href="#" class="navMobile_menu_btn">BLOG</a>
+            </li>
+            <!-- <li class="nav_menu">
+            <p class="nav_menu_btn">ELEMENTS</p>
+          </li> -->
+          </ul>
+        </div>
+        <ul class="navMobile_box">
+          <li class="navMobile_box_menu active homeIcon">
+            <a >
+              <span id="homeIcon" class="icon"><i class="las la-home"></i></span>
+              <span class="text">Home</span>
+            </a>
+          </li>
+          <li class="navMobile_box_menu">
+            <a href="#">
+              <span class="icon"><i class="las la-shopping-bag"></i></span>
+              <span class="text">Shop</span>
+            </a>
+          </li>
+          <li class="navMobile_box_menu">
+            <a href="#">
+              <span class="icon"><i class="las la-shopping-cart"></i></span>
+              <span class="text">Cart</span>
+            </a>
+          </li>
+          <li class="navMobile_box_menu ">
+            <a  class="" >
+              <span class="icon profile"><i class="las la-user-circle profile"></i></span>
+              <span class="text profile">Profile</span>
+            </a>
+          </li>
+        
+          <div class="indicator"></div>
+        </ul>
+      </div>
+    </header>
+
+    <div class="useless">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consectetur
+      libero iure vitae illo optio dolore ducimus nam quod itaque architecto
+      doloremque quidem provident accusamus ipsa, recusandae suscipit incidunt
+      maiores perferendis, modi natus dolorem! Officia corporis ipsum officiis,
+      neque sequi possimus repellat! Perferendis, nam quia quibusdam fugiat
+      dicta beatae tempore qui laudantium consequuntur animi. Molestias pariatur
+      dolorem ullam beatae earum, cumque voluptate, facere molestiae numquam
+      commodi libero laborum distinctio assumenda. Sit molestias dolor expedita
+      veritatis repudiandae in corrupti vel adipisci architecto odit placeat,
+      nulla nesciunt quam nam laudantium accusantium perspiciatis?
+      Necessitatibus ducimus nulla ipsa, sit labore tenetur ullam, velit,
+      temporibus nobis minus nesciunt explicabo! Accusantium iste eius alias
+      modi, quibusdam quae sint commodi quo qui mollitia iure sapiente dolor
+      numquam, quam officiis corrupti explicabo dicta ex doloribus officia
+      voluptatibus. Saepe ad unde sed, expedita molestiae consequuntur animi
+      quisquam voluptate eos quam suscipit dolore esse at nemo autem dolor ullam
+      eaque, quidem quas, quos a! Provident similique molestias sit doloribus
+      nobis dignissimos impedit maxime sequi tempore? Obcaecati id temporibus
+      voluptates architecto non aliquam ut recusandae, maxime ab velit
+      reiciendis. Obcaecati ad nihil quibusdam architecto exercitationem illum
+      dolores ratione ducimus consequuntur delectus vero cumque, assumenda sunt
+      animi laudantium dicta laboriosam fugit harum. Est minus alias eligendi
+      suscipit nostrum reprehenderit consectetur laborum quaerat enim vero esse
+      ab eius aliquid modi dolor ex labore ipsa quasi laudantium qui sunt
+      reiciendis fugiat, sapiente eveniet? Magnam nulla eius animi sunt
+      reprehenderit officia deleniti debitis nisi, sit quas veniam perferendis
+      consequatur quibusdam impedit accusamus? Exercitationem esse aperiam ullam
+      error eum iusto saepe tenetur eos molestiae voluptatibus unde hic
+      perspiciatis asperiores mollitia nobis minima similique iste aliquam,
+      doloribus quibusdam? Non inventore aut commodi quas nemo soluta nostrum,
+      ea, ab recusandae assumenda explicabo consequatur veritatis maiores omnis
+      eum necessitatibus, repellat iste magni. Tenetur itaque officia velit
+      explicabo distinctio! Facere error voluptatum illo ex eum in blanditiis?
+      Numquam rerum culpa iure reprehenderit libero commodi sunt at perferendis
+      beatae totam dolorem doloribus natus dolore dicta voluptatum modi labore
+      harum accusantium, saepe laboriosam sint similique perspiciatis officia?
+      Placeat, non. Ratione officia similique accusamus quisquam quidem, dicta
+      harum perferendis impedit reiciendis, ab consequatur id libero hic minus
+      praesentium quaerat unde temporibus at sit vero. Illo dolorum ab doloribus
+      voluptates molestiae expedita molestias voluptatum eius esse natus quod
+      aspernatur et ea neque reprehenderit nam accusantium maiores quos, placeat
+      delectus sequi. Iusto at aut ducimus porro repellendus, ipsam placeat vero
+      officiis, quas quidem eum odit quis corporis libero ullam, dolores
+      voluptatem nisi! Voluptatibus quod accusamus deserunt tempore. Corrupti
+      culpa sequi et explicabo labore ad nihil ipsam quam alias ducimus! Fugiat
+      aliquid velit necessitatibus quibusdam doloribus voluptas impedit sunt
+      eveniet culpa totam dolore, magnam iste similique repellendus quasi quia
+      temporibus eaque, eligendi delectus possimus molestias error pariatur sed!
+      Nihil, error! Neque, consequatur! Neque enim ea delectus autem voluptatum
+      quos illum doloribus! Quod eius hic odio delectus saepe, dolorum voluptate
+      assumenda eaque sit, nesciunt vel aut exercitationem et id cumque iste
+      dicta placeat aliquid impedit quas. Illum quam ex soluta similique iusto
+      molestias accusantium! Et veniam dicta quae nobis! Delectus, ipsam vero
+      earum aspernatur a accusamus neque reprehenderit eum veritatis fugit cum.
+      Repellat sit quam ducimus nobis id voluptatibus similique quisquam,
+      officia earum maiores eius animi laboriosam corporis. Est minus sunt, sint
+      eveniet, fuga provident perferendis ducimus perspiciatis veniam numquam,
+      quaerat mollitia! Tempore perspiciatis animi harum modi, quos quaerat a!
+      Itaque magni eum praesentium laboriosam? Iure quibusdam perspiciatis
+      tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit,
+      consequatur rerum soluta incidunt voluptate inventore molestias dolor
+      eveniet nesciunt obcaecati harum possimus officiis. Repellendus nam
+      consequuntur ipsa omnis sunt amet aliquid unde natus deleniti inventore
+      beatae provident aliquam, numquam voluptatem minus eius culpa laborum
+      vitae magni quas! Eum, est. Soluta sequi mollitia labore ullam aliquam,
+      esse adipisci reprehenderit obcaecati et, aliquid quisquam consequatur ea,
+      optio fuga delectus repellat a qui! Rem quia, dolorum dolores laboriosam
+      ducimus dicta velit, obcaecati fugiat optio modi porro adipisci nisi autem
+      quos. Exercitationem quaerat aliquid cumque ipsam. Nihil enim ipsa
+      voluptas delectus dolorum porro blanditiis doloribus dolore mollitia! Sed
+      repellat cupiditate ex consequuntur doloremque nisi obcaecati maxime
+      fugiat animi voluptate repellendus, magni sit inventore voluptatum ad
+      provident deserunt a mollitia illo non ea eius error delectus rerum. Quos
+      facere ex delectus cupiditate rem eum facilis assumenda temporibus nemo
+      saepe omnis eveniet illo illum laudantium, quaerat vitae dolor ducimus
+      excepturi non iste explicabo! Sapiente molestiae alias commodi, culpa
+      voluptas aliquid, excepturi perferendis illo ipsam sit, officia quas hic!
+      Quidem deleniti maiores laboriosam, ratione cum fugit natus? Pariatur
+      commodi laboriosam numquam quas velit sequi dolorum quod reiciendis
+      perferendis tempora illo, veritatis quasi. Asperiores culpa cupiditate
+      nemo atque facilis rem sed veniam, inventore vero, facere provident
+      numquam amet deleniti tempore voluptates quibusdam temporibus voluptas
+      velit quo impedit minus quasi. Quia illum aspernatur libero enim. Nobis
+      aspernatur eius nam fugiat placeat temporibus, quo reprehenderit
+      inventore, voluptates molestias assumenda officia maxime eaque sint? Fugit
+      amet quos architecto ea odio eaque odit fuga dicta, libero nihil vel
+      blanditiis voluptate error dolorem harum iusto provident officiis
+      doloribus explicabo rem facere, labore nam quam! Quae culpa alias
+      architecto voluptates aspernatur, harum atque quibusdam quos eaque
+      nostrum! Molestiae fuga, iste tempore autem perferendis illo, quas minima,
+      quasi temporibus veritatis accusantium alias expedita adipisci porro
+      quidem pariatur omnis ea. Id beatae tenetur aliquid, libero ducimus autem
+      numquam assumenda dicta fugit adipisci esse quo rem quis harum nesciunt a
+      placeat maiores! Cupiditate debitis, possimus, velit reprehenderit veniam
+      quos ad inventore nisi, ipsam neque consectetur ipsum animi eligendi
+      blanditiis mollitia. Quisquam neque esse deleniti exercitationem repellat,
+      sed corrupti recusandae eveniet illum, enim excepturi quos id soluta
+      molestiae. Perspiciatis autem quis odit minima sunt tempora consequuntur
+      culpa id exercitationem voluptate, consectetur fugiat provident, odio quas
+      asperiores error voluptas veniam eum optio. Nobis consequatur culpa sequi
+      blanditiis praesentium expedita maxime dolore fugiat ea recusandae,
+      deleniti porro laudantium eum, quia cum soluta repellendus incidunt quo.
+      Omnis voluptatibus cum, vero ut mollitia nesciunt non soluta modi?
+      Suscipit magnam fugiat praesentium, voluptates error vero repudiandae esse
+      consequuntur veritatis beatae expedita corporis deserunt inventore,
+      officiis animi ab vel neque cum corrupti? Lorem, ipsum dolor sit amet
+      consectetur adipisicing elit. Debitis, vitae aliquid adipisci optio
+      voluptatum magnam. Suscipit ad sed illo quibusdam mollitia fuga, ducimus
+      quo sunt totam dolor natus voluptatibus animi odio dignissimos beatae
+      doloremque dicta non officia laboriosam aut officiis hic quisquam. Eum
+      blanditiis hic vel ad reprehenderit recusandae! Dicta error, laboriosam
+      iusto soluta vero ducimus earum eaque repudiandae sit iure tempore
+      accusamus sed voluptatem praesentium odio repellendus fuga, debitis magnam
+      distinctio ex delectus temporibus. Architecto consectetur provident
+      nesciunt, possimus deserunt maiores quidem officiis illo dicta ea
+      doloribus iusto et fugiat sed numquam quam exercitationem placeat mollitia
+      nobis ipsa alias beatae? Ab reprehenderit dolore nihil recusandae. Eos
+      illum quo sit tempora ducimus animi magnam, praesentium ad eveniet commodi
+      quidem qui, rerum laudantium recusandae reiciendis explicabo consequuntur
+      quaerat temporibus sequi. Quidem hic eveniet facilis accusantium? Dolorem
+      dicta minima, consequatur nostrum neque voluptatibus eaque saepe!
+      Sapiente, aspernatur! Sint totam, quos dignissimos illo reiciendis
+      voluptatibus rerum dolore labore optio excepturi modi praesentium
+      doloremque nam assumenda, sapiente neque provident blanditiis consectetur,
+      facere porro omnis soluta. Dicta ad dolore quibusdam accusamus incidunt a
+      ex nam veniam dolorem assumenda nemo quisquam adipisci optio facilis
+      officiis, commodi nisi minima sed accusantium sunt amet, distinctio eos
+      voluptates quasi! Non illo maiores animi a exercitationem mollitia porro
+      accusantium libero ullam at blanditiis qui provident, nisi, suscipit
+      expedita perferendis sequi cupiditate neque cumque maxime in perspiciatis
+      voluptatibus saepe? Explicabo voluptatibus, eaque qui cupiditate alias nam
+      praesentium deleniti maxime quibusdam pariatur, et recusandae rem delectus
+      voluptatum. Maiores ratione, tenetur accusamus distinctio voluptatum nemo
+      architecto illo quam dolorem praesentium consequatur et consectetur minima
+      placeat aut deserunt iste laboriosam. Eum doloribus dolore consectetur
+      ratione, aspernatur nisi? Et excepturi minima laudantium repellat maxime,
+      facilis quaerat numquam consequatur repudiandae, quasi molestiae in
+      ratione rerum possimus est eveniet fuga illo natus pariatur. Accusamus
+      quisquam, maiores odit pariatur obcaecati iusto temporibus modi laudantium
+      natus distinctio commodi, eligendi voluptate. Reiciendis non laudantium
+      dolorum. Et eaque voluptas nostrum alias dicta? Pariatur nemo porro animi
+      voluptates iusto ratione nisi, quo, reiciendis blanditiis quod illum ea
+      nesciunt enim. Aspernatur vero, accusamus at laudantium unde veritatis
+      dolor temporibus cum reiciendis nobis aperiam quisquam perferendis
+      eveniet. Vel dolores voluptatum sit, impedit provident, sunt at,
+      distinctio nihil voluptates error perferendis hic consectetur pariatur
+      perspiciatis ut id facere culpa nobis eligendi dolor laboriosam temporibus
+      quidem esse? Est quisquam voluptatibus ullam quod, voluptate deserunt
+      laudantium repellat voluptatum assumenda suscipit facere eveniet
+      perferendis, corrupti accusantium ipsa ea dolorum illum saepe natus sit
+      recusandae alias molestiae! Sunt velit, ullam eligendi ratione impedit
+      asperiores libero ea sit tempore illum. Consequatur enim impedit quibusdam
+      voluptatum ab modi eveniet aspernatur tenetur eaque excepturi, quia
+      officia expedita ducimus blanditiis reiciendis doloremque itaque vero nemo
+      ut fugiat quasi quae incidunt id possimus! Exercitationem asperiores vitae
+      natus blanditiis alias voluptates eveniet corrupti ullam nam deleniti
+      reiciendis rem, consequatur officiis, placeat in necessitatibus,
+      aspernatur voluptatem! Temporibus harum enim quos optio laborum minima
+      debitis! Labore tenetur quod voluptas odit quos. Non nihil eum enim beatae
+      ipsum quibusdam, omnis delectus labore. Ea rem quidem impedit
+      exercitationem neque illum modi, excepturi iste? Culpa debitis quasi alias
+      vero aliquid quidem maxime exercitationem ipsam, cum necessitatibus odio
+      ipsum placeat laborum explicabo neque quis consequatur aspernatur magni
+      dolorum eum, ad eaque, possimus non? Ratione excepturi veniam harum non
+      quo nemo labore accusantium ea quis, officiis possimus numquam voluptate,
+      modi deserunt laboriosam, quaerat ab. Nesciunt animi voluptatum impedit
+      magnam quas minima dicta vitae esse obcaecati corrupti, aliquid vero
+      dolore velit quae tenetur dignissimos harum vel architecto praesentium
+      eaque ipsum eligendi itaque dolores veritatis? Assumenda corporis vitae id
+      nesciunt sequi ut eos non, aperiam cum perferendis modi nam molestiae
+      molestias reprehenderit repellendus quidem laboriosam. Accusamus
+      voluptates fugiat omnis totam! Ea magnam architecto reiciendis amet
+      possimus quibusdam maxime enim mollitia sint? Earum, vero? Quaerat qui
+      deserunt provident perspiciatis sint commodi dolorem molestias
+      consectetur. Ducimus facere iure dolorum veniam quos, est quibusdam
+      tempore blanditiis minima voluptatibus, repellendus distinctio aut
+      adipisci labore cupiditate. Quibusdam assumenda qui, ab odio sed dolores
+      sequi eligendi eum quasi non cumque numquam, perferendis itaque, rem
+      eaque. Assumenda, voluptates itaque aspernatur fugiat dolore obcaecati!
+      Deleniti voluptate ex aliquam accusantium eius! Totam tenetur, dolores
+      eveniet eligendi mollitia aperiam quam optio dolorem deserunt quia
+      architecto, explicabo inventore temporibus unde ea harum illo
+      necessitatibus ratione debitis odit sunt cupiditate, sapiente voluptatem.
+      Facilis provident atque perspiciatis in nobis perferendis rerum quis
+      beatae tempore incidunt ipsam accusantium, assumenda, doloremque quos
+      natus corrupti modi saepe nemo non quidem iure quasi dolorum? Doloribus
+      quidem harum laboriosam labore animi doloremque quasi nulla modi. Nam
+      dicta aspernatur repellendus, qui accusantium eius voluptatibus,
+      perspiciatis veniam officiis repudiandae nesciunt? Eaque impedit officia
+      sequi magnam maiores, quidem doloremque mollitia quo iste fugit voluptas
+      ipsam modi cupiditate dolor repudiandae repellendus consequatur sunt,
+      minus necessitatibus sit reiciendis. Eligendi magnam voluptatibus optio
+      adipisci earum laudantium illo molestiae fugiat consequuntur rem
+      distinctio, eos voluptatum! Harum, maiores. Illum, ab sed suscipit
+      assumenda dolor, dolorum, aperiam velit ex in corporis unde reprehenderit
+      quae voluptatibus dicta modi. Itaque exercitationem reiciendis similique.
+      Iusto corporis consequuntur magnam alias rerum eligendi totam natus
+      laudantium id fugit soluta dolor vitae labore aperiam vero quidem sed,
+      animi cupiditate quia excepturi similique incidunt quas error voluptas.
+      Voluptate sunt obcaecati repellat, totam at porro odit placeat vero
+      corporis similique error, nobis voluptates suscipit esse rerum labore
+      eaque nemo unde assumenda quaerat ratione id dolore facilis? Eveniet
+      facilis ipsam ullam quae nam similique laudantium, nemo natus. Magnam illo
+      corporis facere, iure illum ab, dolorem quasi saepe commodi esse quas
+      delectus quos harum culpa fuga, ratione modi? Omnis illum quaerat ea
+      expedita cupiditate, commodi voluptatibus quisquam aliquam incidunt
+      placeat libero nostrum vitae fugit mollitia aperiam? Vel nesciunt
+      accusantium mollitia ex, sunt dolores hic voluptates in aut assumenda
+      fuga, dolorem, voluptatibus iure? Consequuntur culpa accusantium non est
+      id placeat consequatur itaque possimus, excepturi aut perspiciatis?
+      Recusandae nobis fugiat beatae, voluptates a sed dolore eos deserunt,
+      corporis consequatur molestiae magni doloribus iste aut qui minus modi
+      quod cum illo velit atque perferendis quas cumque. Molestias vitae autem
+      expedita neque ratione, rem soluta. Fugit reprehenderit, ad quia sunt ut
+      perferendis illo. Officia, ipsa?
+    </div>
+
+    <script src="./js/navbar.js"></script>
+    <script type="module" src="./js/register.js"></script>
+  </body>
+</html>
