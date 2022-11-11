@@ -169,7 +169,6 @@ const getData = (category) => {
 
         .then(() => {
             const cardlinks = document.getElementsByClassName('cards_card_info');
-            console.log(cardlinks);
             for (const link of cardlinks) {
                 link.addEventListener('click',()=>{
                     let productId =link.parentElement.getAttribute('id');
