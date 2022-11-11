@@ -2667,6 +2667,7 @@ nav .submenu_item a {
   margin-right: 10px;
 }
 .standartProduct .productInfo .create-review_reviewerProfile img {
+  border-radius: 50%;
   width: 40px;
   height: 40px;
 }

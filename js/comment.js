@@ -2,7 +2,7 @@ export default class Comment {
     constructor(id, comment) {
         this.userId = id;
         this.comment = comment;
-        this.date = new Date().toDateString();
+        this.date = new Date().toLocaleDateString();
     }
 }
 
@@ -45,7 +45,7 @@ function refreshProduct(newProduct){
 }
 
 function addComment(productId, comment) {
-    let userId = sessionStorage.getItem('currentUserId');
+    let userId = localStorage.getItem('currentUserId');
     let newComment = new Comment(userId, comment);
     console.log(newComment);
 

@@ -12,15 +12,9 @@ if(!Object.keys(localStorage).includes('users')){
 }
 
 export default function getUserDataById(userId) {
-    let result;
-    let wantedUser = localStorage.getItem(`${userId}`);
-    if (wantedUser !== null) {
-        result = JSON.parse(wantedUser);
-    }
-    else {
-        console.error('User Not Found');
-    }
-    return result;
+    let users = getUsers();
+    let user = users.find(user => JSON.parse(user).id == userId);
+    return JSON.parse(user);
 }
 function getUserDataByName(username) {
     let users = getUsers();
