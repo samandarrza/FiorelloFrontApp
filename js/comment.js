@@ -10,7 +10,10 @@ function saveProductsData() {
     fetch('./js/dummy.json')
         .then(res => res.json())
         .then(productData => {
-            localStorage.setItem('products', JSON.stringify(productData));
+            if(!Object.keys(localStorage).includes('products')){
+                localStorage.setItem('products', JSON.stringify(productData));
+                console.log('calisdi')
+            }
         });
 
 }
@@ -26,6 +29,20 @@ function getProduct(productId){
 
 
 
+function refreshProduct(newProduct){
+    let products  =   JSON.parse(localStorage.getItem('products'));
+
+   let updatedProducts =  products.map(product =>{
+        if(product.id == newProduct.id ){
+            return newProduct;
+        }
+        return product
+    })
+
+    console.log(updatedProducts);
+    localStorage.setItem('products',JSON.stringify(updatedProducts))
+
+}
 
 function addComment(productId, comment) {
     let userId = sessionStorage.getItem('currentUserId');
@@ -41,19 +58,5 @@ function addComment(productId, comment) {
 
 }
 
-addComment('42405529', 'bunu men cox beyendnm');
-
-function refreshProduct(newProduct){
-    let products  =   JSON.parse(localStorage.getItem('products'));
-
-   let updatedProducts =  products.map(product =>{
-        if(product.id == newProduct.id ){
-            return newProduct;
-        }
-        return product
-    })
-
-    localStorage.setItem('products',updatedProducts)
-    console.log(updatedProducts);
-
-}
+addComment('42405529', 'bunu men cox beyendnmfddfdf');
+addComment('42405529', 'bunu men cox beyendnmfddfdf');
