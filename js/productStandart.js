@@ -5,6 +5,7 @@
 
 
 import {isLoggedIn}from './UserFunctions.js'
+import {Comment, addComment} from './comment.js'
 
 
 //=======================
@@ -57,7 +58,6 @@ tabs.addEventListener('click',(e)=>{
 //================================
 
 if(isLoggedIn()){
-    console.log('daxil oldun');
 
     let userPhoto = sessionStorage.getItem('photo');
     let userName = sessionStorage.getItem('currentUserName');
@@ -70,7 +70,7 @@ if(isLoggedIn()){
       <img  src="${userPhoto}" alt="" />
     </div>
     <div class="create-review_inputWrap">
-      <input type="text" class="create-review_inputWrap_input" placeholder="Comment as ${userName}">
+      <input id="commentInput" type="text" class="create-review_inputWrap_input" placeholder="Comment as ${userName}">
       <button class="create-review_inputWrap_postBtn">Post</button>
     </div>
     
@@ -78,4 +78,16 @@ if(isLoggedIn()){
 
 }
 
+
+//================================
+// post a comment
+//================================
+
+const postBtn = document.getElementById('create-review');
+const commentInput = document.getElementById('commentInput')
+
+postBtn.addEventListener('click', ()=>{
+    if(commentInput.value.length > 0)
+         addComment('42405529', commentInput.value )
+})
 

@@ -9,7 +9,6 @@
     <title>Standart Product</title>
   </head>
   <body>
-
     <header>
       <nav>
         <div class="nav-wrapper">
@@ -69,7 +68,9 @@
             </div>
 
             <div class="nav-wrapper_menu-box_profile">
-              <button class="profile userProfile d-none"><i class="las la-user-circle profile"></i></button>
+              <button class="profile userProfile d-none">
+                <i class="las la-user-circle profile"></i>
+              </button>
               <button class="sign-up">Sign Up</button>
             </div>
           </div>
@@ -133,15 +134,17 @@
             </div>
 
             <div class="nav-wrapper_menu-box_profile">
-              <button class="profile userProfile d-none"><i class="las la-user-circle profile"></i></button>
+              <button class="profile userProfile d-none">
+                <i class="las la-user-circle profile"></i>
+              </button>
               <button class="sign-up">Sign Up</button>
             </div>
           </div>
         </div>
       </nav>
 
-      <div class="register-modal ">
-        <div class="register-modal_content  ">
+      <div class="register-modal">
+        <div class="register-modal_content">
           <div class="login_modal d-none">
             <div class="register-modal_content_logo">
               <img src="assets/imgs/h2-logo-1.png" alt="" />
@@ -168,34 +171,32 @@
               </p>
             </div>
           </div>
-          <div class="signUp_modal ">
+          <div class="signUp_modal">
             <div class="register-modal_content_logo">
               <img src="assets/imgs/h2-logo-1.png" alt="" />
               <p>Create a new account</p>
               <div class="profileModal_userPhoto">
-                <img class="userPhoto"  src="assets/imgs/userPhoto.png" alt="profile">
-                <span id="addProfilePic" ><i class="las la-plus-circle"></i></span>
-                <input id="addPicHidden" type="file" hidden >
+                <img
+                  class="userPhoto"
+                  src="assets/imgs/userPhoto.png"
+                  alt="profile"
+                />
+                <span id="addProfilePic"
+                  ><i class="las la-plus-circle"></i
+                ></span>
+                <input id="addPicHidden" type="file" hidden />
               </div>
             </div>
             <div class="register-modal_content_inputs">
               <div class="form_holder">
                 <form action="" id="registerForm">
+                  <input id="nameInput" type="text" placeholder="Full name" />
+                  <input id="emailInput" type="email" placeholder="Email" />
                   <input
-                    id="nameInput"
+                    id="phoneInput"
                     type="text"
-                    placeholder="Full name"
+                    placeholder="Phone Number"
                   />
-                  <input
-                  id="emailInput"
-                  type="email"
-                  placeholder="Email"
-                />
-                <input
-                id="phoneInput"
-                type="text"
-                placeholder="Phone Number"
-              />
                   <input id="userInput" type="text" placeholder="Username" />
                   <input
                     id="passwordInput"
@@ -216,23 +217,26 @@
             </div>
           </div>
           <div class="profileModal d-none">
-              <div class="profileModal_userPhoto">
-                <img class="userPhoto"  src="assets/imgs/userPhoto.png" alt="profile">
-                <p class="userName">Username</p>
-              </div>
-              <div class="profileModal_body">
-                <p class="fullName">Full Name</p>
-                <p class="phoneNumber">Phone Number</p>
-                <p class="email">username@example.com</p>
-              </div>
-              <button class="submitBtn log-out">Log Out</button>
+            <div class="profileModal_userPhoto">
+              <img
+                class="userPhoto"
+                src="assets/imgs/userPhoto.png"
+                alt="profile"
+              />
+              <p class="userName">Username</p>
+            </div>
+            <div class="profileModal_body">
+              <p class="fullName">Full Name</p>
+              <p class="phoneNumber">Phone Number</p>
+              <p class="email">username@example.com</p>
+            </div>
+            <button class="submitBtn log-out">Log Out</button>
           </div>
         </div>
       </div>
 
       <div class="navMobile">
-        <div class="navMobile_home ">
-
+        <div class="navMobile_home">
           <ul class="navMobile_menu-holder">
             <li class="navMobile_menu">
               <span class="navMobile_menu_btn">HOME</span>
@@ -245,13 +249,13 @@
             </li>
             <li class="navMobile_menu">
               <span class="navMobile_menu_btn">PAGES</span>
-              <ul class="submenu ">
+              <ul class="submenu">
                 <li class="submenu_item"><a href="#">About Us</a></li>
                 <li class="submenu_item"><a href="#">FAQ Page</a></li>
                 <li class="submenu_item"><a href="#">Contact Us</a></li>
               </ul>
             </li>
-    
+
             <li class="navMobile_menu">
               <a href="#" class="navMobile_menu_btn">PORTFOLIO</a>
             </li>
@@ -265,8 +269,10 @@
         </div>
         <ul class="navMobile_box">
           <li class="navMobile_box_menu active homeIcon">
-            <a >
-              <span id="homeIcon" class="icon"><i class="las la-home"></i></span>
+            <a>
+              <span id="homeIcon" class="icon"
+                ><i class="las la-home"></i
+              ></span>
               <span class="text">Home</span>
             </a>
           </li>
@@ -282,13 +288,15 @@
               <span class="text">Cart</span>
             </a>
           </li>
-          <li class="navMobile_box_menu ">
-            <a  class="" >
-              <span class="icon profile"><i class="las la-user-circle profile"></i></span>
+          <li class="navMobile_box_menu">
+            <a class="">
+              <span class="icon profile"
+                ><i class="las la-user-circle profile"></i
+              ></span>
               <span class="text profile">Profile</span>
             </a>
           </li>
-        
+
           <div class="indicator"></div>
         </ul>
       </div>
@@ -352,14 +360,14 @@
 
       <section class="productInfo">
         <div id="tabs" class="tabs">
-          <div class="item tabs_desc active ">DESCRIPTION</div>
+          <div class="item tabs_desc active">DESCRIPTION</div>
           <div class="item tabs_info">ADDITIONAL INFORMATION</div>
           <div class="item tabs_reviews">
             REVIEWS (<span class="reviewCounts">2</span>)
           </div>
         </div>
         <div id="tab" class="tab">
-          <div id="desc" class="tab_desc d-none ">
+          <div id="desc" class="tab_desc">
             <h2 class="tab_desc_title">The power of flowers</h2>
             <p class="tab_desc_body">
               Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
@@ -378,12 +386,11 @@
               Dimensions: <span> 30 x 30 x 50cm</span>
             </p>
           </div>
-          <div id="reviews" class="tab_reviews ">
+          <div id="reviews" class="tab_reviews d-none">
             <p class="tab_reviews_title">Reviews</p>
             <div class="tab_reviews_review">
-
               <div class="tab_reviews_review_reviewerProfile">
-                <img  src="assets/imgs/userPhoto.png" alt="" />
+                <img src="assets/imgs/userPhoto.png" alt="" />
               </div>
               <div class="review">
                 <p class="review_username">
@@ -396,12 +403,10 @@
                   nascetur ridiculus mus.
                 </p>
               </div>
-
             </div>
             <div class="tab_reviews_review">
-
               <div class="tab_reviews_review_reviewerProfile">
-                <img  src="assets/imgs/h3-team-img-3.png" alt="" />
+                <img src="assets/imgs/h3-team-img-3.png" alt="" />
               </div>
               <div class="review">
                 <p class="review_username">
@@ -414,20 +419,17 @@
                   nascetur ridiculus mus.
                 </p>
               </div>
-              
             </div>
-           
           </div>
         </div>
       </section>
     </main>
-    
 
+    <script src="./js/dummy.js"></script>
     <script src="./js/navbar.js"></script>
     <script type="module" src="./js/register.js"></script>
-    <script  type="module" src="./js/UserFunctions.js"></script>i
-    <script src="./js/comment.js"></script>
-    <script src="./js/dummy.js"></script>
-    <script  type="module" src="./js/productStandart.js"></script>
+    <script type="module" src="./js/UserFunctions.js"></script>
+    <script type="module" src="./js/comment.js"></script>
+    <script type="module" src="./js/productStandart.js"></script>
   </body>
 </html>

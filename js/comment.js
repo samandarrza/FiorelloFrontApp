@@ -1,4 +1,4 @@
-class Comment {
+export default class Comment {
     constructor(id, comment) {
         this.userId = id;
         this.comment = comment;
@@ -58,5 +58,9 @@ function addComment(productId, comment) {
 
 }
 
-addComment('42405529', 'bunu men cox beyendnmfddfdf');
-addComment('42405529', 'bunu men cox beyendnmfddfdf');
+// addComment('42405529', 'bunu men cox beyendnmfddfdf');
+// addComment('42405529', 'bunu men cox beyendnmfddfdf');
+
+
+
+export {Comment, addComment };

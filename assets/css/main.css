@@ -2520,7 +2520,6 @@ nav .submenu_item a {
   color: gray;
 }
 .standartProduct .productDemo {
-  background-color: rebeccapurple;
   padding: 0 5rem;
   max-height: 75vh;
 }
@@ -2591,6 +2590,7 @@ nav .submenu_item a {
   font-size: 0.9rem;
 }
 .standartProduct .productInfo {
+  background-color: white;
   margin-top: 50px;
   padding: 0 5rem;
 }
