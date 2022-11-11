@@ -99,19 +99,19 @@ function login(username, password) {
 
     user.isLogged = true;
     addNewUser(user);
-    sessionStorage.setItem('currentUserId', user.id);
-    sessionStorage.setItem('currentUserName', user.username);
-    sessionStorage.setItem('fullName', user.fullName);
-    sessionStorage.setItem('email', user.email);
-    sessionStorage.setItem('phoneNum', user.phoneNumber);
-    sessionStorage.setItem('isLogged', user.isLogged);
-    sessionStorage.setItem('photo', user.photo);
+    localStorage.setItem('currentUserId', user.id);
+    localStorage.setItem('currentUserName', user.username);
+    localStorage.setItem('fullName', user.fullName);
+    localStorage.setItem('email', user.email);
+    localStorage.setItem('phoneNum', user.phoneNumber);
+    localStorage.setItem('isLogged', user.isLogged);
+    localStorage.setItem('photo', user.photo);
     console.log('Logged In ');
     return true;
 
 }
 function isLoggedIn() {
-    let isLogged =JSON.parse(sessionStorage.getItem('isLogged')) ;
+    let isLogged =JSON.parse(localStorage.getItem('isLogged')) ;
     console.log(isLogged);
     isLogged?
         console.log('logged in user'):

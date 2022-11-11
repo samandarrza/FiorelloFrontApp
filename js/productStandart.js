@@ -75,8 +75,8 @@ tabs.addEventListener('click', (e) => {
 
 if (isLoggedIn()) {
 
-    let userPhoto = sessionStorage.getItem('photo');
-    let userName = sessionStorage.getItem('currentUserName');
+    let userPhoto = localStorage.getItem('photo');
+    let userName = localStorage.getItem('currentUserName');
 
 
     reviews.innerHTML +=
