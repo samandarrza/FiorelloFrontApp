@@ -113,7 +113,7 @@ if (isLoggedIn()) {
     </div>
     <div class="create-review_inputWrap">
       <input id="commentInput" type="text" class="create-review_inputWrap_input" placeholder="Comment as ${userName}">
-      <button id='create-review' class="create-review_inputWrap_postBtn">Post</button>
+      <button id='create-review' class="create-review_inputWrap_postBtn">Post <i class="las la-paper-plane"></i></button>
     </div>
     
   </div>`;
