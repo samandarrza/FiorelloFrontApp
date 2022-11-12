@@ -16,7 +16,7 @@ window.addEventListener('scroll', () => {
 // =====================================
 //  NAVBAR SEARCH INPUT
 // =====================================
-const searchInputs = document.getElementsByClassName('nav_menu-search_input');
+const searchInputs = document.querySelectorAll('.nav_menu-search_input');
 const searchBtn = document.querySelectorAll('.nav_menu-search_btn');
 const menus = document.getElementsByClassName('menu-holder');
 
@@ -24,21 +24,50 @@ searchBtn.forEach(btn => {
     btn.addEventListener('click', (e) => {
 
         let input = e.target.parentElement.parentElement.children[0];
+
         let searchValue = input.value.trim();
         if (searchValue.length < !0) {
             input.classList.toggle('searching');
+            if(input.classList.contains('searching'))
+                input.focus();
             input.parentElement.classList.toggle('border');
             for (const menu of menus) {
                 menu.classList.toggle('d-none');
             }
         }
         else {
-            // search for the value
+            localStorage.setItem('searchValue', input.value.trim().toLowerCase());
+            input.value = '';
+            window.location.href = 'search.html';
         }
 
 
     });
 });
+
+searchInputs.forEach(input => {
+    input.addEventListener('keyup', (e) => {
+        if (e.code == 'Enter') {
+            if (input.value.length > 0) {
+                
+                localStorage.setItem('searchValue', input.value.trim().toLowerCase());
+                input.value = '';
+                window.location.href = 'search.html';
+            }
+            else{
+                for (const menu of menus) {
+                    menu.classList.toggle('d-none');
+                }
+                e.target.parentElement.classList.toggle('border')
+                input.classList.toggle('searching');
+                input.blur();
+            }
+
+
+        }
+    });
+});
+
 
 
 
@@ -49,7 +78,7 @@ const homeMenu = document.querySelector('.navMobile_home');
 const icons = document.getElementsByClassName('navMobile_box_menu');
 const homeIcon = document.getElementById('homeIcon');
 const indicator = document.querySelector('.indicator');
-const activeElement = document.querySelector('.active')
+const activeElement = document.querySelector('.active');
 
 indicator.style.left = `${activeElement.getBoundingClientRect().left - ((indicator.offsetWidth / 2) - (activeElement.offsetWidth / 2))}px`;
 
