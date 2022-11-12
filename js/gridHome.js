@@ -115,10 +115,72 @@ subscribeOrange.addEventListener('click', (e) => {
             console.log('FAILED...', error);
         })
         .then(() => {
-            name_surname.value = '';
             email.value = '';
-            phoneNumber.value = '';
-            desc.value = '';
         });
 
 });
+
+
+
+
+// ====================================================
+// Writing dummy data to html
+// ====================================================
+const container = document.querySelector('.gridHome_products');
+
+document.body.addEventListener('click', (e) => {
+    if (e.target.classList.contains('category')) {
+        let id = e.target.getAttribute('id');
+        getData(id);
+    }
+});
+
+const getData = (category) => {
+    fetch('./js/dummy.json').then(res => res.json())
+        .then(data => {
+
+            const filteredData = data?.filter(product => {
+                if (category === 'ALL')
+                    return true;
+                return product.category.includes(category);
+            });
+
+
+
+            container.innerHTML = '';
+            filteredData?.map(product => {
+
+                let status = 'New';
+                if (product.count <= 0)
+                    status = "Sold";
+
+                container.innerHTML += `  <div id="${product.id}" class="cards_card">
+        <div class="cards_card_status ${status}">${status}</div>
+        <a href ="standartProduct.html" target="_blank" class="cards_card_info">
+          <p class="flower-name">${product.name}</p>
+          <p class="flower-price">${product.price}</p>
+          <button class="addCart-btn">Add to cart</button>
+        </a>
+        <img src="${product.url}" width="100%" alt="" />
+        </div>`;
+            });
+
+        })
+
+        .then(() => {
+            const cardlinks = document.getElementsByClassName('cards_card_info');
+            for (const link of cardlinks) {
+                link.addEventListener('click',()=>{
+                    let productId =link.parentElement.getAttribute('id');
+                    localStorage.setItem('wantedItem',productId);
+                })
+            }
+        });
+};
+
+getData('ALL');
+
+
+
+
+

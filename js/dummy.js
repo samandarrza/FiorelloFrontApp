@@ -36,6 +36,19 @@ class Product {
         this.count = count;
         this.url = url;
         this.desc = desc;
+        this.cartCount = 1;
+        this.reviews =[
+            {
+                userId: 'userID',
+                comment: 'user Commented Here',
+                datetime: '29/15/2002'
+            },
+            {
+                userId: 'userID',
+                comment: 'user Commented Here',
+                datetime: '29/15/2002'
+            }
+        ];
     };
 
     sellProduct(count) {
@@ -47,13 +60,15 @@ class Product {
 };
 
 
-for (let i = 0; i < 20; i++) {
+
+
+for (let i = 0; i < 7; i++) {
     let newProduct1 = new Product('Rose',[category.popular], 12.4, 15, link1,desc);
-    let newProduct2 = new Product('SWEET ',[category.cactuses, category.winter], 5.69, 1, link2,desc);
+    let newProduct2 = new Product('SWEET ',[category.greens, category.winter], 5.69, 0, link2,desc);
     let newProduct3 = new Product('FOXGLOVE',[category.exotic], 75.55, 16, link3,desc);
-    let newProduct4 = new Product('SUMMER SAVORY',[category.greens,category.various], 485.55, 100, link4,desc)
+    let newProduct4 = new Product('SUMMER SAVORY',[category.cactuses,category.various], 485.55, 100, link4,desc)
     products.push(newProduct1,newProduct2,newProduct3,newProduct4)
 }
 
-console.log(JSON.stringify(products));
+console.log(JSON.stringify(products)); 
 

@@ -21,9 +21,12 @@
 @import "partials/mainslider";
 @import "partials/videobutton";
 @import "partials/team";
+@import "partials/index"; 
+@import "partials/productStandart";
 @import "partials/index";
 @import "partials/tab";
-
+@import "partials/contactUs";
+  
 
 
 // =====================================
@@ -46,4 +49,10 @@ body {
 }
 button {
   cursor: pointer;
+}
+
+
+::selection {
+  background: #f34f3f;
+  color: #fff;
 }

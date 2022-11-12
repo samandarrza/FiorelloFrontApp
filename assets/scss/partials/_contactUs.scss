@@ -1,0 +1,31 @@
+.contact {
+    margin-top: 20px;
+  padding: 0 5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  color: $text_color;
+
+  &_details {
+    padding: 1rem;
+
+    img {
+      display: block;
+      margin: auto;
+    }
+    &_info {
+      margin-top: 50px;
+
+      &_titles {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 10px;
+      }
+    }
+  }
+  &_form{
+        .form_holder{
+        width: 100%;
+        padding: 0 20px;
+    }
+  }
+}
