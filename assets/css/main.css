@@ -1793,6 +1793,9 @@ nav .nav_menu_btn {
   font-size: 0.75rem;
   cursor: pointer;
 }
+nav .nav_menu_btn.active::before {
+  width: 100% !important;
+}
 nav .nav_menu-search {
   margin-left: 20px;
   list-style: none;
@@ -1843,6 +1846,9 @@ nav .submenu_item {
 }
 nav .submenu_item a {
   color: #1b1b1b;
+}
+nav .submenu_item a.active::before {
+  width: 100% !important;
 }
 
 .nav-scroll {
@@ -3018,6 +3024,9 @@ nav .submenu_item a {
   text-decoration: none;
   font-weight: 400;
 }
+.navMobile_home a.active::before {
+  width: 100% !important;
+}
 .navMobile_home.active {
   width: 250px;
   padding: 20px 40px 0;
@@ -3032,6 +3041,9 @@ nav .submenu_item a {
 .navMobile_menu-holder .navMobile_menu_btn {
   width: auto;
   font-weight: 500 !important;
+}
+.navMobile_menu-holder .navMobile_menu_btn.active::before {
+  width: 100% !important;
 }
 .navMobile_menu-holder .navMobile_menu .submenu {
   transition: 0.5s;

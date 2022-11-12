@@ -9,8 +9,6 @@
   height: 72px;
   z-index: 8;
 
-
-
   &_box {
     width: 100%;
     position: fixed;
@@ -77,8 +75,8 @@
       border-radius: 50%;
       border: 6px solid white;
       transition: 0.5s;
-      &::before{
-        content: '';
+      &::before {
+        content: "";
         width: 20px;
         height: 20px;
         background-color: transparent;
@@ -86,10 +84,10 @@
         left: -20px;
         top: 51%;
         border-top-right-radius: 25px;
-        box-shadow: 0 -5px  white;
+        box-shadow: 0 -5px white;
       }
-      &::after{
-        content: '';
+      &::after {
+        content: "";
         width: 20px;
         height: 20px;
         background-color: transparent;
@@ -97,61 +95,66 @@
         right: -20px;
         top: 51%;
         border-top-left-radius: 25px;
-        box-shadow: 0 -5px 0 0  white;
+        box-shadow: 0 -5px 0 0 white;
       }
     }
-
   }
 
-  &_home{
+  &_home {
     display: flex;
     align-items: center;
     position: absolute;
     width: 0;
     overflow: hidden;
-    height: 95vh ;
-    background-color: white; 
+    height: 95vh;
+    background-color: white;
     border-right: 1px solid gainsboro;
     bottom: 70px;
     z-index: 0;
     transition: 0.5s;
-    a{
-        color: $text_color;
-        text-decoration: none;
-        font-weight: 400;
-        @extend %simple_btn;
+    a {
+      color: $text_color;
+      text-decoration: none;
+      font-weight: 400;
+      @extend %simple_btn;
+
+      &.active::before {
+        width: 100% !important;
       }
+    }
 
-    &.active{
-          width: 250px;
-          padding: 20px 40px 0;
-
+    &.active {
+      width: 250px;
+      padding: 20px 40px 0;
     }
   }
 
-  &_menu-holder{
-    
+  &_menu-holder {
     list-style: none;
 
-    .navMobile_menu{
-        margin-top: 20px;
-        color: $text_color !important;
-        &_btn{
-            @extend %simple_btn;
-            width: auto;
-            font-weight: 500 !important;
+    .navMobile_menu {
+      margin-top: 20px;
+      color: $text_color !important;
+      &_btn {
+        @extend %simple_btn;
+        width: auto;
+        font-weight: 500 !important;
+
+        &.active::before {
+          width: 100% !important;
         }
-        .submenu{
-            transition: 0.5s;
-            list-style: none;
-            padding-left: 20px;
-            max-height: 0;
-            overflow: hidden;
-        }
-        .submenu.active{
-            padding: 10px 0px 10px 20px;
-            max-height: 200px;
-        }
+      }
+      .submenu {
+        transition: 0.5s;
+        list-style: none;
+        padding-left: 20px;
+        max-height: 0;
+        overflow: hidden;
+      }
+      .submenu.active {
+        padding: 10px 0px 10px 20px;
+        max-height: 200px;
+      }
     }
   }
 }
