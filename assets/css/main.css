@@ -2877,6 +2877,33 @@ nav .submenu_item a {
   display: block;
 }
 
+.contact {
+  margin-top: 20px;
+  padding: 0 5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  color: #1b1b1b;
+}
+.contact_details {
+  padding: 1rem;
+}
+.contact_details img {
+  display: block;
+  margin: auto;
+}
+.contact_details_info {
+  margin-top: 50px;
+}
+.contact_details_info_titles {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.contact_form .form_holder {
+  width: 100%;
+  padding: 0 20px;
+}
+
 .navMobile {
   display: none;
   width: 100%;
@@ -3052,6 +3079,11 @@ nav .submenu_item a {
   .sm-cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .contact {
+    grid-template-columns: 1fr;
+    padding: 0 2rem;
+    row-gap: 50px;
+  }
 }
 @media (max-width: 768px) {
   .cards {
@@ -3060,6 +3092,9 @@ nav .submenu_item a {
   .sm-cards {
     grid-template-columns: 1fr 1fr;
   }
+  .contact {
+    padding: 0 1rem;
+  }
 }
 @media (max-width: 560px) {
   .cards {
@@ -3067,6 +3102,9 @@ nav .submenu_item a {
   }
   .sm-cards {
     grid-template-columns: 1fr 1fr;
+  }
+  .contact {
+    padding: 0rem;
   }
 }
 @media (max-width: 360px) {

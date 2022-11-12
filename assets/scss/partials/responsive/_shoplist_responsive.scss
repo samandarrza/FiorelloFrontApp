@@ -5,6 +5,11 @@
   .sm-cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .contact{
+    grid-template-columns: 1fr;
+    padding: 0 2rem;
+    row-gap: 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -14,6 +19,9 @@
   .sm-cards {
     grid-template-columns: 1fr 1fr;
   }
+  .contact{
+    padding: 0 1rem;
+  }
 }
 @media (max-width: 560px) {
   .cards {
@@ -21,6 +29,9 @@
   }
   .sm-cards {
     grid-template-columns: 1fr 1fr;
+  }
+  .contact{
+    padding: 0rem;
   }
 }
 @media (max-width: 360px) {
