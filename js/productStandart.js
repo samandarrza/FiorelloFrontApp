@@ -142,3 +142,19 @@ if (isLoggedIn()) {
 
 
 
+//================================
+// change main Image by clicking small Photos
+//================================
+
+const smPhotos = document.getElementsByClassName('smPhoto');
+const mainPhoto = document.getElementById('mainImg');
+for (const smPhoto of smPhotos) {
+    smPhoto.addEventListener('click',()=>{
+        let src = smPhoto.getAttribute('src');
+        mainPhoto.setAttribute('src', src)
+    })
+}
+
+
+
+
