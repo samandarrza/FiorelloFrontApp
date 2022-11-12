@@ -1720,6 +1720,13 @@ nav .nav-wrapper_menu-box .nav_menu-cart {
 nav .nav-wrapper_menu-box .nav_menu-cart_btn {
   position: relative;
 }
+nav .nav-wrapper_menu-box .nav_menu-cart_btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+}
 nav .nav-wrapper_menu-box .nav_menu-cart_btn .cart-item-count {
   position: absolute;
   padding: 2.5px;

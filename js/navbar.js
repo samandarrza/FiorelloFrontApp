@@ -49,8 +49,9 @@ const homeMenu = document.querySelector('.navMobile_home');
 const icons = document.getElementsByClassName('navMobile_box_menu');
 const homeIcon = document.getElementById('homeIcon');
 const indicator = document.querySelector('.indicator');
+const activeElement = document.querySelector('.active')
 
-indicator.style.left = `${homeIcon.getBoundingClientRect().left - ((indicator.offsetWidth / 2) - (homeIcon.offsetWidth / 2))}px`;
+indicator.style.left = `${activeElement.getBoundingClientRect().left - ((indicator.offsetWidth / 2) - (activeElement.offsetWidth / 2))}px`;
 
 for (const icon of icons) {
     icon.addEventListener('click', () => {
