@@ -47,6 +47,7 @@ input::placeholder {
 }
 
 .navMobile_menu-holder .navMobile_menu_btn, .navMobile_home a, nav .submenu_item a, nav .nav_menu_btn, .simple {
+  cursor: pointer;
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
@@ -133,6 +134,7 @@ input::placeholder {
 }
 
 .navMobile_menu-holder .navMobile_menu_btn, .navMobile_home a, nav .submenu_item a, nav .nav_menu_btn, .simple {
+  cursor: pointer;
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
@@ -292,6 +294,7 @@ input::placeholder {
 }
 
 .navMobile_menu-holder .navMobile_menu_btn, .navMobile_home a, nav .submenu_item a, nav .nav_menu_btn, .simple {
+  cursor: pointer;
   border: none;
   font-weight: 500;
   font-style: 1.3rem;
@@ -565,7 +568,6 @@ input::placeholder {
   width: 100%;
   height: 190px;
   overflow: hidden;
-  background-color: gray;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2173,6 +2175,13 @@ nav .submenu_item a.active::before {
   font-size: 2.2rem;
 }
 
+#error-msg {
+  padding: 40px 0px;
+  text-align: center;
+  font-size: 1.8rem;
+  display: none;
+}
+
 @-webkit-keyframes slideUp {
   from {
     opacity: 0;
@@ -3058,33 +3067,6 @@ nav .submenu_item a.active::before {
 }
 
 @media (max-width: 992px) {
-  .navMobile {
-    display: flex;
-  }
-  body {
-    padding-bottom: 90px;
-  }
-  .menu-holder {
-    display: none !important;
-  }
-  .nav_menu-cart {
-    display: none !important;
-  }
-  .nav-wrapper_menu-box_profile {
-    display: none !important;
-  }
-}
-@media (max-width: 768px) {
-  nav .nav-wrapper {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .nav_menu-search {
-    display: none !important;
-  }
-}
-@media (max-width: 992px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -3108,7 +3090,7 @@ nav .submenu_item a.active::before {
     padding: 0 1rem;
   }
 }
-@media (max-width: 560px) {
+@media (max-width: 568px) {
   .cards {
     grid-template-columns: 1fr 1fr;
   }
@@ -3198,6 +3180,33 @@ nav .submenu_item a.active::before {
   }
   .subscribe-holder .subscribe_orange {
     width: 90px;
+  }
+}
+@media (max-width: 992px) {
+  .navMobile {
+    display: flex;
+  }
+  body {
+    padding-bottom: 70px;
+  }
+  .menu-holder {
+    display: none !important;
+  }
+  .nav_menu-cart {
+    display: none !important;
+  }
+  .nav-wrapper_menu-box_profile {
+    display: none !important;
+  }
+}
+@media (max-width: 768px) {
+  nav .nav-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav_menu-search {
+    display: none !important;
   }
 }
 * {

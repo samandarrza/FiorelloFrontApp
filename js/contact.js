@@ -73,16 +73,12 @@ const send = () => {
 // ===================================================
 const form = document.getElementById('mailForm');
 const sendMailBtn = document.getElementById('sendMailBtn');
-const name_surname = document.getElementById('nameInput');
-const email = document.getElementById('emailInput');
-const phoneNumber = document.getElementById('phoneInput');
-const desc = document.getElementById('descInput');
-
-sendMailBtn.addEventListener('click', (e) => {
+const name_surname = document.getElementById('nameUser');
+const email = document.getElementById('emailUser');
+const phoneNumber = document.getElementById('phoneUser');
+const desc = document.getElementById('descUser');
 
 
-
-});
 
 
 
@@ -116,6 +112,8 @@ sendMailBtn.addEventListener('click', (e) => {
     emailjs.send('service_da4oq1d', 'template_v3hcg84', templateParams)
         .then(function (response) {
             console.log('SUCCESS!', response.status, response.text);
+            toastr.success('Email Sent')
+            
         }, function (error) {
             console.log('FAILED...', error);
         })

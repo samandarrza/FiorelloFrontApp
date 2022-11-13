@@ -217,10 +217,11 @@ registerBtn.addEventListener('click', (e) => {
 
     modal.classList.toggle('show-modal');
     modalContent.classList.toggle('show-modal_content');
+    toastr.success('Signed Up')
 
     setTimeout(() => {
         window.location.reload();
-    }, 0);
+    }, 600);
 
 });
 
@@ -238,9 +239,12 @@ loginBtn.addEventListener('click', () => {
         passwordLogin.animate(inputShake, shakeTiming);
         return;
     }
+
+    toastr.success('Signed In')
+
     setTimeout(() => {
         window.location.reload();
-    }, 0);
+    }, 600);
 });
 
 for (const loginLink of modalLinks) {
