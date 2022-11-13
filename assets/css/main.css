@@ -1171,7 +1171,7 @@ main {
 
 @media only screen and (max-width: 767px) {
   .blog {
-    width: 110%;
+    width: 100%;
   }
   .blog .title {
     font-size: 20px;
@@ -1180,7 +1180,7 @@ main {
     font-size: 15px;
   }
   footer {
-    width: 110%;
+    width: 100%;
   }
   .blog-info {
     padding-left: 2.5rem !important;
