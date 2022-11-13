@@ -1684,7 +1684,7 @@ main {
 
 .update {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   padding: 20px;
 }
 .update input {
@@ -1733,6 +1733,40 @@ main {
   color: #f34f3f;
 }
 
+@media only screen and (max-width: 576px) {
+  .card_content, .card_product {
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr 2fr 2fr 2fr;
+  }
+  .cart_total span {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .card_content h3, .cart_total h3 {
+    font-size: 1rem;
+  }
+  .cart h3 {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 476px) {
+  .card_content, .card_product {
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr 2fr 2fr 2fr;
+  }
+  .cart_total span {
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .card_content h3, .cart_total h3 {
+    font-size: 0.8rem;
+  }
+  .cart h3 {
+    font-size: 0.8rem;
+  }
+}
 nav {
   background-color: white;
   padding: 20px;
@@ -2558,12 +2592,12 @@ nav .submenu_item a.active::before {
   width: 100%;
 }
 .main_subscribe .main_container {
-  width: 60%;
+  width: 40%;
 }
 .main_subscribe .main_container h2 {
   color: white;
   margin-bottom: 3rem;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .main_subscribe .main_container .input_group {
   position: relative;
@@ -2571,8 +2605,10 @@ nav .submenu_item a.active::before {
 }
 .main_subscribe .main_container .input_group input {
   width: 100%;
+  border-radius: 10px;
 }
 .main_subscribe .main_container .input_group button {
+  border-radius: 0 10px 10px 0;
   position: absolute;
   right: 0;
   width: 20%;
@@ -2628,24 +2664,49 @@ nav .submenu_item a.active::before {
   aspect-ratio: 16/9;
 }
 
+.productsIndex {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.productsIndex .index_categories .category {
+  cursor: pointer;
+  display: inline-block;
+  color: #1b1b1b;
+  margin-left: 1rem;
+  font-size: 0.75rem;
+  transition: 0.5s;
+}
+.productsIndex .index_categories .category:hover {
+  color: #f40000;
+}
+
 @media (max-width: 768px) {
   .inframe_video {
     width: 95%;
     aspect-ratio: 9/16;
   }
+}
+@media only screen and (max-width: 992px) {
   .main_container {
-    width: 100%;
-  }
-  .main_container h2 {
-    font-size: 2rem;
+    width: 70% !important;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 768px) {
   .main_container {
-    width: 100%;
+    width: 80% !important;
   }
-  .main_container h2 {
-    font-size: 2rem;
+}
+@media only screen and (max-width: 576px) {
+  .main_container {
+    width: 90% !important;
+  }
+  .productsIndex {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .main_container {
+    width: 100% !important;
   }
 }
 .standartProduct {
@@ -2915,12 +2976,12 @@ nav .submenu_item a.active::before {
   width: 100%;
 }
 .main_subscribe .main_container {
-  width: 60%;
+  width: 40%;
 }
 .main_subscribe .main_container h2 {
   color: white;
   margin-bottom: 3rem;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .main_subscribe .main_container .input_group {
   position: relative;
@@ -2928,8 +2989,10 @@ nav .submenu_item a.active::before {
 }
 .main_subscribe .main_container .input_group input {
   width: 100%;
+  border-radius: 10px;
 }
 .main_subscribe .main_container .input_group button {
+  border-radius: 0 10px 10px 0;
   position: absolute;
   right: 0;
   width: 20%;
@@ -2985,24 +3048,49 @@ nav .submenu_item a.active::before {
   aspect-ratio: 16/9;
 }
 
+.productsIndex {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.productsIndex .index_categories .category {
+  cursor: pointer;
+  display: inline-block;
+  color: #1b1b1b;
+  margin-left: 1rem;
+  font-size: 0.75rem;
+  transition: 0.5s;
+}
+.productsIndex .index_categories .category:hover {
+  color: #f40000;
+}
+
 @media (max-width: 768px) {
   .inframe_video {
     width: 95%;
     aspect-ratio: 9/16;
   }
+}
+@media only screen and (max-width: 992px) {
   .main_container {
-    width: 100%;
-  }
-  .main_container h2 {
-    font-size: 2rem;
+    width: 70% !important;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 768px) {
   .main_container {
-    width: 100%;
+    width: 80% !important;
   }
-  .main_container h2 {
-    font-size: 2rem;
+}
+@media only screen and (max-width: 576px) {
+  .main_container {
+    width: 90% !important;
+  }
+  .productsIndex {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .main_container {
+    width: 100% !important;
   }
 }
 .wrapper {

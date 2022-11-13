@@ -76,7 +76,7 @@
 }
 .update{
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     padding: 20px;
     input{
         width: 200px;
@@ -120,3 +120,43 @@
     color: $primary_orange;
 
 }
+
+@media only screen and (max-width: 576px) {
+    .card_content, .card_product{
+        display: grid;
+        grid-template-columns: 1fr 2fr 4fr 2fr 2fr 2fr;
+    }
+    .cart_total span{
+        margin-right: 0.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .card_content, .cart_total{
+        h3{
+            font-size: 1rem;
+        }
+    }
+    .cart h3{
+        font-size: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 476px) {
+    .card_content, .card_product{
+        display: grid;
+        grid-template-columns: 1fr 2fr 4fr 2fr 2fr 2fr;
+    }
+    .cart_total span{
+        margin-right: 0.5rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+    .card_content, .cart_total{
+        h3{
+            font-size: 0.8rem;
+        }
+    }
+    .cart h3{
+        font-size: 0.8rem;
+    }
+  }
