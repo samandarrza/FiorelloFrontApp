@@ -68,11 +68,30 @@
         height: 20px;
         margin-right: 5px;
         border: none;
-        color: $second_text_color;
-        background-color: $primary_orange;
-        border-radius: 10px;
+        color: $text_color;
+        font-weight: 600;
+        background-color: $bg_primary;
+        border-radius: 5px;
+        &:hover{
+            background-color: $primary_orange; 
+            color: $second_text_color;
+        }
     }
 }
+
+.cart_counter{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    a{
+        color: black;
+    }
+    sup{
+        color: red;
+    }
+}
+
+
 @media screen and (max-width: 976px) {
     .column{
         width: 100%;
