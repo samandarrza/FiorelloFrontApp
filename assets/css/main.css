@@ -2119,16 +2119,14 @@ nav .submenu_item a.active::before {
   top: 40% !important;
 }
 
-#img-heading {
+.portstandart {
   width: 100%;
-  height: 14rem;
-  position: relative;
+  height: 30vh;
+  background-color: #fefaf9;
+  display: flex;
+  align-items: center;
 }
-
-#text-heading {
-  position: absolute;
-  top: 5.2rem;
-  left: 5rem;
+.portstandart #text-heading {
   font-size: 3rem;
   font-weight: 500;
 }
