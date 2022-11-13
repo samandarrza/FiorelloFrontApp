@@ -78,7 +78,7 @@ const homeMenu = document.querySelector('.navMobile_home');
 const icons = document.getElementsByClassName('navMobile_box_menu');
 const homeIcon = document.getElementById('homeIcon');
 const indicator = document.querySelector('.indicator');
-const activeElement = document.querySelector('.active');
+const activeElement = document.querySelector('li.active');
 
 indicator.style.left = `${activeElement.getBoundingClientRect().left - ((indicator.offsetWidth / 2) - (activeElement.offsetWidth / 2))}px`;
 

@@ -73,10 +73,10 @@ const send = () => {
 // ===================================================
 const form = document.getElementById('mailForm');
 const sendMailBtn = document.getElementById('sendMailBtn');
-const name_surname = document.getElementById('nameInput');
-const email = document.getElementById('emailInput');
-const phoneNumber = document.getElementById('phoneInput');
-const desc = document.getElementById('descInput');
+const name_surname = document.getElementById('nameUser');
+const email = document.getElementById('emailUser');
+const phoneNumber = document.getElementById('phoneUser');
+const desc = document.getElementById('descUser');
 
 sendMailBtn.addEventListener('click', (e) => {
 

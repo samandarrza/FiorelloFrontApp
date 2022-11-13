@@ -1,164 +1,541 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/main.css.map">
-    </head>
-<body>
-    <div class = "portstandart">
-        <img src="assets/imgs/rbt-placeholder.jpg" alt="" id="img-heading">
-        <h1 id="text-heading">Portfolio Standard</h1>
-    </div>
-<div class="standard_container">
-    <div class = "categories">
-        <a href="">Show all</a>
-        <a href="">Floristics</a>
-        <a href="">Floristry</a>
-        <a href="">Flowers</a>
-        <a href="">Herbs</a>
-    </div>
-    <div class="items">
-        <div id = "port-item1">
-            <div class = "floristics-flowers">
-                <div class = "port-imgs">
-                    <img src="assets/imgs/shop-category-img-1.jpg" alt="">
-                </div>
-                <div class="port-text">
-                    <p>Flower Power</p>
-                    <a href="">Floristics / <a href="">Flowers</a></a>
-                </div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/main.css.map" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-wrapper">
+          <div class="nav-wrapper_logo">
+            <a href="index.html"
+              ><img src="assets/imgs/h2-logo-1.png" alt=""
+            /></a>
+          </div>
+          <div class="nav-wrapper_menu-box">
+            <div class="container">
+              <ul class="menu-holder">
+                <li class="nav_menu">
+                  <p class="nav_menu_btn active">HOME</p>
+                  <ul class="submenu">
+                    <li class="submenu_item">
+                      <a href="index.html">Main Home</a>
+                    </li>
+                    <li class="submenu_item">
+                      <a href="gridHome.html" class="active">Grid Home</a>
+                    </li>
+                    <li class="submenu_item"><a href="#">Flower Shop</a></li>
+                    <li class="submenu_item">
+                      <a href="showcase.html">Metro Showcase</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- <li class="nav_menu">
+                    <p class="nav_menu_btn">PAGES</p>
+                    <ul class="submenu">
+                      <li class="submenu_item"><a href="#">About Us</a></li>
+                      <li class="submenu_item"><a href="#">FAQ Page</a></li>
+                      <li class="submenu_item"><a href="#">Contact Us</a></li>
+                    </ul>
+                  </li> -->
+                <li class="nav_menu">
+                  <a href="#" class="nav_menu_btn">SHOP</a>
+                </li>
+                <li class="nav_menu">
+                  <a href="standard.html" class="nav_menu_btn">PORTFOLIO</a>
+                </li>
+                <li class="nav_menu">
+                  <a href="blog-standard.html" class="nav_menu_btn">BLOG</a>
+                </li>
+                <li class="nav_menu">
+                  <a href="contactUs.html" class="nav_menu_btn">CONTACT US</a>
+                </li>
+                <!-- <li class="nav_menu">
+                  <p class="nav_menu_btn">ELEMENTS</p>
+                </li> -->
+              </ul>
+              <div class="nav_menu-search">
+                <input
+                  type="search"
+                  placeholder="Search ..."
+                  class="nav_menu-search_input"
+                />
+                <button class="nav_menu-search_btn">
+                  <i class="las la-search"></i>
+                </button>
+              </div>
             </div>
-        </div>
-        <div id = "port-item2">
-            <div class = "floristry-herbs">
-                <div class = "port-imgs">
-                    <img src="assets/imgs/port-img-21.jpg" alt="">
-                </div>
-                <div class="port-text">
-                    <p>Floristry Shops</p>
-                    <a href="">Floristry / <a href="">Herbs</a></a>
-                </div>
-            </div>
-        </div>
-        <div id = "port-item3">
-            <div class = "floristics-flowers">
-                <div class="port-imgs">
-                    <img src="assets/imgs/port-img-31.jpg" alt="">
-                </div>
-                <div class="port-text">
-                    <p>English Garden</p>
-                    <a href="">Floristics / <a href="">Flowers</a></a>
-                </div>
-            </div>
-        </div>
-        <div id = "port-item4">
-            <div class = "floristry-herbs">
-                <div class = "port-imgs" >
-                    <img src="assets/imgs/shop-8-img.jpg" alt="">
-                </div>
-                <div class="port-text">
-                    <p>Floriculture</p>
-                    <a href="">Floristry / <a href="">Herbs</a></a>
-                </div>
-            </div>
-        </div>
-        <div id = "port-item5">
-            <div class = "floristics-flowers">
-                <div class="port-imgs">
-                    <img src="assets/imgs/shop-2-img.jpg" alt="">
-                </div>
-                <div class="port-text">
-                    <p>Meanings</p>
-                    <a href="">Floristics / <a href="">Flowers</a></a>
-                </div>
-            </div>
-        </div>
-        <div id = "port-item6">
-            <div class = "floristry-herbs">
-                <div class="port-imgs">
-                    <img src="assets/imgs/port-img-41.jpg" alt="">
-                </div>
-                <div class="port-text">
-                    <p>Dutch Style</p>
-                    <a href="">Floristry / <a href="">Herbs</a></a>
-                </div>
-            </div>
-        </div>
-        <div id = "port-item7">
-            <div class = "floristry-herbs">
-                <div class="port-imgs">
-                    <img src="assets/imgs/shop-category-img-4.jpg" alt="">
-                </div>
-                <div class="port-text">
-                    <p>Dried Roses</p>
-                    <a href="">Floristry / <a href="">Herbs</a></a>
-                </div>
-            </div>
-        </div>
-        <div id = "port-item8">
-            <div class = "floristry-flowers">
-                <div class="port-imgs">
-                    <img src="assets/imgs/shop-1-img.jpg" alt="">
-                </div>
-                <div class="port-text">
-                    <p>Flower Experts</p>
-                    <a href="">Floristry / <a href="">Flowers</a></a>
-                </div>
-            </div>
-        </div>
-        <div id = "port-item9">
-            <div class = "floristry-herbs">
-                <div class="port-imgs">
-                    <img src="assets/imgs/port-img-51.jpg" alt="">
-                </div>
-                <div class="port-text">
-                    <p>Ikebana</p>
-                    <a href="">Floristry / <a href="">Herbs</a></a>
-                </div>
-            </div>
-        </div>
-        <div id = "port-item10">
-            <div class = "floristics-herbs">
-                <div class="port-imgs">
-                    <img src="assets/imgs/shop-9-img.jpg" alt="">
-                </div>
-                <div class="port-text">
-                    <p>Flower Wreath</p>
-                    <a href="">Floristics / <a href="">Herbs</a></a>
-                </div>
-            </div>
-        </div>
-        <div id = "port-item11">
-            <div class = "floristics-flowers">
-                <div class="port-imgs">
-                    <img src="assets/imgs/shop-4-img.jpg" alt="">
-                </div>
-                <div class="port-text">
-                    <p>Symbolics</p>
-                    <a href="">Floristics / <a href="">Flowers</a></a>
-                </div>
-            </div>
-        </div>
-        <div id = "port-item12">
-            <div class = "floristics-flowers">
-                <div class="port-imgs">
-                    <img src="assets/imgs/port-gallery-img-11.jpg" alt="">
-                </div>
-                <div class="port-text">
-                    <p>Horticulture</p>
-                    <a href="">Floristics/ <a href="">Flowers</a></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    <button id="btn-load">Load More</button>
-</div>
-</body>
-</html>
 
+            <div class="nav_menu-cart">
+              <button class="nav_menu-cart_btn">
+                <a href="cart.html"></a>
+                <i class="las la-shopping-cart"></i>
+                <span class="cart-item-count">0</span>
+              </button>
+            </div>
+
+            <div class="nav-wrapper_menu-box_profile">
+              <button class="profile userProfile d-none">
+                <i class="las la-user-circle profile"></i>
+              </button>
+              <button class="sign-up">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="nav-scroll">
+        <div class="nav-wrapper">
+          <div class="nav-wrapper_logo">
+            <a href="index.html"
+              ><img src="assets/imgs/h2-logo-1.png" alt=""
+            /></a>
+          </div>
+          <div class="nav-wrapper_menu-box">
+            <div class="container">
+              <ul class="menu-holder">
+                <li class="nav_menu">
+                  <p class="nav_menu_btn">HOME</p>
+                  <ul class="submenu">
+                    <li class="submenu_item">
+                      <a href="index.html">Main Home</a>
+                    </li>
+                    <li class="submenu_item">
+                      <a href="gridHome.html">Grid Home</a>
+                    </li>
+                    <li class="submenu_item"><a href="#">Flower Shop</a></li>
+                    <li class="submenu_item">
+                      <a href="showcase.html">Metro Showcase</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- <li class="nav_menu">
+                    <p class="nav_menu_btn">PAGES</p>
+                    <ul class="submenu">
+                      <li class="submenu_item"><a href="#">About Us</a></li>
+                      <li class="submenu_item"><a href="#">FAQ Page</a></li>
+                      <li class="submenu_item"><a href="#">Contact Us</a></li>
+                    </ul>
+                  </li> -->
+                <li class="nav_menu">
+                  <a href="#" class="nav_menu_btn">SHOP</a>
+                </li>
+                <li class="nav_menu">
+                  <a href="standard.html" class="nav_menu_btn">PORTFOLIO</a>
+                </li>
+                <li class="nav_menu">
+                  <a href="blog-standard.html" class="nav_menu_btn">BLOG</a>
+                </li>
+                <li class="nav_menu">
+                  <a href="contactUs.html" class="nav_menu_btn">CONTACT US</a>
+                </li>
+                <!-- <li class="nav_menu">
+                  <p class="nav_menu_btn">ELEMENTS</p>
+                </li> -->
+              </ul>
+              <div class="nav_menu-search">
+                <input
+                  type="search"
+                  placeholder="Search ..."
+                  class="nav_menu-search_input"
+                />
+                <button class="nav_menu-search_btn">
+                  <i class="las la-search"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="nav_menu-cart">
+              <button class="nav_menu-cart_btn">
+                <a href="cart.html"></a>
+                <i class="las la-shopping-cart"></i>
+                <span class="cart-item-count">0</span>
+              </button>
+            </div>
+
+            <div class="nav-wrapper_menu-box_profile">
+              <button class="profile userProfile d-none">
+                <i class="las la-user-circle profile"></i>
+              </button>
+              <button class="sign-up">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="register-modal">
+        <div class="register-modal_content">
+          <div class="login_modal d-none">
+            <div class="register-modal_content_logo">
+              <img src="assets/imgs/h2-logo-1.png" alt="" />
+              <p>Log in to your account</p>
+            </div>
+            <div class="register-modal_content_inputs">
+              <div class="form_holder">
+                <form action="" id="loginForm">
+                  <input id="userLogin" type="email" placeholder="Username" />
+                  <input
+                    id="passwordLogin"
+                    type="password"
+                    placeholder="Password"
+                  />
+                  <button id="loginBtn" type="button" class="submitBtn">
+                    Log In
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="register-modal_content_suggestion">
+              <p>
+                Don't have account? <a class="login-link" href="#">Sign Up</a>
+              </p>
+            </div>
+          </div>
+          <div class="signUp_modal">
+            <div class="register-modal_content_logo">
+              <img src="assets/imgs/h2-logo-1.png" alt="" />
+              <p>Create a new account</p>
+              <div class="profileModal_userPhoto">
+                <img
+                  class="userPhoto"
+                  src="assets/imgs/userPhoto.png"
+                  alt="profile"
+                />
+                <span id="addProfilePic"
+                  ><i class="las la-plus-circle"></i
+                ></span>
+                <input id="addPicHidden" type="file" hidden />
+              </div>
+            </div>
+            <div class="register-modal_content_inputs">
+              <div class="form_holder">
+                <form action="" id="registerForm">
+                  <input id="nameInput" type="text" placeholder="Full name" />
+                  <input id="emailInput" type="email" placeholder="Email" />
+                  <input
+                    id="phoneInput"
+                    type="text"
+                    placeholder="Phone Number"
+                  />
+                  <input id="userInput" type="text" placeholder="Username" />
+                  <input
+                    id="passwordInput"
+                    type="password"
+                    placeholder="Password"
+                  />
+                  <button id="registerBtn" type="button" class="submitBtn">
+                    Sign Up
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="register-modal_content_suggestion">
+              <p>
+                You allready have account?
+                <a class="login-link" href="#">Log In</a>
+              </p>
+            </div>
+          </div>
+          <div class="profileModal d-none">
+            <div class="profileModal_userPhoto">
+              <img
+                class="userPhoto"
+                src="assets/imgs/userPhoto.png"
+                alt="profile"
+              />
+              <p class="userName">Username</p>
+            </div>
+            <div class="profileModal_body">
+              <p class="fullName">Full Name</p>
+              <p class="phoneNumber">Phone Number</p>
+              <p class="email">username@example.com</p>
+            </div>
+            <button class="submitBtn log-out">Log Out</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="navMobile">
+        <div class="navMobile_home">
+          <ul class="navMobile_menu-holder">
+            <li class="navMobile_menu">
+              <span class="navMobile_menu_btn">HOME</span>
+              <ul class="submenu">
+                <li class="submenu_item"><a href="index.html">Main Home</a></li>
+                <li class="submenu_item">
+                  <a href="gridHome.html">Grid Home</a>
+                </li>
+                <li class="submenu_item"><a href="#">Flower Shop</a></li>
+                <li class="submenu_item">
+                  <a href="showcase.html">Metro Showcase</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="navMobile_menu">
+              <a href="standard.html" class="navMobile_menu_btn active">PORTFOLIO</a>
+            </li>
+            <li class="navMobile_menu">
+              <a href="blog-standard.html" class="navMobile_menu_btn">BLOG</a>
+            </li>
+            <li class="navMobile_menu">
+              <a href="contactUs.html" class="navMobile_menu_btn">CONTACT US</a>
+            </li>
+            <!-- <li class="nav_menu">
+              <p class="nav_menu_btn">ELEMENTS</p>
+            </li> -->
+          </ul>
+        </div>
+        <ul class="navMobile_box">
+          <li class="navMobile_box_menu active homeIcon">
+            <a>
+              <span id="homeIcon" class="icon"
+                ><i class="las la-bars"></i
+              ></span>
+              <span class="text">Menu</span>
+            </a>
+          </li>
+          <li class="navMobile_box_menu">
+            <a href="gridHome.html">
+              <span class="icon"><i class="las la-shopping-bag"></i></span>
+              <span class="text">Shop</span>
+            </a>
+          </li>
+          <li class="navMobile_box_menu">
+            <a href="cart.html">
+              <span class="icon"><i class="las la-shopping-cart"></i></span>
+              <span class="text">Cart</span>
+            </a>
+          </li>
+          <li class="navMobile_box_menu">
+            <a class="">
+              <span class="icon profile"
+                ><i class="las la-user-circle profile"></i
+              ></span>
+              <span class="text profile">Profile</span>
+            </a>
+          </li>
+
+          <div class="indicator"></div>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="portstandart">
+        <img src="assets/imgs/rbt-placeholder.jpg" alt="" id="img-heading" />
+        <h1 id="text-heading">Portfolio Standard</h1>
+      </div>
+      <div class="standard_container">
+        <div class="categories">
+          <a href="">Show all</a>
+          <a href="">Floristics</a>
+          <a href="">Floristry</a>
+          <a href="">Flowers</a>
+          <a href="">Herbs</a>
+        </div>
+        <div class="items">
+          <div id="port-item1">
+            <div class="floristics-flowers">
+              <div class="port-imgs">
+                <img src="assets/imgs/shop-category-img-1.jpg" alt="" />
+              </div>
+              <div class="port-text">
+                <p>Flower Power</p>
+                <a href="">Floristics / <a href="">Flowers</a></a>
+              </div>
+            </div>
+          </div>
+          <div id="port-item2">
+            <div class="floristry-herbs">
+              <div class="port-imgs">
+                <img src="assets/imgs/port-img-21.jpg" alt="" />
+              </div>
+              <div class="port-text">
+                <p>Floristry Shops</p>
+                <a href="">Floristry / <a href="">Herbs</a></a>
+              </div>
+            </div>
+          </div>
+          <div id="port-item3">
+            <div class="floristics-flowers">
+              <div class="port-imgs">
+                <img src="assets/imgs/port-img-31.jpg" alt="" />
+              </div>
+              <div class="port-text">
+                <p>English Garden</p>
+                <a href="">Floristics / <a href="">Flowers</a></a>
+              </div>
+            </div>
+          </div>
+          <div id="port-item4">
+            <div class="floristry-herbs">
+              <div class="port-imgs">
+                <img src="assets/imgs/shop-8-img.jpg" alt="" />
+              </div>
+              <div class="port-text">
+                <p>Floriculture</p>
+                <a href="">Floristry / <a href="">Herbs</a></a>
+              </div>
+            </div>
+          </div>
+          <div id="port-item5">
+            <div class="floristics-flowers">
+              <div class="port-imgs">
+                <img src="assets/imgs/shop-2-img.jpg" alt="" />
+              </div>
+              <div class="port-text">
+                <p>Meanings</p>
+                <a href="">Floristics / <a href="">Flowers</a></a>
+              </div>
+            </div>
+          </div>
+          <div id="port-item6">
+            <div class="floristry-herbs">
+              <div class="port-imgs">
+                <img src="assets/imgs/port-img-41.jpg" alt="" />
+              </div>
+              <div class="port-text">
+                <p>Dutch Style</p>
+                <a href="">Floristry / <a href="">Herbs</a></a>
+              </div>
+            </div>
+          </div>
+          <div id="port-item7">
+            <div class="floristry-herbs">
+              <div class="port-imgs">
+                <img src="assets/imgs/shop-category-img-4.jpg" alt="" />
+              </div>
+              <div class="port-text">
+                <p>Dried Roses</p>
+                <a href="">Floristry / <a href="">Herbs</a></a>
+              </div>
+            </div>
+          </div>
+          <div id="port-item8">
+            <div class="floristry-flowers">
+              <div class="port-imgs">
+                <img src="assets/imgs/shop-1-img.jpg" alt="" />
+              </div>
+              <div class="port-text">
+                <p>Flower Experts</p>
+                <a href="">Floristry / <a href="">Flowers</a></a>
+              </div>
+            </div>
+          </div>
+          <div id="port-item9">
+            <div class="floristry-herbs">
+              <div class="port-imgs">
+                <img src="assets/imgs/port-img-51.jpg" alt="" />
+              </div>
+              <div class="port-text">
+                <p>Ikebana</p>
+                <a href="">Floristry / <a href="">Herbs</a></a>
+              </div>
+            </div>
+          </div>
+          <div id="port-item10">
+            <div class="floristics-herbs">
+              <div class="port-imgs">
+                <img src="assets/imgs/shop-9-img.jpg" alt="" />
+              </div>
+              <div class="port-text">
+                <p>Flower Wreath</p>
+                <a href="">Floristics / <a href="">Herbs</a></a>
+              </div>
+            </div>
+          </div>
+          <div id="port-item11">
+            <div class="floristics-flowers">
+              <div class="port-imgs">
+                <img src="assets/imgs/shop-4-img.jpg" alt="" />
+              </div>
+              <div class="port-text">
+                <p>Symbolics</p>
+                <a href="">Floristics / <a href="">Flowers</a></a>
+              </div>
+            </div>
+          </div>
+          <div id="port-item12">
+            <div class="floristics-flowers">
+              <div class="port-imgs">
+                <img src="assets/imgs/port-gallery-img-11.jpg" alt="" />
+              </div>
+              <div class="port-text">
+                <p>Horticulture</p>
+                <a href="">Floristics/ <a href="">Flowers</a></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="btn-load">Load More</button>
+    </main>
+
+    <footer>
+      <div class="footer_container">
+        <div class="footer_items">
+          <ul>
+            <li class="footer_headings"><p>CUSTOMER SERVICE</p></li>
+            <li class="footer_item"><a href="">Help & Contact Us</a></li>
+            <li class="footer_item"><a href="">Returns & Refunds</a></li>
+            <li class="footer_item"><a href="">Online Stores</a></li>
+            <li class="footer_item"><a href="">Terms & Conditions</a></li>
+          </ul>
+          <ul>
+            <li class="footer_headings"><p>COMPANY</p></li>
+            <li class="footer_item"><a href="">About Us</a></li>
+            <li class="footer_item"><a href="">Blog</a></li>
+            <li class="footer_item"><a href="">Order Tracking</a></li>
+            <li class="footer_item"><a href="">FAQ Page</a></li>
+            <li class="footer_item"><a href="">Contact Us</a></li>
+            <li class="footer_item"><a href="">Login</a></li>
+          </ul>
+          <ul>
+            <li class="footer_headings"><p>SOCIAL MEDIA</p></li>
+            <li class="footer_item"><a href="">Twitter</a></li>
+            <li class="footer_item"><a href="">Instagram</a></li>
+            <li class="footer_item"><a href="">Tumblr</a></li>
+            <li class="footer_item"><a href="">Pinterest</a></li>
+          </ul>
+          <ul>
+            <li class="footer_headings"><p>ARCHIVE</p></li>
+            <li class="footer_item"><a href="">Designer Shoes</a></li>
+            <li class="footer_item"><a href="">Gallery</a></li>
+            <li class="footer_item"><a href="">Pricing</a></li>
+            <li class="footer_item"><a href="">Feature Index</a></li>
+            <li class="footer_item"><a href="">Login</a></li>
+            <li class="footer_item"><a href="">Help & Support</a></li>
+          </ul>
+        </div>
+        <hr class="hr" />
+        <div class="footer_lastinfo">
+          <p id="">
+            © 2018 <a href="">Qode Interactive</a>, All Rights Reserved
+          </p>
+          <div class="footer_payingImg">
+            <a href=""
+              ><img
+                src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/footer-bottom-1.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="footer_social_media">
+            <a href="" id="instagram"><p>INSTAGRAM</p></a>
+            <a href="" id="facebook"><p>FACEBOOK</p></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/navbar.js"></script>
+    <script type="module" src="./js/register.js"></script>
+  </body>
+</html>
