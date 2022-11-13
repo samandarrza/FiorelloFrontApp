@@ -32,17 +32,20 @@ for (const link of cardlinks) {
     if (product.count <= 0)
         status = "Sold";
     
-  container.innerHTML += `  <div id="${product.id}" class="cards_card">
-        <div class="cards_card_status ${status}">${status}</div>
-        <a href ="standartProduct.html" target="_blank" class="cards_card_info">
-          <p class="flower-name">${product.name}</p>
-          <p class="flower-price">${product.price}</p>
-          <button class="addCart-btn">Add to cart</button>
-        </a>
-        <img src="${product.url}" width="100%" alt="" />
-        </div>`;
+  container.innerHTML += `<div id="${product.id}" class="cards_card">
+  <div class="cards_card_status ${status}">${status}</div>
+  <a href ="standartProduct.html" target="_blank" class="cards_card_info">
+    <p class="flower-name">${product.name}</p>
+    <p class="flower-price">${product.price}</p>
+    </a>
+    <div>
+    <button class="addCart-btn cart_btn">Add to cart</button>
+    </div>
+  <img src="${product.url}" width="100%" alt="" />
+  </div>`;
   })
 
+  
 
 
 

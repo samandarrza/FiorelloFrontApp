@@ -1,7 +1,8 @@
 document.body.addEventListener('click', (e) => {
     if (e.target.classList.contains('cart_btn')) {
+        let products = JSON.parse(localStorage.getItem('products'))
         let wantedId = e.target.parentElement.parentElement.id;
-        data.forEach(e => {
+        products.forEach(e => {
             if (e.id == wantedId) {
                 let OldCart = JSON.parse(localStorage.getItem('myCart'));
                 let NewCart = OldCart;

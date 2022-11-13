@@ -111,7 +111,7 @@ subscribeOrange.addEventListener('click', (e) => {
     emailjs.send('service_da4oq1d', 'template_v3hcg84', templateParams)
         .then(function (response) {
             console.log('SUCCESS!', response.status, response.text);
-            toastr.success('Email Sent')
+            toastr.success('Email Sent');
         }, function (error) {
             console.log('FAILED...', error);
         })
@@ -160,8 +160,10 @@ const getData = (category) => {
         <a href ="standartProduct.html" target="_blank" class="cards_card_info">
           <p class="flower-name">${product.name}</p>
           <p class="flower-price">${product.price}</p>
-          <button class="addCart-btn">Add to cart</button>
-        </a>
+          </a>
+          <div>
+          <button class="addCart-btn cart_btn">Add to cart</button>
+          </div>
         <img src="${product.url}" width="100%" alt="" />
         </div>`;
             });
@@ -171,17 +173,27 @@ const getData = (category) => {
         .then(() => {
             const cardlinks = document.getElementsByClassName('cards_card_info');
             for (const link of cardlinks) {
-                link.addEventListener('click',()=>{
-                    let productId =link.parentElement.getAttribute('id');
-                    localStorage.setItem('wantedItem',productId);
-                })
+                link.addEventListener('click', () => {
+                    let productId = link.parentElement.getAttribute('id');
+                    localStorage.setItem('wantedItem', productId);
+                });
+            }
+
+            let addToCart_btns = document.getElementsByClassName('addCart-btn');
+
+            for (const btn of addToCart_btns) {
+                btn.addEventListener('click', () => {
+                    //add to cart here 
+                });
             }
         });
 };
 
 getData('ALL');
 
-
+// ====================================================
+// Add to cart btn
+// ====================================================
 
 
 

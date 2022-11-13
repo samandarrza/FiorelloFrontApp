@@ -6,6 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cart</title>
+  <link
+  rel="icon"
+  type="image/x-icon"
+  href="https://pickbazar-react.vercel.app/favicon.ico"
+/>
   <link rel="stylesheet"
     href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
@@ -25,11 +30,11 @@
           <div class="container">
             <ul class="menu-holder">
               <li class="nav_menu">
-                <p class="nav_menu_btn active">HOME</p>
+                <p class="nav_menu_btn ">HOME</p>
                 <ul class="submenu">
                   <li class="submenu_item"><a href="index.html">Main Home</a></li>
-                  <li class="submenu_item "><a href="gridHome.html" class="active">Grid Home</a></li>
-                  <li class="submenu_item"><a href="#">Flower Shop</a></li>
+                  <li class="submenu_item "><a href="gridHome.html" >Grid Home</a></li>
+                  <li class="submenu_item"><a href="flower-shop.html">Flower Shop</a></li>
                   <li class="submenu_item"><a href="showcase.html">Metro Showcase</a></li>
                 </ul>
               </li>
@@ -41,9 +46,7 @@
                       <li class="submenu_item"><a href="#">Contact Us</a></li>
                     </ul>
                   </li> -->
-              <li class="nav_menu">
-                <a href="#" class="nav_menu_btn">SHOP</a>
-              </li>
+             
               <li class="nav_menu">
                 <a href="standard.html" class="nav_menu_btn">PORTFOLIO</a>
               </li>
@@ -93,7 +96,7 @@
                 <ul class="submenu">
                   <li class="submenu_item"><a href="index.html">Main Home</a></li>
                   <li class="submenu_item"><a href="gridHome.html">Grid Home</a></li>
-                  <li class="submenu_item"><a href="#">Flower Shop</a></li>
+                  <li class="submenu_item"><a href="flower-shop.html">Flower Shop</a></li>
                   <li class="submenu_item"><a href="showcase.html">Metro Showcase</a></li>
                 </ul>
               </li>
@@ -105,9 +108,7 @@
                       <li class="submenu_item"><a href="#">Contact Us</a></li>
                     </ul>
                   </li> -->
-              <li class="nav_menu">
-                <a href="#" class="nav_menu_btn">SHOP</a>
-              </li>
+             
               <li class="nav_menu">
                 <a href="standard.html" class="nav_menu_btn">PORTFOLIO</a>
               </li>
@@ -224,7 +225,7 @@
             <ul class="submenu">
               <li class="submenu_item"><a href="index.html">Main Home</a></li>
               <li class="submenu_item"><a href="gridHome.html">Grid Home</a></li>
-              <li class="submenu_item"><a href="#">Flower Shop</a></li>
+              <li class="submenu_item"><a href="flower-shop.html">Flower Shop</a></li>
               <li class="submenu_item"><a href="showcase.html">Metro Showcase</a></li>
             </ul>
           </li>
@@ -245,19 +246,19 @@
         </ul>
       </div>
       <ul class="navMobile_box">
-        <li class="navMobile_box_menu active homeIcon">
+        <li class="navMobile_box_menu  homeIcon">
           <a>
             <span id="homeIcon" class="icon"><i class="las la-bars"></i></span>
             <span class="text">Menu</span>
           </a>
         </li>
         <li class="navMobile_box_menu ">
-          <a href="#">
+          <a href="gridHome.html">
             <span class="icon"><i class="las la-shopping-bag"></i></span>
             <span class="text">Shop</span>
           </a>
         </li>
-        <li class="navMobile_box_menu">
+        <li class="navMobile_box_menu active">
           <a href="cart.html">
             <span class="icon"><i class="las la-shopping-cart"></i></span>
             <span class="text">Cart</span>
@@ -325,9 +326,11 @@
   <script src="js/navbar.js"></script>
   <script type="module" src="./js/register.js"></script>
 
-
-
-
+  <script type="module" src="./js/register.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/cartCount.js"></script>
+  <script src="js/addcart.js"></script>
 </body>
 
 </html>
