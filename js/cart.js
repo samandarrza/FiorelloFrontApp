@@ -22,7 +22,6 @@ if (localStorage.getItem("myCart") != null) {
     cart.addEventListener('click', (e) => {
         if (e.target.classList.contains('close')) {
             let wantedId = e.target.parentElement.id;
-            console.log(wantedId);
             let arr = JSON.parse(localStorage.getItem("myCart"));
             let newArr = arr.filter(product => product.id != wantedId);
             localStorage.setItem('myCart', JSON.stringify(newArr));
@@ -74,7 +73,6 @@ function send() {
         let product = `${item.name} | ${item.price}AZN | ${item.cartCount} ədəd | Məbləğ: ${(item.price * item.cartCount).toFixed(2)}AZN`
         sendPruduct.push(product);
     }) 
-    console.log(sendPruduct);
 }
 send();
 function sendMail() {
@@ -110,7 +108,6 @@ clearCard.addEventListener('click', function clear() {
 
 function totalUpdate() {
     if (localStorage.getItem("myCart") != null) {
-        console.log('calisdi');
         let arr = JSON.parse(localStorage.getItem("myCart"));
         let totalCount = 0;
         arr.map(product => {

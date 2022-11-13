@@ -81,5 +81,5 @@ for (let i = 0; i < 3; i++) {
 
 }
 
-console.log(JSON.stringify(products)); 
+// console.log(JSON.stringify(products)); 
 

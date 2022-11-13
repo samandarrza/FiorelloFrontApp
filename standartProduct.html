@@ -380,8 +380,8 @@
               elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.
             </p>
             <div class="addToCart-container">
-              <input type="number" min="0" max="100" value="1" />
-              <button class="addToCart">ADD TO CART</button>
+              <input id="times" type="number" min="0" max="100" value="1" />
+              <button id="addToCart" class="addToCart">ADD TO CART</button>
             </div>
             <p class="details">
               Categories: <span id="product-categories">Exotic, Various</span>
@@ -445,6 +445,8 @@
     </main>
 
     <footer>
+    <a href="#" class="navigate-top"><i class="las la-arrow-up"></i></a>
+
       <div class="footer_container">
         <div class="footer_items">
           <ul>
@@ -499,7 +501,8 @@
         </div>
       </div>
     </footer>
-
+    
+    <script src="js/cartCount.js"></script>
     <script src="./js/navbar.js"></script>
     <script type="module" src="./js/register.js"></script>
     <script type="module" src="./js/UserFunctions.js"></script>
@@ -507,6 +510,7 @@
     <script type="module" src="./js/productStandart.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <script src="js/navigate.js"></script>
+    
   </body>
 </html>

@@ -230,7 +230,6 @@ registerBtn.addEventListener('click', (e) => {
 loginBtn.addEventListener('click', () => {
     if (!checkLogin())
         return;
-    console.log(usernameLogin.value, passwordLogin.value);
     let isLoggedin = login(usernameLogin.value, passwordLogin.value);
     if (!isLoggedin) {
         insertErrorMsg(usernameLogin, 'Wrong password or username');

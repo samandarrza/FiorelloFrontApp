@@ -12,7 +12,6 @@ function saveProductsData() {
         .then(productData => {
             if(!Object.keys(localStorage).includes('products')){
                 localStorage.setItem('products', JSON.stringify(productData));
-                console.log('calisdi')
             }
         });
 
@@ -39,7 +38,6 @@ function refreshProduct(newProduct){
         return product
     })
 
-    console.log(updatedProducts);
     localStorage.setItem('products',JSON.stringify(updatedProducts))
 
 }
@@ -47,12 +45,10 @@ function refreshProduct(newProduct){
 function addComment(productId, comment) {
     let userId = localStorage.getItem('currentUserId');
     let newComment = new Comment(userId, comment);
-    console.log(newComment);
 
 
     let product =  getProduct(productId);
     product?.reviews.push(newComment);
-    console.log(product);
 
     refreshProduct(product);
     return newComment;
