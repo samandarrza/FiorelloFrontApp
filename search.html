@@ -4,14 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Flower Shop</title>
-    <link
-      rel="stylesheet"
-      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
-    />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/main.css.map" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Search Result</title>
   </head>
   <body>
     <header>
@@ -247,12 +244,12 @@
   
             <ul class="navMobile_menu-holder">
               <li class="navMobile_menu">
-                <span class="navMobile_menu_btn">HOME</span>
+                <span class="navMobile_menu_btn active">HOME</span>
                 <ul class="submenu">
                   <li class="submenu_item"><a href="index.html">Main Home</a></li>
                   <li class="submenu_item"><a href="gridHome.html">Grid Home</a></li>
                   <li class="submenu_item"><a href="#">Flower Shop</a></li>
-                  <li class="submenu_item"><a href="showcase.html">Metro Showcase</a></li>
+                  <li class="submenu_item"><a href="showcase.html" class="active">Metro Showcase</a></li>
                 </ul>
               </li>
            
@@ -279,7 +276,7 @@
               </a>
             </li>
             <li class="navMobile_box_menu ">
-              <a href="#">
+              <a href="gridHome.html">
                 <span class="icon"><i class="las la-shopping-bag"></i></span>
                 <span class="text">Shop</span>
               </a>
@@ -301,188 +298,73 @@
           </ul>
         </div>
       </header>
-    <div class="mainSlider bg">
-      <div class="mainSlider-items">
-        <div class="item active">
-          <img src="assets/imgs/flower-shop/h1-img-1.jpg" />
-          <h3 class="title-info">When you think of flowers think of ours.</h3>
-          <br />
-          <br />
-          <p>from 55$</p>
+    <main class="gridHome searchResult">
+      <p id="error-msg">Product not found !!!</p>
+      <section class="productsSection">
+        <div class="cards gridHome_products"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_container">
+        <div class="footer_items">
+          <ul>
+            <li class="footer_headings"><p>CUSTOMER SERVICE</p></li>
+            <li class="footer_item"><a href="">Help & Contact Us</a></li>
+            <li class="footer_item"><a href="">Returns & Refunds</a></li>
+            <li class="footer_item"><a href="">Online Stores</a></li>
+            <li class="footer_item"><a href="">Terms & Conditions</a></li>
+          </ul>
+          <ul>
+            <li class="footer_headings"><p>COMPANY</p></li>
+            <li class="footer_item"><a href="">About Us</a></li>
+            <li class="footer_item"><a href="">Blog</a></li>
+            <li class="footer_item"><a href="">Order Tracking</a></li>
+            <li class="footer_item"><a href="">FAQ Page</a></li>
+            <li class="footer_item"><a href="">Contact Us</a></li>
+            <li class="footer_item"><a href="">Login</a></li>
+          </ul>
+          <ul>
+            <li class="footer_headings"><p>SOCIAL MEDIA</p></li>
+            <li class="footer_item"><a href="">Twitter</a></li>
+            <li class="footer_item"><a href="">Instagram</a></li>
+            <li class="footer_item"><a href="">Tumblr</a></li>
+            <li class="footer_item"><a href="">Pinterest</a></li>
+          </ul>
+          <ul>
+            <li class="footer_headings"><p>ARCHIVE</p></li>
+            <li class="footer_item"><a href="">Designer Shoes</a></li>
+            <li class="footer_item"><a href="">Gallery</a></li>
+            <li class="footer_item"><a href="">Pricing</a></li>
+            <li class="footer_item"><a href="">Feature Index</a></li>
+            <li class="footer_item"><a href="">Login</a></li>
+            <li class="footer_item"><a href="">Help & Support</a></li>
+          </ul>
         </div>
-        <div class="item">
-          <img src="assets/imgs/flower-shop/h1-img-2.jpg" />
-          <h3 class="title-info">When you think of flowers think of ours.</h3>
-          <br />
-          <br />
-          <p>from 55$</p>
-        </div>
-      </div>
-    </div>
-    <main>
-      <div class="d-grid">
-        <div class="img-size">
-          <img class="img-1" src="/assets/imgs/flower-shop/h1-img-1.jpg" />
-          <h3 class="title">-30% Sale</h3>
-          <p class="subtitle">WEDDING BOUQUETS</p>
-        </div>
-        <div class="img-size">
-          <img src="/assets/imgs/flower-shop/h1-img-2.jpg" />
-          <i class="las la-heart i-1">
-            <p class="i-text">Best way to say you care.</p>
-          </i>
-          <i class="las la-heart i-2">
-            <p class="i-text">Unique arrangements.</p></i
-          >
-          <i class="las la-heart i-3">
-            <p class="i-text">Hand picked just for you.</p></i
-          >
-        </div>
-      </div>
-      <div class="content">
-        <div class="img">
-          <img src="/assets/imgs/flower-shop/h1-img-3.png" />
-        </div>
-        <div class="text">
-          <div class="size">
-            <p>
-              “Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean masa. ”
-            </p>
+        <hr class="hr" />
+        <div class="footer_lastinfo">
+          <p id="">
+            © 2018 <a href="">Qode Interactive</a>, All Rights Reserved
+          </p>
+          <div class="footer_payingImg">
+            <a href=""
+              ><img
+                src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/footer-bottom-1.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="footer_social_media">
+            <a href="" id="instagram"><p>INSTAGRAM</p></a>
+            <a href="" id="facebook"><p>FACEBOOK</p></a>
           </div>
         </div>
       </div>
-      <div class="shop-1">
-        <div>
-            <img src="/assets/imgs/flower-shop/shop-1-img.jpg" alt="SCHEFFLERA" />
-            <div class="text-1">
-                <p>SCHEFFLERA</p>
-                <small class="small-text-1">$259</small>
-            </div>
-        </div>
-        <div>
-            <img
-              src="/assets/imgs/flower-shop/shop-2-img.jpg"
-              alt="ORANGE AMARYLLIS"
-            />
-            <div class="text-2">
-                <p>ORANGE AMARYLLIS</p>
-                <small class="small-text-2">$259</small>
-            </div>
-        </div>
-        <div>
-            <img
-              src="/assets/imgs/flower-shop/shop-3-img.jpg"
-              alt="CACTUS IN ORANGE"
-            />
-            <div class="text-3">
-                <p>CACTUS IN ORANGE</p>
-                <small class="small-text-3">$259</small>
-            </div>
-        </div>
-        <div>
-            <img src="/assets/imgs/flower-shop/shop-7-img.jpg" alt="WILD ROSES" />
-            <div class="text-4">
-                <p>WILD ROSES</p>
-                <small class="small-text-4">$259</small>
-            </div>
-        </div>
-      </div>
-      <div class="shop-1">
-        <div>
-            <img
-              src="/assets/imgs/flower-shop/shop-4-img.jpg"
-              alt="PINK FLOWER TREE
-            "
-            />
-            <div class="text-5">
-                <p>PINK FLOWER TREE</p>
-                <small class="small-text-5">$180-350</small>
-            </div>
-        </div>
-        <div>
-            <img
-              src="/assets/imgs/flower-shop/shop-5-img.jpg"
-              alt="WILD CACTUS"
-            />
-            <div class="text-6">
-                <p>WILD CACTUS</p>
-                <small class="small-text-6">$159</small>
-            </div>
-        </div>
-        <div>
-            <img
-              src="/assets/imgs/flower-shop/shop-6-img.jpg"
-              alt="COLORFUL TULIPS"
-            />
-            <div class="text-7">
-                <p>COLORFUL TULIPS</p>
-                <small class="small-text-7">$350</small>
-            </div>
-        </div>
-        <div>
-            <img src="/assets/imgs/flower-shop/shop-8-img.jpg" alt="SUMMER SAVORY" />
-            <div class="text-8">
-                <p>SUMMER SAVORY</p>
-                <small class="small-text-8">$259</small>
-            </div>
-        </div>
-      </div>
-    </main>
-    <footer>
-        <div class = "footer_container">
-        <div class = "footer_items">
-            <ul>
-                <li class = "footer_headings"><p>CUSTOMER SERVICE</p></li>
-                <li class = "footer_item"><a href="">Help & Contact Us</a></li>
-                <li class = "footer_item"><a href="">Returns & Refunds</a></li>
-                <li class = "footer_item"><a href="">Online Stores</a></li>
-                <li class = "footer_item"><a href="">Terms & Conditions</a></li>
-            </ul>
-            <ul>
-            <li class = "footer_headings"><p>COMPANY</p></li>
-            <li class = "footer_item"><a href="">About Us</a></li>
-            <li class = "footer_item"><a href="">Blog</a></li>
-            <li class = "footer_item"><a href="">Order Tracking</a></li>
-            <li class = "footer_item"><a href="">FAQ Page</a></li>
-            <li class = "footer_item"><a href="">Contact Us</a></li>
-            <li class = "footer_item"><a href="">Login</a></li>
-        </ul>
-        <ul>
-            <li class = "footer_headings"><p>SOCIAL MEDIA</p></li>
-            <li class = "footer_item"><a href="">Twitter</a></li>
-            <li class = "footer_item"><a href="">Instagram</a></li>
-            <li class = "footer_item"><a href="">Tumblr</a></li>
-            <li class = "footer_item"><a href="">Pinterest</a></li>
-        </ul>
-        <ul>
-            <li class = "footer_headings"><p>ARCHIVE</p></li>
-            <li class = "footer_item"><a href="">Designer Shoes</a></li>
-            <li class = "footer_item"><a href="">Gallery</a></li>
-            <li class = "footer_item"><a href="">Pricing</a></li>
-            <li class = "footer_item"><a href="">Feature Index</a></li>
-            <li class = "footer_item"><a href="">Login</a></li>
-            <li class = "footer_item"><a href="">Help & Support</a></li>
-        </ul>
-        </div>
-        <hr class = "hr">
-        <div class = "footer_lastinfo">
-            <p id="">© 2018 <a href="">Qode Interactive</a>, All Rights Reserved</p>
-         <div class="footer_payingImg">
-             <a href=""><img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/footer-bottom-1.png" alt=""></a>
-         </div>
-         <div class = "footer_social_media">
-         <a href="" id="instagram"><p>INSTAGRAM</p></a>
-         <a href="" id="facebook"><p>FACEBOOK</p></a>
-        </div>
-        </div>
-    </div>
-  </div>
-</footer>
-    <script src="/js/main_slider.js"></script>
+    </footer>
+
     <script src="./js/navbar.js"></script>
     <script type="module" src="./js/register.js"></script>
+    <script src="js/search.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   </body>
 </html>

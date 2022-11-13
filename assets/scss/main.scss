@@ -21,15 +21,20 @@
 @import "partials/mainslider";
 @import "partials/videobutton";
 @import "partials/team";
+@import "partials/index"; 
+@import "partials/productStandart";
 @import "partials/index";
 @import "partials/tab";
+@import "partials/contactUs";
+  
+
+
 @import "partials/flower-shop";
 // =====================================
 // RESPONSIVE SCSS
 // =====================================
 @import 'partials/navMobile';
-@import 'partials/responsive/navbar-responsive';
-@import 'partials/responsive/shoplist_responsive';
+@import 'partials/responsive/responsive';
 
 * {
   margin: 0;
@@ -44,4 +49,10 @@ body {
 }
 button {
   cursor: pointer;
+}
+
+
+::selection {
+  background: #f34f3f;
+  color: #fff;
 }

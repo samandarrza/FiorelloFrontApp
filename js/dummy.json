@@ -1,922 +1,581 @@
 [
     {
-        "id": "4240ac14",
+        "id": "4240918a",
+        "category": [
+            "POULAR",
+            "WINTER"
+        ],
+        "name": "MAJESTY PALM",
+        "price": 23.9,
+        "count": 90,
+        "url": "./assets/imgs/shop-1-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "42403bdd",
         "category": [
             "POULAR"
         ],
-        "name": "Rose",
-        "price": 12.4,
-        "count": 15,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
+        "name": "SCARLET SAGE ",
+        "price": 15.9,
+        "count": 70,
+        "url": "./assets/imgs/shop-2-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
     },
     {
-        "id": "4240111c",
+        "id": "42407b05",
         "category": [
             "CACTUSES",
-            "WINTER"
+            "VARIOUS"
         ],
-        "name": "SWEET ",
-        "price": 5.69,
-        "count": 1,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
+        "name": "CACTUS IN ORANGE",
+        "price": 24.9,
+        "count": 80,
+        "url": "./assets/imgs/shop-3-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
     },
     {
-        "id": "4240f1b9",
+        "id": "4240986e",
         "category": [
-            "EXOTIC"
+            "GREENS",
+            "VARIOUS"
         ],
-        "name": "FOXGLOVE",
-        "price": 75.55,
-        "count": 16,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
+        "name": "PINK FLOWER TREE",
+        "price": 18.2,
+        "count": 85,
+        "url": "./assets/imgs/shop-4-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
     },
     {
-        "id": "4240dcb5",
+        "id": "42408551",
+        "category": [
+            "CACTUSES",
+            "VARIOUS"
+        ],
+        "name": "WILD CACTUS",
+        "price": 23.9,
+        "count": 90,
+        "url": "./assets/imgs/shop-5-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "42406935",
+        "category": [
+            "CACTUSES",
+            "VARIOUS"
+        ],
+        "name": "ROCK SOAPWORT",
+        "price": 25.9,
+        "count": 80,
+        "url": "./assets/imgs/shop-9-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "4240f478",
+        "category": [
+            "EXOTIC",
+            "VARIOUS"
+        ],
+        "name": "WILD ROSES",
+        "price": 24.9,
+        "count": 75,
+        "url": "./assets/imgs/shop-7-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "4240e3c5",
         "category": [
             "GREENS",
             "VARIOUS"
         ],
         "name": "SUMMER SAVORY",
-        "price": 485.55,
-        "count": 100,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
+        "price": 23.9,
+        "count": 70,
+        "url": "./assets/imgs/shop-8-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
     },
     {
-        "id": "42408634",
+        "id": "42406b66",
+        "category": [
+            "EXOTIC",
+            "VARIOUS"
+        ],
+        "name": "ORANGE AMARYLLIS",
+        "price": 24.9,
+        "count": 90,
+        "url": "./assets/imgs/shop-12-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "42408be2",
+        "category": [
+            "POULAR",
+            "WINTER"
+        ],
+        "name": "SWEET ALYSSUM",
+        "price": 23.9,
+        "count": 85,
+        "url": "./assets/imgs/shop-10-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "42405de0",
         "category": [
             "POULAR"
         ],
-        "name": "Rose",
-        "price": 12.4,
-        "count": 15,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
+        "name": "SPRING SNOWFLAKE",
+        "price": 17.2,
+        "count": 75,
+        "url": "./assets/imgs/shop-11-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
     },
     {
-        "id": "4240ff18",
+        "id": "42408954",
         "category": [
-            "CACTUSES",
+            "GREENS"
+        ],
+        "name": "SCHEFFLERA",
+        "price": 26.9,
+        "count": 75,
+        "url": "./assets/imgs/shop-14-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "4240946f",
+        "category": [
+            "POULAR",
             "WINTER"
         ],
-        "name": "SWEET ",
-        "price": 5.69,
-        "count": 1,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
+        "name": "FOXGLOVE FLOWER",
+        "price": 25.9,
+        "count": 95,
+        "url": "./assets/imgs/shop-13-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
     },
     {
-        "id": "4240aa47",
+        "id": "42405b3e",
         "category": [
-            "EXOTIC"
+            "EXOTIC",
+            "VARIOUS"
         ],
-        "name": "FOXGLOVE",
-        "price": 75.55,
-        "count": 16,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
+        "name": "COLORFUL TULIPS",
+        "price": 25.9,
+        "count": 95,
+        "url": "./assets/imgs/shop-6-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
     },
     {
-        "id": "4240cbe7",
+        "id": "4240119b",
+        "category": [
+            "POULAR",
+            "WINTER"
+        ],
+        "name": "MAJESTY PALM",
+        "price": 23.9,
+        "count": 90,
+        "url": "./assets/imgs/shop-1-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "42404844",
+        "category": [
+            "POULAR"
+        ],
+        "name": "SCARLET SAGE ",
+        "price": 15.9,
+        "count": 70,
+        "url": "./assets/imgs/shop-2-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "424037b4",
+        "category": [
+            "CACTUSES",
+            "VARIOUS"
+        ],
+        "name": "CACTUS IN ORANGE",
+        "price": 24.9,
+        "count": 80,
+        "url": "./assets/imgs/shop-3-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "4240c94a",
+        "category": [
+            "GREENS",
+            "VARIOUS"
+        ],
+        "name": "PINK FLOWER TREE",
+        "price": 18.2,
+        "count": 85,
+        "url": "./assets/imgs/shop-4-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "42406a38",
+        "category": [
+            "CACTUSES",
+            "VARIOUS"
+        ],
+        "name": "WILD CACTUS",
+        "price": 23.9,
+        "count": 90,
+        "url": "./assets/imgs/shop-5-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "42400105",
+        "category": [
+            "CACTUSES",
+            "VARIOUS"
+        ],
+        "name": "ROCK SOAPWORT",
+        "price": 25.9,
+        "count": 80,
+        "url": "./assets/imgs/shop-9-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "42408c4f",
+        "category": [
+            "EXOTIC",
+            "VARIOUS"
+        ],
+        "name": "WILD ROSES",
+        "price": 24.9,
+        "count": 75,
+        "url": "./assets/imgs/shop-7-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "4240574f",
         "category": [
             "GREENS",
             "VARIOUS"
         ],
         "name": "SUMMER SAVORY",
-        "price": 485.55,
-        "count": 100,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
+        "price": 23.9,
+        "count": 70,
+        "url": "./assets/imgs/shop-8-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
     },
     {
-        "id": "424085a5",
+        "id": "4240120b",
+        "category": [
+            "EXOTIC",
+            "VARIOUS"
+        ],
+        "name": "ORANGE AMARYLLIS",
+        "price": 24.9,
+        "count": 90,
+        "url": "./assets/imgs/shop-12-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "424045e9",
+        "category": [
+            "POULAR",
+            "WINTER"
+        ],
+        "name": "SWEET ALYSSUM",
+        "price": 23.9,
+        "count": 85,
+        "url": "./assets/imgs/shop-10-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "4240f95f",
         "category": [
             "POULAR"
         ],
-        "name": "Rose",
-        "price": 12.4,
-        "count": 15,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
+        "name": "SPRING SNOWFLAKE",
+        "price": 17.2,
+        "count": 75,
+        "url": "./assets/imgs/shop-11-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
     },
     {
-        "id": "4240f47f",
+        "id": "42408fc0",
         "category": [
-            "CACTUSES",
+            "GREENS"
+        ],
+        "name": "SCHEFFLERA",
+        "price": 26.9,
+        "count": 75,
+        "url": "./assets/imgs/shop-14-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "42403166",
+        "category": [
+            "POULAR",
             "WINTER"
         ],
-        "name": "SWEET ",
-        "price": 5.69,
-        "count": 1,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
+        "name": "FOXGLOVE FLOWER",
+        "price": 25.9,
+        "count": 95,
+        "url": "./assets/imgs/shop-13-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
     },
     {
-        "id": "42400706",
+        "id": "42402c42",
         "category": [
-            "EXOTIC"
+            "EXOTIC",
+            "VARIOUS"
         ],
-        "name": "FOXGLOVE",
-        "price": 75.55,
-        "count": 16,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
+        "name": "COLORFUL TULIPS",
+        "price": 25.9,
+        "count": 95,
+        "url": "./assets/imgs/shop-6-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
     },
     {
-        "id": "4240bad3",
+        "id": "42407b65",
+        "category": [
+            "POULAR",
+            "WINTER"
+        ],
+        "name": "MAJESTY PALM",
+        "price": 23.9,
+        "count": 90,
+        "url": "./assets/imgs/shop-1-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "424074b1",
+        "category": [
+            "POULAR"
+        ],
+        "name": "SCARLET SAGE ",
+        "price": 15.9,
+        "count": 70,
+        "url": "./assets/imgs/shop-2-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "4240c8b3",
+        "category": [
+            "CACTUSES",
+            "VARIOUS"
+        ],
+        "name": "CACTUS IN ORANGE",
+        "price": 24.9,
+        "count": 80,
+        "url": "./assets/imgs/shop-3-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "424088e3",
+        "category": [
+            "GREENS",
+            "VARIOUS"
+        ],
+        "name": "PINK FLOWER TREE",
+        "price": 18.2,
+        "count": 85,
+        "url": "./assets/imgs/shop-4-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "4240251b",
+        "category": [
+            "CACTUSES",
+            "VARIOUS"
+        ],
+        "name": "WILD CACTUS",
+        "price": 23.9,
+        "count": 90,
+        "url": "./assets/imgs/shop-5-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "42403187",
+        "category": [
+            "CACTUSES",
+            "VARIOUS"
+        ],
+        "name": "ROCK SOAPWORT",
+        "price": 25.9,
+        "count": 80,
+        "url": "./assets/imgs/shop-9-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "4240bb51",
+        "category": [
+            "EXOTIC",
+            "VARIOUS"
+        ],
+        "name": "WILD ROSES",
+        "price": 24.9,
+        "count": 75,
+        "url": "./assets/imgs/shop-7-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "42407921",
         "category": [
             "GREENS",
             "VARIOUS"
         ],
         "name": "SUMMER SAVORY",
-        "price": 485.55,
-        "count": 100,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
+        "price": 23.9,
+        "count": 70,
+        "url": "./assets/imgs/shop-8-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
     },
     {
-        "id": "4240262e",
+        "id": "4240875d",
+        "category": [
+            "EXOTIC",
+            "VARIOUS"
+        ],
+        "name": "ORANGE AMARYLLIS",
+        "price": 24.9,
+        "count": 90,
+        "url": "./assets/imgs/shop-12-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "4240a261",
+        "category": [
+            "POULAR",
+            "WINTER"
+        ],
+        "name": "SWEET ALYSSUM",
+        "price": 23.9,
+        "count": 85,
+        "url": "./assets/imgs/shop-10-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "4240311b",
         "category": [
             "POULAR"
         ],
-        "name": "Rose",
-        "price": 12.4,
-        "count": 15,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
+        "name": "SPRING SNOWFLAKE",
+        "price": 17.2,
+        "count": 75,
+        "url": "./assets/imgs/shop-11-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
     },
     {
-        "id": "42406495",
+        "id": "42403ccd",
         "category": [
-            "CACTUSES",
+            "GREENS"
+        ],
+        "name": "SCHEFFLERA",
+        "price": 26.9,
+        "count": 75,
+        "url": "./assets/imgs/shop-14-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
+    },
+    {
+        "id": "4240370f",
+        "category": [
+            "POULAR",
             "WINTER"
         ],
-        "name": "SWEET ",
-        "price": 5.69,
-        "count": 1,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
+        "name": "FOXGLOVE FLOWER",
+        "price": 25.9,
+        "count": 95,
+        "url": "./assets/imgs/shop-13-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
     },
     {
-        "id": "424057a2",
+        "id": "4240e63d",
         "category": [
-            "EXOTIC"
-        ],
-        "name": "FOXGLOVE",
-        "price": 75.55,
-        "count": 16,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240c983",
-        "category": [
-            "GREENS",
+            "EXOTIC",
             "VARIOUS"
         ],
-        "name": "SUMMER SAVORY",
-        "price": 485.55,
-        "count": 100,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240cd20",
-        "category": [
-            "POULAR"
-        ],
-        "name": "Rose",
-        "price": 12.4,
-        "count": 15,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "424056cf",
-        "category": [
-            "CACTUSES",
-            "WINTER"
-        ],
-        "name": "SWEET ",
-        "price": 5.69,
-        "count": 1,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "424036e5",
-        "category": [
-            "EXOTIC"
-        ],
-        "name": "FOXGLOVE",
-        "price": 75.55,
-        "count": 16,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240378a",
-        "category": [
-            "GREENS",
-            "VARIOUS"
-        ],
-        "name": "SUMMER SAVORY",
-        "price": 485.55,
-        "count": 100,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42407103",
-        "category": [
-            "POULAR"
-        ],
-        "name": "Rose",
-        "price": 12.4,
-        "count": 15,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42409b66",
-        "category": [
-            "CACTUSES",
-            "WINTER"
-        ],
-        "name": "SWEET ",
-        "price": 5.69,
-        "count": 1,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42403929",
-        "category": [
-            "EXOTIC"
-        ],
-        "name": "FOXGLOVE",
-        "price": 75.55,
-        "count": 16,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240b66d",
-        "category": [
-            "GREENS",
-            "VARIOUS"
-        ],
-        "name": "SUMMER SAVORY",
-        "price": 485.55,
-        "count": 100,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240b5b8",
-        "category": [
-            "POULAR"
-        ],
-        "name": "Rose",
-        "price": 12.4,
-        "count": 15,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42403ca1",
-        "category": [
-            "CACTUSES",
-            "WINTER"
-        ],
-        "name": "SWEET ",
-        "price": 5.69,
-        "count": 1,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240d73b",
-        "category": [
-            "EXOTIC"
-        ],
-        "name": "FOXGLOVE",
-        "price": 75.55,
-        "count": 16,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "424094dc",
-        "category": [
-            "GREENS",
-            "VARIOUS"
-        ],
-        "name": "SUMMER SAVORY",
-        "price": 485.55,
-        "count": 100,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240176c",
-        "category": [
-            "POULAR"
-        ],
-        "name": "Rose",
-        "price": 12.4,
-        "count": 15,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42405b2d",
-        "category": [
-            "CACTUSES",
-            "WINTER"
-        ],
-        "name": "SWEET ",
-        "price": 5.69,
-        "count": 1,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42400759",
-        "category": [
-            "EXOTIC"
-        ],
-        "name": "FOXGLOVE",
-        "price": 75.55,
-        "count": 16,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240aa3b",
-        "category": [
-            "GREENS",
-            "VARIOUS"
-        ],
-        "name": "SUMMER SAVORY",
-        "price": 485.55,
-        "count": 100,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240ed41",
-        "category": [
-            "POULAR"
-        ],
-        "name": "Rose",
-        "price": 12.4,
-        "count": 15,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42400c03",
-        "category": [
-            "CACTUSES",
-            "WINTER"
-        ],
-        "name": "SWEET ",
-        "price": 5.69,
-        "count": 1,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42406911",
-        "category": [
-            "EXOTIC"
-        ],
-        "name": "FOXGLOVE",
-        "price": 75.55,
-        "count": 16,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "424057b4",
-        "category": [
-            "GREENS",
-            "VARIOUS"
-        ],
-        "name": "SUMMER SAVORY",
-        "price": 485.55,
-        "count": 100,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240d9b5",
-        "category": [
-            "POULAR"
-        ],
-        "name": "Rose",
-        "price": 12.4,
-        "count": 15,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240628c",
-        "category": [
-            "CACTUSES",
-            "WINTER"
-        ],
-        "name": "SWEET ",
-        "price": 5.69,
-        "count": 1,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "424014d6",
-        "category": [
-            "EXOTIC"
-        ],
-        "name": "FOXGLOVE",
-        "price": 75.55,
-        "count": 16,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240ad37",
-        "category": [
-            "GREENS",
-            "VARIOUS"
-        ],
-        "name": "SUMMER SAVORY",
-        "price": 485.55,
-        "count": 100,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "424001f6",
-        "category": [
-            "POULAR"
-        ],
-        "name": "Rose",
-        "price": 12.4,
-        "count": 15,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240896e",
-        "category": [
-            "CACTUSES",
-            "WINTER"
-        ],
-        "name": "SWEET ",
-        "price": 5.69,
-        "count": 1,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42403c32",
-        "category": [
-            "EXOTIC"
-        ],
-        "name": "FOXGLOVE",
-        "price": 75.55,
-        "count": 16,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42406ec6",
-        "category": [
-            "GREENS",
-            "VARIOUS"
-        ],
-        "name": "SUMMER SAVORY",
-        "price": 485.55,
-        "count": 100,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240810b",
-        "category": [
-            "POULAR"
-        ],
-        "name": "Rose",
-        "price": 12.4,
-        "count": 15,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240a940",
-        "category": [
-            "CACTUSES",
-            "WINTER"
-        ],
-        "name": "SWEET ",
-        "price": 5.69,
-        "count": 1,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42403fac",
-        "category": [
-            "EXOTIC"
-        ],
-        "name": "FOXGLOVE",
-        "price": 75.55,
-        "count": 16,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42401492",
-        "category": [
-            "GREENS",
-            "VARIOUS"
-        ],
-        "name": "SUMMER SAVORY",
-        "price": 485.55,
-        "count": 100,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "424083fa",
-        "category": [
-            "POULAR"
-        ],
-        "name": "Rose",
-        "price": 12.4,
-        "count": 15,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42406f64",
-        "category": [
-            "CACTUSES",
-            "WINTER"
-        ],
-        "name": "SWEET ",
-        "price": 5.69,
-        "count": 1,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "424041c9",
-        "category": [
-            "EXOTIC"
-        ],
-        "name": "FOXGLOVE",
-        "price": 75.55,
-        "count": 16,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240e00f",
-        "category": [
-            "GREENS",
-            "VARIOUS"
-        ],
-        "name": "SUMMER SAVORY",
-        "price": 485.55,
-        "count": 100,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240a539",
-        "category": [
-            "POULAR"
-        ],
-        "name": "Rose",
-        "price": 12.4,
-        "count": 15,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240d2ee",
-        "category": [
-            "CACTUSES",
-            "WINTER"
-        ],
-        "name": "SWEET ",
-        "price": 5.69,
-        "count": 1,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240146d",
-        "category": [
-            "EXOTIC"
-        ],
-        "name": "FOXGLOVE",
-        "price": 75.55,
-        "count": 16,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "424021a5",
-        "category": [
-            "GREENS",
-            "VARIOUS"
-        ],
-        "name": "SUMMER SAVORY",
-        "price": 485.55,
-        "count": 100,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "424031dc",
-        "category": [
-            "POULAR"
-        ],
-        "name": "Rose",
-        "price": 12.4,
-        "count": 15,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240503c",
-        "category": [
-            "CACTUSES",
-            "WINTER"
-        ],
-        "name": "SWEET ",
-        "price": 5.69,
-        "count": 1,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42400100",
-        "category": [
-            "EXOTIC"
-        ],
-        "name": "FOXGLOVE",
-        "price": 75.55,
-        "count": 16,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "424092fb",
-        "category": [
-            "GREENS",
-            "VARIOUS"
-        ],
-        "name": "SUMMER SAVORY",
-        "price": 485.55,
-        "count": 100,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240360e",
-        "category": [
-            "POULAR"
-        ],
-        "name": "Rose",
-        "price": 12.4,
-        "count": 15,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42408599",
-        "category": [
-            "CACTUSES",
-            "WINTER"
-        ],
-        "name": "SWEET ",
-        "price": 5.69,
-        "count": 1,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240c074",
-        "category": [
-            "EXOTIC"
-        ],
-        "name": "FOXGLOVE",
-        "price": 75.55,
-        "count": 16,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42409eca",
-        "category": [
-            "GREENS",
-            "VARIOUS"
-        ],
-        "name": "SUMMER SAVORY",
-        "price": 485.55,
-        "count": 100,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "424044c2",
-        "category": [
-            "POULAR"
-        ],
-        "name": "Rose",
-        "price": 12.4,
-        "count": 15,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42408c35",
-        "category": [
-            "CACTUSES",
-            "WINTER"
-        ],
-        "name": "SWEET ",
-        "price": 5.69,
-        "count": 1,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42403122",
-        "category": [
-            "EXOTIC"
-        ],
-        "name": "FOXGLOVE",
-        "price": 75.55,
-        "count": 16,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42400778",
-        "category": [
-            "GREENS",
-            "VARIOUS"
-        ],
-        "name": "SUMMER SAVORY",
-        "price": 485.55,
-        "count": 100,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42402f35",
-        "category": [
-            "POULAR"
-        ],
-        "name": "Rose",
-        "price": 12.4,
-        "count": 15,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240a7ea",
-        "category": [
-            "CACTUSES",
-            "WINTER"
-        ],
-        "name": "SWEET ",
-        "price": 5.69,
-        "count": 1,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "424080d3",
-        "category": [
-            "EXOTIC"
-        ],
-        "name": "FOXGLOVE",
-        "price": 75.55,
-        "count": 16,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240e407",
-        "category": [
-            "GREENS",
-            "VARIOUS"
-        ],
-        "name": "SUMMER SAVORY",
-        "price": 485.55,
-        "count": 100,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240b37c",
-        "category": [
-            "POULAR"
-        ],
-        "name": "Rose",
-        "price": 12.4,
-        "count": 15,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42405171",
-        "category": [
-            "CACTUSES",
-            "WINTER"
-        ],
-        "name": "SWEET ",
-        "price": 5.69,
-        "count": 1,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42400a31",
-        "category": [
-            "EXOTIC"
-        ],
-        "name": "FOXGLOVE",
-        "price": 75.55,
-        "count": 16,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42404ed6",
-        "category": [
-            "GREENS",
-            "VARIOUS"
-        ],
-        "name": "SUMMER SAVORY",
-        "price": 485.55,
-        "count": 100,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42409f94",
-        "category": [
-            "POULAR"
-        ],
-        "name": "Rose",
-        "price": 12.4,
-        "count": 15,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240d9d3",
-        "category": [
-            "CACTUSES",
-            "WINTER"
-        ],
-        "name": "SWEET ",
-        "price": 5.69,
-        "count": 1,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "4240cd77",
-        "category": [
-            "EXOTIC"
-        ],
-        "name": "FOXGLOVE",
-        "price": 75.55,
-        "count": 16,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
-    },
-    {
-        "id": "42402cac",
-        "category": [
-            "GREENS",
-            "VARIOUS"
-        ],
-        "name": "SUMMER SAVORY",
-        "price": 485.55,
-        "count": 100,
-        "url": "https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg",
-        "desc": "ntium laboriosam? Iure quibusdam perspiciatis tempora culpa beatae veritatis est repellat saepe ipsa adipisci sit, consequatur rerum soluta incidunt voluptate inventore molestias dolor eveniet nesciunt obcaecati harum possimus officiis."
+        "name": "COLORFUL TULIPS",
+        "price": 25.9,
+        "count": 95,
+        "url": "./assets/imgs/shop-6-img.jpg",
+        "desc": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.",
+        "cartCount": 1,
+        "reviews": []
     }
 ]

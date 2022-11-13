@@ -2,10 +2,10 @@
   padding: 20px;
   width: 100%;
   margin: auto;
-  background-color: aqua;
+  background-color: transparent;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 15px;
+  gap: 30px;
 
   &_card {
     width: 100%;
@@ -39,20 +39,33 @@
         color: #afafaf;
       }
       .addCart-btn {
-        @extend %medium_btn;
+        border: none;
+        padding: 5px 10px;
+        background-color: $secondary_orange;
+        transition: 0.3s;
+        color: white;
+        &:hover{
+          background-color: $primary_orange;
+        }
       }
     }
 
     &_status {
       text-align: center;
-      font-size: 1rem;
+      font-size: 0.8rem;
       color: white;
-      padding: 6px 15px;
+      padding: 3px 6px;
       background-color: $primary_orange;
       position: absolute;
       top: 15px;
       left: 15px;
       z-index: 2;
+    }
+    .Sold{
+      background-color: black !important;
+    }
+    .New{
+      background-color: $primary_orange !important;
     }
   }
 }
@@ -83,7 +96,7 @@
       align-items: center;
       justify-content: center;
       overflow: hidden;
-      background-color: aqua;
+      background-color: transparent ;
 
       &:hover img {
         scale: 1.15;
@@ -140,7 +153,6 @@
       width: 100%;
       height: 190px;
       overflow: hidden;
-      background-color: gray;
       display: flex;
       align-items: center;
       justify-content: center;
