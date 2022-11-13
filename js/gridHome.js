@@ -111,6 +111,7 @@ subscribeOrange.addEventListener('click', (e) => {
     emailjs.send('service_da4oq1d', 'template_v3hcg84', templateParams)
         .then(function (response) {
             console.log('SUCCESS!', response.status, response.text);
+            toastr.success('Email Sent')
         }, function (error) {
             console.log('FAILED...', error);
         })

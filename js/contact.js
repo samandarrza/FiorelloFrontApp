@@ -78,11 +78,7 @@ const email = document.getElementById('emailUser');
 const phoneNumber = document.getElementById('phoneUser');
 const desc = document.getElementById('descUser');
 
-sendMailBtn.addEventListener('click', (e) => {
 
-
-
-});
 
 
 
@@ -116,6 +112,8 @@ sendMailBtn.addEventListener('click', (e) => {
     emailjs.send('service_da4oq1d', 'template_v3hcg84', templateParams)
         .then(function (response) {
             console.log('SUCCESS!', response.status, response.text);
+            toastr.success('Email Sent')
+            
         }, function (error) {
             console.log('FAILED...', error);
         })
