@@ -3,7 +3,7 @@
 // =====================================
 const nav = document.querySelector('.nav-scroll');
 window.addEventListener('scroll', () => {
-    if (document.documentElement.scrollTop > window.innerHeight)
+    if (document.documentElement.scrollTop > 300)
         nav.style.top = '0';
     else
         nav.style.top = '-15vh';
