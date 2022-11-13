@@ -13,21 +13,22 @@
     text-align: center;
     width: 100%;
     .main_container{
-        width: 60%;
+        width: 40%;
         h2{
 
             color: white;
             margin-bottom: 3rem;
-            font-size: 3rem;
+            font-size: 2rem;
         }
         .input_group{
             position: relative;
             width: 100%;
             input{
                 width: 100%;
-
+                border-radius: 10px;
             }
             button{
+                border-radius: 0 10px 10px 0;
                 position: absolute;
                 right: 0;
                 width: 20%;
@@ -82,23 +83,54 @@
     aspect-ratio: 16/9;
 }
 
+.productsIndex {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    .index_categories {
+      .category {
+        cursor: pointer;
+        display: inline-block;
+        color: $text_color;
+        margin-left: 1rem;
+        font-size: .75rem;
+        transition: 0.5s;
+        &:hover{
+          color: $secondary_orange;
+        }
+      }
+    }
+  }
+
+
+
 @media (max-width: 768px) {
     .inframe_video{
         width: 95%;
         aspect-ratio: 9/16;
     }
-    .main_container{
-        width: 100%;
-        h2{
-            font-size: 2rem;
-        }
-    }
 }
-@media (max-width: 900px) {
+
+@media only screen and (max-width: 992px) {
     .main_container{
-        width: 100%;
-        h2{
-            font-size: 2rem;
-        }
+        width: 70%!important;
     }
-}
+  }
+
+  @media only screen and (max-width: 768px) {
+    .main_container{
+        width: 80%!important;
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    .main_container{
+        width: 90%!important;
+    }
+    .productsIndex{
+        text-align: center;
+    }
+  }
+  @media only screen and (max-width: 426px) {
+    .main_container{
+        width: 100%!important;
+    }
+  }
