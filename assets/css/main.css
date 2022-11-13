@@ -2420,6 +2420,40 @@ nav .submenu_item a.active::before {
     transform: scale(1);
   }
 }
+@media only screen and (max-width: 576px) {
+  .mainSlider .mainSlider-items .item span {
+    font-size: 3.2rem;
+    line-height: 3rem;
+  }
+  .mainSlider .mainSlider-items .item p {
+    top: 35%;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 476px) {
+  .mainSlider .mainSlider-items .item span {
+    font-size: 2.8rem;
+    line-height: 3rem;
+  }
+  .mainSlider .mainSlider-items .item p {
+    top: 35%;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 436px) {
+  .mainSlider .mainSlider-items .item span {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+  .mainSlider .mainSlider-items .item p {
+    top: 40%;
+    font-size: 1.2rem;
+  }
+  .mainSlider .mainSlider-items .item div img {
+    width: 30%;
+    top: 80%;
+  }
+}
 .video_header {
   background-color: #fefaf9;
   flex-direction: column;
