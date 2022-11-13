@@ -1986,6 +1986,24 @@ nav .submenu_item a.active::before {
   display: none !important;
 }
 
+.navigate-top {
+  display: block;
+  position: fixed;
+  z-index: 10;
+  bottom: 20px;
+  right: 20px;
+  width: 2rem;
+  height: 2rem;
+  background-color: #f34f3f;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 0.3rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.5s;
+}
+
 .register-modal {
   position: fixed;
   width: 100%;

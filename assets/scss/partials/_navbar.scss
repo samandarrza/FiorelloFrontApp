@@ -227,3 +227,23 @@ nav {
 .d-none {
 display: none !important;
 }
+
+
+
+.navigate-top{
+  display: block;
+  position: fixed;
+  z-index: 10;
+  bottom: 20px;
+  right: 20px;
+  width: 2rem;
+  height: 2rem;
+  background-color: $primary_orange;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: .3rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.5s;
+}

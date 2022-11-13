@@ -75,7 +75,6 @@ document.getElementById('reviewCounts').textContent = product.reviews.length;
 // Displaying Rewiews
 product.reviews.map(comment => {
     let user = getUserDataById(comment.userId);
-    console.log(user);
 
     let html = `  <div class="tab_reviews_review">
 <div class="tab_reviews_review_reviewerProfile">
@@ -123,7 +122,6 @@ if (isLoggedIn()) {
     //================================
 
     const postBtn = document.getElementById('create-review');
-    console.log(postBtn)
     const commentInput = document.getElementById('commentInput');
 
     postBtn.addEventListener('click', () => {
@@ -156,5 +154,53 @@ for (const smPhoto of smPhotos) {
 }
 
 
+//==============================
+// ADDING TO CART
+//===========================
+
+let btn =document.getElementById('addToCart');
+let timesInput = document.getElementById('times');
+
+
+btn.addEventListener('click',()=>{
+let times = parseInt(timesInput.value);
+   
+let wantedId = localStorage.getItem("wantedItem");
+let products = JSON.parse(localStorage.getItem('products'));
+
+for (let i = 0; i < times ; i++) {
+         products.forEach(e => {
+             if (e.id == wantedId) {
+    
+            let OldCart = JSON.parse(localStorage.getItem('myCart'));
+            let NewCart = OldCart;
+            let ExtraCart = [];
+            let hasItem = false;
+            if (OldCart.length > 0) {
+
+                NewCart = OldCart.map((item) => {
+                    if (item.id == wantedId  && item.count > 0) {
+                        item.cartCount++;
+                        item.count--;
+                        hasItem = true;
+                    }
+                    return item;
+                })
+                if (!hasItem) {
+                    ExtraCart.push(e);
+                }
+            }
+            else {
+                NewCart.push(e);
+            }
+            NewCart = NewCart.concat(ExtraCart);
+            localStorage.setItem('myCart', JSON.stringify(NewCart));
+          total();
+        }
+    });
+    }
+
+   
+})
 
 

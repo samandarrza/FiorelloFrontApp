@@ -85,7 +85,6 @@ function login(username, password) {
         return false;
     }
     let user = getUserDataByName(username);
-    console.log(user);
     if (user.password !== password){
         console.log('password problem')
         return false;
