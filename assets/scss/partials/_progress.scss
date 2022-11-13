@@ -1,13 +1,12 @@
 .progress_bar{
-    background: #fefaf9;
-    padding: 10px;
+    padding: 2rem;
     align-items: center;
     display: flex;
     flex-direction: column;
     
 }
 .progress_bar h3{
-    padding: 10px;
+    padding: 1rem;
     font-size: 1rem;
     text-align: center;
     font-weight: 600;
@@ -19,6 +18,9 @@
     position: relative;
 }
 .progress_watch{
+    max-width: 1280px;
+    margin: auto;
+    margin: 2rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -45,7 +47,7 @@
 }
 #progress_one_number, #progress_two_number, #progress_three_number, #progress_four_number {
     font-weight: 600;
-    font-size: 32px;
+    font-size: 2rem;
     color: #f40000;
 
 }
@@ -106,3 +108,20 @@
     100%{
         stroke-dashoffset: 40;  
     }}
+
+.progress{
+    display: flex;
+    justify-content: center;
+    background-color: #f7f7f7;
+}
+
+@media (max-width: 992px) {
+    .progress_watch{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 576px) {
+    .progress_watch{
+        grid-template-columns: 1fr;
+    }
+}
